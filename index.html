@@ -14,12 +14,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <svg style="display:none;">
+    <symbol id="sun" viewBox="0 0 32 32"><title>Sun</title>
+      <path d="M23.395 14.106c2.958-1.383 2.828-6.068 5.758-5.884-4.125-2.74-4.019 3.106-9.089 1.235 1.107-3.068-2.292-6.286-0.091-8.227-4.855 0.979-0.645 5.039-5.555 7.301-1.384-2.958-6.068-2.828-5.884-5.758-2.74 4.125 3.106 4.019 1.235 9.089-3.068-1.107-6.286 2.292-8.227 0.091 0.979 4.855 5.039 0.645 7.301 5.555-2.958 1.384-2.828 6.068-5.758 5.884 4.125 2.74 4.019-3.106 9.089-1.235-1.107 3.068 2.292 6.286 0.091 8.227 4.855-0.979 0.645-5.039 5.555-7.301 1.384 2.958 6.068 2.828 5.884 5.758 2.74-4.125-3.106-4.019-1.235-9.089 3.068 1.107 6.286-2.292 8.226-0.091-0.979-4.855-5.039-0.645-7.301-5.555z"></path>
+    </symbol>
+    <symbol id="moon" viewBox="0 0 32 32"><title>Moon</title>
+      <path d="M10.895 7.574c0 7.55 5.179 13.67 11.567 13.67 1.588 0 3.101-0.38 4.479-1.063-1.695 4.46-5.996 7.636-11.051 7.636-6.533 0-11.83-5.297-11.83-11.83 0-4.82 2.888-8.959 7.023-10.803-0.116 0.778-0.188 1.573-0.188 2.39z"></path>
+    </symbol>
+  </svg>
+  
   <div class="min-h-screen flex flex-col">
     <header class="w-full bg-green-700 flex">
-      <section class="w-full items-center justify-center flex h-full py-4 md:py-6 px-12">
-        <nav id="navLinks" class="flex flex-row gap-7 md:gap-14 lg:gap-18 text-sm md:text-base lg:text-xl text-white">
-          <div class="w-6 md:w-8 lg:w-12">
-            <img src="images/sigla scris alb PNG (1).png" class="w-full h-full object-contain rounded-full">
+      <section class="w-full items-center justify-center flex h-12 md:h-full py-4 md:py-6 px-12">
+        <nav class="hidden md:flex flex-row gap-7 md:gap-14 lg:gap-18 text-sm md:text-base lg:text-xl text-white">
+          <div class="w-6 md:w-8 lg:w-16">
+            <img src="images/sigla scris alb PNG (1).png" class="w-full h-full object-contain rounded-full border-1 border-lime-50">
           </div>
           <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:bg-lime-400/20 hover:text-lime-200">Acasă</a>
           <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:bg-lime-400/20 hover:text-lime-200">Despre noi</a>
@@ -27,11 +36,75 @@
           <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:bg-lime-400/20 hover:text-lime-200">Implică-te</a>
           <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:bg-lime-400/20 hover:text-lime-200">Galerie</a>
           <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:bg-lime-400/20 hover:text-lime-200">Contact</a>
+          <button class="themeToggle self-center relative flex items-center w-28 h-8 px-2 bg-white dark:bg-zinc-800 rounded-lg cursor-pointer select-none">
+            <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
+              <use href="#sun"></use></svg></span>
+            <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
+              <use href="#moon"></use></svg></span>
+            <span class="themeDot absolute left-1 w-7 h-7 bg-zinc-300 rounded-full shadow-md transition-all"></span>
+          </button>
         </nav>
+        <button id="btnMenu" class="block absolute md:hidden text-lime-50 transition-all duration-200 hover:text-lime-200 lg:text-xl z-5 right-1 px-8 cursor-pointer">MENIU ☰</button>
       </section>
+      <div id="sidebar" class="fixed inset-0 z-40 pointer-events-none opacity-0 transition-opacity duration-300">
+        <div id="sidebarBackdrop" class="absolute inset-0 bg-black opacity-30 transition-opacity duration-300"></div>
+        <aside class="absolute left-0 top-0 h-full w-full bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 gap-6">
+          <div class="flex flex-row justify-between items-center">
+            <div class="w-6 md:w-8 lg:w-16">
+              <img src="images/sigla scris alb PNG (1).png" class="w-full h-full object-contain rounded-full border-1 border-lime-50">
+            </div> 
+            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Close Sidebar">MENIU X</button>
+          </div>
+          <nav class="flex flex-col gap-4 text-lg">
+            <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Acasă</a>
+            <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Despre noi</a>
+            <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Proiecte</a>
+            <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Implică-te</a>
+            <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Galerie</a>
+            <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Contact</a>
+             <button class="themeToggle mx-3 relative flex items-center w-24 h-8 bg-white dark:bg-zinc-800 rounded-lg cursor-pointer select-none">
+            <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
+              <use href="#sun"></use></svg></span>
+            <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
+              <use href="#moon"></use></svg></span>
+            <span class="themeDot absolute left-1 w-7 h-7 bg-zinc-300 rounded-full shadow-md transition-all"></span>
+          </button>
+          </nav>
+        </aside>
+      </div>
     </header>
-    <main class="flex-1 w-full bg-gray-50 leading-relaxed"> 
-      
+    <main class="flex-1 w-full bg-gray-50 dark:bg-zinc-900 text-gray-800 dark:text-gray-200 leading-relaxed"> 
+      <section class="relative w-full h-[300px] md:h-[450px] lg:h-[600px] overflow-hidden group">
+        <div class="absolute inset-0 opacity-100 transition-opacity duration-700" data-index="0">
+          <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Slide 1" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
+          <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479" alt="Slide 2" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1950&q=80" alt="Slide 3" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
+          <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=1950&q=80" alt="Slide 4" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Slide 5" class="w-full h-full object-cover">
+        </div>
+         <div class="absolute inset-0 bg-black/55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-centera text-gray-100 text-center py-10 md:py-14 lg:py-18">
+          <h3 class="text-2xl font-bold text-lime-200">Liga Studenților Științelor Vieții</h3>
+           <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 text-lime-200 text-3xl px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+            &#10094;</button>
+        <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 text-lime-200 text-3xl px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+            &#10095;</button>
+        </div>
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+          <span class="bar w-6 h-1.5 rounded-full bg-white/80 cursor-pointer" data-bar="0"></span>
+          <span class="bar w-6 h-1.5 rounded-full bg-white/40 cursor-pointer" data-bar="1"></span>
+          <span class="bar w-6 h-1.5 rounded-full bg-white/40 cursor-pointer" data-bar="2"></span>
+          <span class="bar w-6 h-1.5 rounded-full bg-white/40 cursor-pointer" data-bar="3"></span>
+          <span class="bar w-6 h-1.5 rounded-full bg-white/40 cursor-pointer" data-bar="4"></span>
+        </div>
+      </section>
     </main>
     <footer class="w-full bg-green-700 text-white py-4 md:py-6 px-12 text-center">
       <p class="text-base md:text-xl">&copy; 2025 Liga Studenților Științelor Vieții. Toate drepturile rezervate.</p>
