@@ -66,54 +66,36 @@ closeSidebar.addEventListener("click", close);
 document.addEventListener("keydown", e => {
   if (e.key === "Escape" && !sidebar.classList.contains("pointer-events-none")) close();
 });
-// Hero Photo Slides
 
-const slides = document.querySelectorAll("section.relative > div[data-index");
-const bars = document.querySelectorAll(".bar");
-const prevBtn = document.getElementById("prev");
-const nextBtn = document.getElementById("next");
+// Portfolio Modal
 
-let currentIndex = 0;
-let slideInterval = setInterval(nextSlide, 5000);
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+const modalTitle = document.getElementById("modalTitle");
+const modalDesc = document.getElementById("modalDesc");
+const closeModal = document.getElementById("closeModal");
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle("opacity-100", i === index);
-    slide.classList.toggle("opacity-0", i !== index);
-    bars[i].classList.toggle("bg-white/80", i === index);
-    bars[i].classList.toggle("bg-white/40", i !== index);
-  });
-  currentIndex = index;
-}
-
-function nextSlide() {
-  const newIndex = (currentIndex + 1 ) % slides.length;
-  showSlide(newIndex);
-}
-
-function prevSlide() {
-  const newIndex = (currentIndex - 1 + slides.length) % slides.length;
-  showSlide(newIndex);
-}
-
-function resetInterval() {
-  clearInterval(slideInterval);
-  slideInterval = setInterval(nextSlide, 5000);
-}
-
-bars.forEach(bar => {
-  bar.addEventListener("click", () => {
-    showSlide(parseInt(bar.dataset.bar));
-    resetInterval();
+document.querySelectorAll(".group").forEach(card => {
+  card.addEventListener("click", () => {
+    modalImg.src = card.dataset.img;
+    modalTitle.textContent = card.dataset.title;
+    modalDesc.textContent = card.dataset.desc;
+    modal.classList.remove("opacity-0", "pointer-events-none");
+    modal.classList.add("flex", "opacity-100");
   });
 });
 
-nextBtn.addEventListener("click", () => {
-  nextSlide();
-  resetInterval();
+function hideModal() {
+  modal.classList.remove("opacity-100");
+  modal.classList.add("opacity-0", "pointer-events-none");
+}
+
+closeModal.addEventListener("click", hideModal);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") hideModal();
 });
 
-prevBtn.addEventListener("click", () => {
-  prevSlide();
-  resetInterval();
+modal.addEventListener("click", e => {
+  if (e.target === modal) hideModal();
 });

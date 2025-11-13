@@ -22,7 +22,6 @@
       <path d="M10.895 7.574c0 7.55 5.179 13.67 11.567 13.67 1.588 0 3.101-0.38 4.479-1.063-1.695 4.46-5.996 7.636-11.051 7.636-6.533 0-11.83-5.297-11.83-11.83 0-4.82 2.888-8.959 7.023-10.803-0.116 0.778-0.188 1.573-0.188 2.39z"></path>
     </symbol>
   </svg>
-  
   <div class="min-h-screen flex flex-col">
     <header class="w-full bg-green-700 flex">
       <section class="w-full items-center justify-center flex h-12 md:h-full py-4 md:py-6 px-12">
@@ -58,7 +57,7 @@
           <nav class="flex flex-col gap-4 text-lg">
             <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Acasă</a>
             <a href="despre-noi.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Despre noi</a>
-            <a href="proiecte.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Proiecte</a>
+            <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Proiecte</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Implică-te</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Galerie</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Contact</a>
@@ -74,102 +73,100 @@
       </div>
     </header>
     <main class="flex-1 w-full bg-gray-50 dark:bg-zinc-900 text-gray-800 dark:text-gray-200 leading-relaxed"> 
-      <section class="relative w-full h-[300px] md:h-[450px] lg:h-[600px] overflow-hidden group">
-        <div class="absolute inset-0 opacity-100 transition-opacity duration-700" data-index="0">
-          <img src="images/lssv-team.jpg" alt="LSSV Team Photo" class="w-full h-full object-cover">
-        </div>
-        <div class="absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
-          <img src="images/teambuilding.JPG" alt="Team Building Photo" class="w-full h-full object-cover">
-        </div>
-        <div class="absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
-          <img src="images/cupa-sportiva.jpg" alt="Cupa Sportiva Photo" class="w-full h-full object-cover">
-        </div>
-        <div class="absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
-          <img src="images/ag-boboci.jpg" alt="Adunare Generală Boboci Photo" class="w-full h-full object-cover">
-        </div>
-        <div class="absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
-          <img src="images/lssv-flag.jpg" alt="LSSV Activity Photo" class="w-full h-full object-cover">
-        </div>
-         <div class="absolute inset-0 bg-black/55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-centera text-gray-100 text-center py-10 md:py-14 lg:py-18">
-          <h3 class="text-2xl font-bold text-lime-200">Liga Studenților Științelor Vieții</h3>
-           <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 text-lime-200 text-3xl px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
-            &#10094;</button>
-        <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 text-lime-200 text-3xl px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
-            &#10095;</button>
-        </div>
-        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-          <span class="bar w-6 h-1.5 rounded-full bg-white/80 cursor-pointer" data-bar="0"></span>
-          <span class="bar w-6 h-1.5 rounded-full bg-white/40 cursor-pointer" data-bar="1"></span>
-          <span class="bar w-6 h-1.5 rounded-full bg-white/40 cursor-pointer" data-bar="2"></span>
-          <span class="bar w-6 h-1.5 rounded-full bg-white/40 cursor-pointer" data-bar="3"></span>
-          <span class="bar w-6 h-1.5 rounded-full bg-white/40 cursor-pointer" data-bar="4"></span>
-        </div>
-      </section>
-      <section class="flex flex-col md:flex-row w-3/4 md:w-7xl justify-center itemms-center text-justify mx-auto my-8 md:my-12 lg:my-16 gap-8 md:gap-12 lg:gap-16">
-        <div class="flex-1 w-full h-[600px]">
-          <img src="images/quiz-night.JPG" alt="Slide 1" class="w-full h-full object-cover">
-        </div>
-        <div class="flex flex-1 flex-col gap-3 md:gap-6">
-          <h1 class="text-xl md:text-2xl lg:text-3xl text-green-800 font-bold">Liga Studenților Științelor Vieții</h1>
-          <p class="text-base md:text-xl">Liga Studenților Științelor Vieții este o asociație care își desfășoară activitatea în scopul drepturilor și intereselor studenților din cadrul USAMV Cluj-Napoca. 
-            Astfel se dorește organizarea de evenimente care să încurajeze cercetarea științifică și pregătirea profesională, socială și culturală a membrilor săi. 
-            <br>Studenți ai Universității de Științe Agricole și Medicină Veterinară sunteți invitați să vă alăturați Asociației, împreună să punem bazele unui viitor mai bun!</p>
-        </div>
-      </section>
-      <section class="flex flex-col mx-auto gap-4 my-12 w-3/4">
-        <h1 class="text-center font-semibold text-3xl text-green-700">Proiecte</h1>
-        <article class="flex w-full gap-4">
-          <div class="h-40 w-25 bg-green-700 flex-1">
+     <section class="mb-12">
+          <div class="relative w-full h-[350px] md:h-[400px] lg:h-[500px] object-cover shadow-md bg-cover bg-center bg-no-repeat flex justify-center items-center flex-col text-gray-200" 
+            style="background-image: url('images/ag-boboci.jpg')">
+            <div class="absolute inset-0 bg-black opacity-80"></div>
+            <div class="relative text-center flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-8">
+              <h1 class="text-xl md:text-3xl font-bold text-green-700">Liga Studenților Științelor Vieții</h1>
+              <p class="text-xl font-semibold text-gray-200">Board-ul de conducere or something</p>
+            </div>
           </div>
-          <div class="h-40 w-25 bg-green-700 flex-1">
+        </section>
+      <section class="flex flex-col justify-center items-center mx-auto w-3/4 gap-20 mb-12">
+        <article class="flex gap-24">
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">Suciu Alin</h2>
+            <p class="text-gray-300">Presedinte</p>
           </div>
-          <div class="h-40 w-25 bg-green-700 flex-1">
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">X</h2>
+            <p class="text-gray-300">Secretar General</p>
           </div>
         </article>
-        <a rel="noopener noreferrer" href="https://preachervr.github.io/urbanature-tailwind" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
-          <button class="py-2 px-4 md:py-3 md:px-6 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
-            Learn More</button></a>
-      </section>
-       <section class="flex flex-col mx-auto gap-4 my-12 w-3/4">
-        <h1 class="text-center font-semibold text-3xl text-green-700">Evenimente</h1>
-        <article class="flex w-full gap-4">
-          <div class="h-40 w-25 bg-green-700 flex-1">
+         <article class="flex gap-24">
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">Nicola Daria</h2>
+            <p class="text-gray-300">Vicepresedinte Interne</p>
           </div>
-          <div class="h-40 w-25 bg-green-700 flex-1">
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">Nut Daria</h2>
+            <p class="text-gray-300">Vicepresedinte Externe</p>
+        </article>
+        <article class="flex gap-24">
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">Ovidiu Pop??!?!?!?!?!?!?!</h2>
+            <p class="text-gray-300">Coordonator HR</p>
           </div>
-          <div class="h-40 w-25 bg-green-700 flex-1">
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">Crisan Florin</h2>
+            <p class="text-gray-300">Coordonator Evenimente</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">Creta Ioana Lenuta</h2>
+            <p class="text-gray-300">Coordonator Proiecte</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">Ramona</h2>
+            <p class="text-gray-300">Coordonator Imagine</p>
           </div>
         </article>
-        <a rel="noopener noreferrer" href="https://preachervr.github.io/urbanature-tailwind" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
-          <button class="py-2 px-4 md:py-3 md:px-6 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
-            Learn More</button></a>
-      </section>
-      <section class="flex flex-col mx-auto w-3/4 mb-12 gap-4">
-        <h1 class="text-center font-semibold text-3xl text-green-700">Partenerii Ligii Studenților Științelor Vieți</h1>
-        <article class="w-full flex">
-          <div class="flex-1 flex items-center flex-col">
-            <div class="w-8 h-8 bg-lime-500"></div>
-            <h1>IVSA</h1>
-            <p>Descriere</p>
+         <article class="flex gap-24">
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">X</h2>
+            <p class="text-gray-300">Coordonator Y</p>
           </div>
-           <div class="flex-1 flex items-center flex-col">
-            <div class="w-8 h-8 bg-lime-500"></div>
-            <h1>USR</h1>
-            <p>Descriere</p>
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">??????</h2>
+            <p class="text-gray-300">Coordonator Logistica</p>
           </div>
-           <div class="flex-1 flex items-center flex-col">
-            <div class="w-8 h-8 bg-lime-500"></div>
-            <h1>USAMV</h1>
-            <p>Descriere</p>
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">Da</h2>
+            <p class="text-gray-300">Coordonator Comunicare?</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">Mda</h2>
+            <p class="text-gray-300">Coordonator Fundraising</p>
+          </div>
+        </article>
+         <article class="flex gap-24">
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">Vlad Tepes (Misu sau cum ii ziceau turcii)</h2>
+            <p class="text-gray-300">Cenzor</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <h2 class="text-xl text-green-700 font-semibold">?!?!?!?</h2>
+            <p class="text-gray-300">Trezorier??</p>
           </div>
         </article>
       </section>
-      <section class="flex flex-col mx-auto w-3/4 mb-12 gap-6">
-        <h3 class="text-center text-2xl">Slogan</h3>
-        <a rel="noopener noreferrer" href="https://preachervr.github.io/urbanature-tailwind" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
-          <button class="py-2 px-4 md:py-3 md:px-6 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
-            Alatura-te</button></a>
-      </section>
+      Aici daca vreti mai putem pune descrieri pe larg a ligii, ca sa nu ramana doar ierarhic echipa, daca aveti ceva idee chiar va rog sa imi ziceti
+      <br>Ma gandeam eventual ceva de genul:
+      <br>Principii, obiective, text scurt dar atractiv
     </main>
     <footer class="w-full bg-green-700 text-white py-4 md:py-6 px-12 text-center">
       <p class="text-base md:text-xl">&copy; 2025 Liga Studenților Științelor Vieții. Toate drepturile rezervate.</p>
