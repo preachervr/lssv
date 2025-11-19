@@ -5,7 +5,7 @@ const currentUrl = window.location.href;
 
 links.forEach(link => {
   if (link.href === currentUrl) {
-    link.classList.add('bg-lime-400/20', 'text-lime-200');
+    link.classList.add('scale-102', 'text-lime-200');
   }
 });
 
@@ -116,4 +116,13 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
   prevSlide();
   resetInterval();
+});
+
+const toggleSubmenu = document.getElementById("toggleSubmenu");
+const submenu = document.getElementById("submenu");
+const submenuArrow = document.getElementById("submenuArrow");
+
+toggleSubmenu.addEventListener("click", () => {
+  submenu.classList.toggle("hidden");
+  submenuArrow.classList.toggle("rotate-180");
 });
