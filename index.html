@@ -11,6 +11,7 @@
   <link rel="icon" href="images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -42,10 +43,10 @@
           </div>
           <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200">Acasă</a>
           <div class="relative group">
-            <a href="despre-noi.html" class="flex items-center gap-1 relative px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-500 hover:scale-102">Despre noi
-              <span class="transition-transform duration-200 group-hover:rotate-180">▼</span>
+            <a id="toggleSubmenu" href="despre-noi.html" class="flex items-center gap-1 relative px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-500 hover:scale-102">Despre noi
+              <span id="submenuArrow" class="transition-transform duration-200 group-hover:rotate-180">▼</span>
             </a>
-            <div class="absolute left-0 mt-1 w-60 h-60s bg-green-700 text-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-2">
+            <div id="submenu" class="absolute left-0 mt-1 w-60 h-60s bg-green-700 text-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-2">
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-500 hover:scale-102">Board Executiv</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-500 hover:scale-102">Departament Resurse Umane</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-500 hover:scale-102">Departament Imagine</a>
@@ -145,27 +146,27 @@
           <p class="text-center">LSSV este o comunitate, oportunități de voluntariat, proiecte și evenimente care te pun în mișcare și evenimente care fac studenția mai vie. 
             <br>Un loc unde te implici, te dezvolți și te conectezi cu oameni ca tine.</p>
         </article>
-        <article class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-12">
+        <article data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-12">
           <div class="flex flex-col bg-linear-to-t from-green-700 to-lime-500 text-gray-200 rounded-xl gap-4 py-6 px-4 md:py-8 md:px-6 flex-1
-            transform hover:translate-y-2 hover:shadow-lg shadow-gray-800 transition-all duration-200 ease-in-out">
+            transform hover:translate-y-2 hover:shadow-lg shadow-lime-700 transition-all duration-200 ease-in-out">
             <svg aria-hidden="true" class="w-10 h-10 fill-lime-100 hover:fill-green-700 transition duration-200 ease-in-out self-center"><use href="#community"></use></svg>
             <h2 class="text-xl md:text-2xl text-lime-100 self-center font-semibold">Comunitate</h2>
             <p class="text-sm md:text-base text-gray-200 text-center md:text-justify">Un loc unde găsești oameni ca tine — deschiși, implicați și gata să te ajute să te integrezi și să crești alături de ei.</p>
           </div>
           <div class="flex flex-col bg-linear-to-t from-green-700 to-lime-500 text-gray-200 rounded-xl gap-4 py-6 px-4 md:py-8 md:px-6 flex-1
-            transform hover:translate-y-2 hover:shadow-lg shadow-gray-800 transition duration-200 ease-in-out">
+            transform hover:translate-y-2 hover:shadow-lg shadow-lime-700 transition duration-200 ease-in-out">
             <svg aria-hidden="true" class="w-10 h-10 fill-lime-100 hover:fill-green-700 transition duration-200 ease-in-out self-center"><use href="#volunteer"></use></svg>
             <h2 class="text-xl md:text-2xl text-lime-100 self-center font-semibold">Voluntariat</h2>
             <p class="text-sm md:text-base text-gray-200 text-center md:text-justify">Îți poți pune ideile în practică, poți învăța lucruri noi și poți contribui concret la viața studenților din facultate.</p>
           </div>
           <div class="flex flex-col bg-linear-to-t from-green-700 to-lime-500 text-gray-200 text-gray-200 rounded-xl gap-4 py-6 px-4 md:py-8 md:px-6 flex-1
-            transform hover:translate-y-2 hover:shadow-lg shadow-gray-800 transition duration-200 ease-in-out">
+            transform hover:translate-y-2 hover:shadow-lg shadow-lime-700 transition duration-200 ease-in-out">
             <svg aria-hidden="true" class="w-10 h-10 fill-lime-100 hover:fill-green-700 transition duration-200 ease-in-out self-center"><use href="#project"></use></svg>
             <h2 class="text-xl md:text-2xl text-lime-100 self-center font-semibold">Proiecte</h2>
             <p class="text-sm md:text-base text-slate-200 text-center md:text-justify">De la proiecte sportive la seri tematice și acțiuni caritabile, LSSV îți oferă șansa să fii parte din proiecte cu impact real.</p>
           </div>
           <div class="flex flex-col bg-linear-to-t from-green-700 to-lime-500 text-gray-200 text-gray-200 rounded-xl gap-4 py-6 px-4 md:py-8 md:px-6 flex-1
-            transform hover:translate-y-2 hover:shadow-lg shadow-gray-800 transition duration-200 ease-in-out">
+            transform hover:translate-y-2 hover:shadow-lg shadow-lime-700 transition duration-200 ease-in-out">
             <svg aria-hidden="true" class="w-10 h-10 fill-lime-100 hover:fill-green-700 transition duration-200 ease-in-out self-center"><use href="#event"></use></svg>
             <h2 class="text-xl md:text-2xl text-lime-100 self-center font-semibold">Evenimente</h2>
             <p class="text-sm md:text-base text-gray-200 text-center md:text-justify">Participi, te distrezi, cunoști oameni noi și creezi amintiri — fiecare eveniment aduce ceva diferit și memorabil.</p>
@@ -173,7 +174,7 @@
         </article>
       </section>
       <section class="flex flex-col md:flex-row-reverse px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
-        <div class="flex-1 w-full h-auto">
+        <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex-1 w-full h-auto">
           <img src="images/lssv-flag-copy.jpg" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
         </div>
         <div class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
@@ -193,7 +194,7 @@
             Mai mult</button></a>
         </div>
       </section>
-      <section>
+      <section data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
         <div class="relative w-full h-[400px] md:h-[450px] lg:h-[500px] object-cover shadow-md bg-cover bg-center bg-no-repeat flex justify-center items-center flex-col text-gray-200" 
             style="background-image: url('images/cupa-sportiva.jpg')">
           <div class="absolute inset-0 bg-black opacity-80"></div>
@@ -209,10 +210,10 @@
         </div>
       </section>
       <section class="flex flex-col md:flex-row px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
-        <div class="flex-1 w-full h-auto">
+        <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex-1 w-full h-auto">
           <img src="images/proiecte-main.jpeg" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
         </div>
-        <div class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
+        <div  class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
           <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center">Proiecte</h1>
           <p class="text-base text-center">Proiectele noastre sunt create pentru a le oferi studenților experiențe relevante, ocazia de a învăța lucruri noi și de a lucra alături de oameni cu aceleași interese. 
             Fiecare proiect aduce valoare reală, prin activități practice, ghidare și oportunități de dezvoltare personală. Ne propunem să construim un mediu în care inițiativa, creativitatea și colaborarea se 
@@ -223,7 +224,7 @@
         </div>
       </section>
       <section class="flex flex-col md:flex-row-reverse px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
-        <div class="flex-1 w-full h-auto">
+        <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex-1 w-full h-auto">
           <img src="images/lssv-flag-copy.jpg" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
         </div>
         <div class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
@@ -250,5 +251,6 @@
     </footer>
   </div>
   <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </body>
 </html>

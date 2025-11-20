@@ -68,7 +68,7 @@ document.addEventListener("keydown", e => {
 });
 // Hero Photo Slides
 
-const slides = document.querySelectorAll("section.relative > div[data-index");
+const slides = document.querySelectorAll("section.relative > div[data-index]");
 const bars = document.querySelectorAll(".bar");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
@@ -118,11 +118,24 @@ prevBtn.addEventListener("click", () => {
   resetInterval();
 });
 
-const toggleSubmenu = document.getElementById("toggleSubmenu");
-const submenu = document.getElementById("submenu");
-const submenuArrow = document.getElementById("submenuArrow");
+// AOS
 
-toggleSubmenu.addEventListener("click", () => {
-  submenu.classList.toggle("hidden");
-  submenuArrow.classList.toggle("rotate-180");
+document.addEventListener('DOMContentLoaded', () => {
+  AOS.init();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleSubmenu = document.getElementById("toggleSubmenu");
+  const submenu = document.getElementById("submenu");
+  const submenuArrow = document.getElementById("submenuArrow");
+
+  if (!toggleSubmenu || !submenu || !submenuArrow) {
+    console.warn("Submenu elements not found in DOM");
+    return;
+  }
+
+  toggleSubmenu.addEventListener("click", () => {
+    submenu.classList.toggle("hidden");
+    submenuArrow.classList.toggle("rotate-180");
+  });
 });
