@@ -331,6 +331,15 @@
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
+  .h-60 {
+    height: calc(var(--spacing) * 60);
+  }
+  .h-65 {
+    height: calc(var(--spacing) * 65);
+  }
+  .h-70 {
+    height: calc(var(--spacing) * 70);
+  }
   .h-\[200px\] {
     height: 200px;
   }
@@ -372,6 +381,9 @@
   }
   .w-60 {
     width: calc(var(--spacing) * 60);
+  }
+  .w-65 {
+    width: calc(var(--spacing) * 65);
   }
   .w-full {
     width: 100%;
@@ -647,6 +659,9 @@
   .text-justify {
     text-align: justify;
   }
+  .text-left {
+    text-align: left;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -742,18 +757,6 @@
   .shadow-xl {
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-gray-800 {
-    --tw-shadow-color: oklch(27.8% 0.033 256.848);
-    @supports (color: color-mix(in lab, red, red)) {
-      --tw-shadow-color: color-mix(in oklab, var(--color-gray-800) var(--tw-shadow-alpha), transparent);
-    }
-  }
-  .shadow-lime-300 {
-    --tw-shadow-color: oklch(89.7% 0.196 126.665);
-    @supports (color: color-mix(in lab, red, red)) {
-      --tw-shadow-color: color-mix(in oklab, var(--color-lime-300) var(--tw-shadow-alpha), transparent);
-    }
   }
   .shadow-lime-700 {
     --tw-shadow-color: oklch(53.2% 0.157 131.589);
@@ -1174,6 +1177,11 @@
       gap: calc(var(--spacing) * 18);
     }
   }
+  .lg\:px-30 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 30);
+    }
+  }
   .lg\:px-40 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 40);
@@ -1192,6 +1200,11 @@
   .lg\:py-18 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 18);
+    }
+  }
+  .lg\:text-justify {
+    @media (width >= 64rem) {
+      text-align: justify;
     }
   }
   .lg\:text-xl {
