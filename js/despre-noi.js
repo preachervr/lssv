@@ -82,58 +82,6 @@ document.addEventListener("keydown", e => {
   if (e.key === "Escape" && !sidebar.classList.contains("pointer-events-none")) close();
 });
 
-// Hero Photo Slides
-
-const slides = document.querySelectorAll("section.relative > div[data-index]");
-const bars = document.querySelectorAll(".bar");
-const prevBtn = document.getElementById("prev");
-const nextBtn = document.getElementById("next");
-
-let currentIndex = 0;
-let slideInterval = setInterval(nextSlide, 5000);
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle("opacity-100", i === index);
-    slide.classList.toggle("opacity-0", i !== index);
-    bars[i].classList.toggle("bg-white/80", i === index);
-    bars[i].classList.toggle("bg-white/40", i !== index);
-  });
-  currentIndex = index;
-}
-
-function nextSlide() {
-  const newIndex = (currentIndex + 1 ) % slides.length;
-  showSlide(newIndex);
-}
-
-function prevSlide() {
-  const newIndex = (currentIndex - 1 + slides.length) % slides.length;
-  showSlide(newIndex);
-}
-
-function resetInterval() {
-  clearInterval(slideInterval);
-  slideInterval = setInterval(nextSlide, 5000);
-}
-
-bars.forEach(bar => {
-  bar.addEventListener("click", () => {
-    showSlide(parseInt(bar.dataset.bar));
-    resetInterval();
-  });
-});
-
-nextBtn.addEventListener("click", () => {
-  nextSlide();
-  resetInterval();
-});
-
-prevBtn.addEventListener("click", () => {
-  prevSlide();
-  resetInterval();
-});
-
 // AOS
 
 document.addEventListener('DOMContentLoaded', () => {

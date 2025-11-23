@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Front-end developer portfolio showcasing clean, modern web design using HTML, CSS, JS, and TailwindCSS.">
-  <title>LSSV - Acasă</title>
+  <title>LSSV - Despre Noi</title>
   <link href="dist/output.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,14 +27,27 @@
       <section class="w-full items-center justify-center flex h-12 md:h-full py-4 md:py-6 px-12">
         <nav id="navLinks" class="hidden md:flex flex-row gap-7 md:gap-14 lg:gap-18 text-sm md:text-base lg:text-xl text-white">
           <div class="w-6 md:w-8 lg:w-16">
-            <img src="images/sigla scris alb PNG (1).png" class="w-full h-full object-contain rounded-full border-1 border-lime-50">
+            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
           </div>
-          <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:bg-lime-400/20 hover:text-lime-200">Acasă</a>
-          <a href="despre-noi.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:bg-lime-400/20 hover:text-lime-200">Despre noi</a>
-          <a href="proiecte.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:bg-lime-400/20 hover:text-lime-200">Proiecte</a>
-          <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:bg-lime-400/20 hover:text-lime-200">Implică-te</a>
-          <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:bg-lime-400/20 hover:text-lime-200">Galerie</a>
-          <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:bg-lime-400/20 hover:text-lime-200">Contact</a>
+          <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200">Acasă</a>
+          <div class="relative group">
+            <a id="toggleSubmenu" href="despre-noi.html" class="flex items-center gap-1 relative px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Despre noi
+              <span id="submenuArrow" class="transition-transform duration-200 group-hover:rotate-180">▼</span>
+            </a>
+            <div id="submenu" class="absolute left-0 mt-1 w-65 py-4 bg-green-700 text-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-2">
+              <a href="despre-noi.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Despre LSSV</a>
+              <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Board Executiv</a>
+              <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Resurse Umane</a>
+              <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Imagine</a>
+              <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Evenimente</a>
+              <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Proiecte</a>
+              <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Parteneri & Sponsori</a>
+            </div>
+          </div>
+          <a href="proiecte.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Proiecte</a>
+          <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Implică-te</a>
+          <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Galerie</a>
+          <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Contact</a>
           <button class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none hover:bg-zinc-700 transition-all duration-200 linear">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
@@ -50,14 +63,28 @@
         <aside class="absolute left-0 top-0 h-full w-full bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 gap-6">
           <div class="flex flex-row justify-between items-center">
             <div class="w-6 md:w-8 lg:w-16">
-              <img src="images/sigla scris alb PNG (1).png" class="w-full h-full object-contain rounded-full border-1 border-lime-50">
+              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
             </div> 
             <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Close Sidebar">MENIU X</button>
           </div>
           <nav class="flex flex-col gap-4 text-lg">
             <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Acasă</a>
-            <a href="despre-noi.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Despre noi</a>
-            <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Proiecte</a>
+            <div class="flex flex-col">
+              <button id="mobileSubmenuToggle" class="flex justify-between items-center px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">
+                <span>Despre noi</span>
+                <span id="mobileArrow" class="transition-transform duration-200">▼</span>
+              </button>
+              <div id="mobileSubmenu" class="hidden flex flex-col ml-5 mt-2 gap-2 text-base">
+                <a href="despre-noi.html" class="text-lime-100 hover:text-lime-300">Despre LSSV</a>
+                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Board Executiv</a>
+                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Resurse Umane</a>
+                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Imagine</a>
+                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Evenimente</a>
+                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Proiecte</a>
+                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Parteneri & Sponsori</a>
+              </div>
+            </div>
+            <a href="proiecte.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Proiecte</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Implică-te</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Galerie</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Contact</a>
@@ -86,76 +113,102 @@
       <section class="flex flex-col justify-center items-center mx-auto gap-6 md:gap-10 lg:gap-14 w-3/4">
         <article class="grid grid-cols-1">
           <div class="flex flex-col items-center justify-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Suciu Alin</h2>
             <p class="text-gray-300">Președinte</p>
           </div>
         </article>
-         <article class="grid grid-cols-2 gap-6 md:gap-10 lg:gap-14">
+         <article class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 lg:gap-14">
           <div class="flex flex-col items-center justify-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Nicola Daria</h2>
             <p class="text-gray-300">Vicepreședinte Interne</p>
           </div>
           <div class="flex flex-col items-center justify-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Nuț Daria</h2>
             <p class="text-gray-300">Vicepreședinte Externe</p>
         </article>
         <article class="grid grid-cols-1 gap-6 md:gap-10 lg:gap-14">
           <div class="flex flex-col items-center justify-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Miclăuș Rareș</h2>
             <p class="text-gray-300">Secretar General</p>
           </div>
         </article>
         <article class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 lg:gap-14">
-          <div class="flex flex-col items-center justify-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+          <div class="flex flex-col items-center justify-center text-center">
+            <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Pop Ovidiu</h2>
             <p class="text-gray-300">Coordonator Resurse Umane</p>
           </div>
-          <div class="flex flex-col items-center justify-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+          <div class="flex flex-col items-center justify-center text-center">
+            <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Crișan Florin</h2>
             <p class="text-gray-300">Coordonator Evenimente</p>
           </div>
-          <div class="flex flex-col items-center justify-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+          <div class="flex flex-col items-center justify-center text-center">
+            <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Creța Ioana</h2>
             <p class="text-gray-300">Coordonator Proiecte</p>
           </div>
           <div class="flex flex-col items-center justify-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Pașcu Ramona</h2>
             <p class="text-gray-300">Coordonator Imagine</p>
           </div>
         </article>
          <article class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 lg:gap-14">
           <div class="flex flex-col items-center justify-center text-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Mureșan Radu</h2>
             <p class="text-gray-300">Coordonator Logistică</p>
           </div>
           <div class="flex flex-col items-center justify-center text-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Da</h2>
             <p class="text-gray-300">Coordonator Comunicare?</p>
           </div>
           <div class="flex flex-col items-center justify-center text-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+            <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Cihărean Filip</h2>
             <p class="text-gray-300">Coordonator Fundraising</p>
           </div>
         </article>
-         <article class="grid grid-cols-2 gap-6 md:gap-10 lg:gap-14">
-          <div class="flex flex-col items-center justify-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+         <article class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 lg:gap-14">
+          <div class="flex flex-col items-center justify-center text-center">
+            <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Bochiș Mihai</h2>
             <p class="text-gray-300">Cenzor</p>
           </div>
           <div class="flex flex-col items-center justify-center">
-            <div class="rounded-full w-24 h-24 bg-green-700"></div>
+           <div class="rounded-full w-36 h-36">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+            </div>
             <h2 class="text-xl text-green-700 font-semibold">Tarța Cătălin</h2>
             <p class="text-gray-300">Trezorier</p>
           </div>

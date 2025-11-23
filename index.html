@@ -3,8 +3,16 @@
 <head>
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Front-end developer portfolio showcasing clean, modern web design using HTML, CSS, JS, and TailwindCSS.">
-  <title>LSSV - Acasă</title>
+  <meta name="description" content="Liga Studenților Științelor Vieții este o asociație care își desfășoară activitatea în scopul drepturilor și intereselor studenților din 
+            cadrul USAMV Cluj-Napoca. Astfel se dorește organizarea de evenimente care să încurajeze cercetarea științifică și pregătirea profesională, socială și culturală a membrilor săi.">
+  <meta name="keywords" content="Front-end developer, Web Design, TailwindCSS, HTML, CSS, JavaScript">
+  <meta property="og:title" content="Liga Studenților Științelor Vieții">
+  <meta property="og:description" content="Liga Studenților Științelor Vieții este o asociație care își desfășoară activitatea în scopul drepturilor și intereselor studenților din 
+            cadrul USAMV Cluj-Napoca. Astfel se dorește organizarea de evenimente care să încurajeze cercetarea științifică și pregătirea profesională, socială și culturală a membrilor săi.">
+  <meta property="og:image" content="https://preachervr.github.io/preachervr/images/hero-background.webp">
+  <meta property="og:url" content="https://preachervr.github.io/lssv/">
+  <meta property="og:type" content="website">
+  <title>Liga Studenților Științelor Vieții</title>
   <link href="dist/output.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +22,7 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="selection:bg-lime-500 dark:selection:bg-lime-900">
   <svg style="display:none;">
     <symbol id="sun" viewBox="0 0 32 32"><title>Sun</title>
       <path d="M23.395 14.106c2.958-1.383 2.828-6.068 5.758-5.884-4.125-2.74-4.019 3.106-9.089 1.235 1.107-3.068-2.292-6.286-0.091-8.227-4.855 0.979-0.645 5.039-5.555 7.301-1.384-2.958-6.068-2.828-5.884-5.758-2.74 4.125 3.106 4.019 1.235 9.089-3.068-1.107-6.286 2.292-8.227 0.091 0.979 4.855 5.039 0.645 7.301 5.555-2.958 1.384-2.828 6.068-5.758 5.884 4.125 2.74 4.019-3.106 9.089-1.235-1.107 3.068 2.292 6.286 0.091 8.227 4.855-0.979 0.645-5.039 5.555-7.301 1.384 2.958 6.068 2.828 5.884 5.758 2.74-4.125-3.106-4.019-1.235-9.089 3.068 1.107 6.286-2.292 8.226-0.091-0.979-4.855-5.039-0.645-7.301-5.555z"></path>
@@ -58,12 +66,14 @@
             <a id="toggleSubmenu" href="despre-noi.html" class="flex items-center gap-1 relative px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Despre noi
               <span id="submenuArrow" class="transition-transform duration-200 group-hover:rotate-180">▼</span>
             </a>
-            <div id="submenu" class="absolute left-0 mt-1 w-65 h-65 bg-green-700 text-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-2">
+            <div id="submenu" class="absolute left-0 mt-1 w-65 py-4 bg-green-700 text-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-2">
+              <a href="despre-noi.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Despre LSSV</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Board Executiv</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Resurse Umane</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Imagine</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Evenimente</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Proiecte</a>
+              <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Parteneri & Sponsori</a>
             </div>
           </div>
           <a href="proiecte.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Proiecte</a>
@@ -85,13 +95,27 @@
         <aside class="absolute left-0 top-0 h-full w-full bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 gap-6">
           <div class="flex flex-row justify-between items-center">
             <div class="w-6 md:w-8 lg:w-16">
-              <img src="images/sigla scris alb PNG (1).png" class="w-full h-full object-contain rounded-full border-1 border-lime-50">
+              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
             </div> 
             <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Close Sidebar">MENIU X</button>
           </div>
           <nav class="flex flex-col gap-4 text-lg">
             <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Acasă</a>
-            <a href="despre-noi.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Despre noi</a>
+            <div class="flex flex-col">
+              <button id="mobileSubmenuToggle" class="flex justify-between items-center px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200 cursor-pointer">
+                <span>Despre noi</span>
+                <span id="mobileArrow" class="transition-transform duration-200">▼</span>
+              </button>
+              <div id="mobileSubmenu" class="hidden flex flex-col ml-5 mt-2 gap-2 text-base">
+                <a href="despre-noi.html" class="text-lime-100 hover:text-lime-300">Despre LSSV</a>
+                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Board Executiv</a>
+                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Resurse Umane</a>
+                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Imagine</a>
+                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Evenimente</a>
+                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Proiecte</a>
+                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Parteneri & Sponsori</a>
+              </div>
+            </div>
             <a href="proiecte.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Proiecte</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Implică-te</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Galerie</a>
@@ -149,7 +173,7 @@
             <br>Studenți ai Universității de Științe Agricole și Medicină Veterinară sunteți invitați să vă alăturați Asociației, împreună să punem bazele unui viitor mai bun!</p>
              <a rel="noopener noreferrer" href="despre-noi.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
           <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
-            Mai mult</button></a>
+            Despre Noi</button></a>
         </div>
       </section>
       <section class="flex flex-col px-12 md:px-24 lg:px-40 w-full md:w-3/4 justify-center items-center text-justify mx-auto gap-4 md:gap-8 lg:gap-12">
@@ -201,9 +225,6 @@
             <p class="text-gray-800 dark:text-gray-300"><span class="text-green-700">•</span> Întâlnirea cu oameni care împărtășesc aceleași interese și cu care se pot conecta natural.</p>
             <p class="text-gray-800 dark:text-gray-300"><span class="text-green-700">•</span> Clădirea unor relații calde și autentice, care să însoțească voluntarii pe tot parcursul facultății — și chiar dincolo de ea.</p>
           </div>
-          <a rel="noopener noreferrer" href="despre-noi.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
-          <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
-            Mai mult</button></a>
         </div>
       </section>
       <section data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
@@ -215,7 +236,7 @@
               <p class="text-base px-2 sm:px-8 md:px-24 lg:px-80 text-sm md:text-base">Voluntariatul în LSSV înseamnă să fii parte din acțiuni care contează: fie că organizezi un eveniment, ajuți la un proiect 
                 caritabil sau coordonezi activități pentru colegi, fiecare contribuție este apreciată și are un impact real. Este și un spațiu de învățare, de dezvoltare personală și de descoperire a propriei 
                 creativități, dar și o oportunitate de a lega prietenii și conexiuni durabile cu studenți cu aceeași pasiune pentru implicare.</p>
-            <a rel="noopener noreferrer" href="despre-noi.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
+            <a rel="noopener noreferrer" href="proiecte.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
           <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
             Mai mult</button></a>
           </div>
@@ -230,9 +251,9 @@
           <p class="text-base text-center">Proiectele noastre sunt create pentru a le oferi studenților experiențe relevante, ocazia de a învăța lucruri noi și de a lucra alături de oameni cu aceleași interese. 
             Fiecare proiect aduce valoare reală, prin activități practice, ghidare și oportunități de dezvoltare personală. Ne propunem să construim un mediu în care inițiativa, creativitatea și colaborarea se 
             transformă în rezultate vizibile.</p>
-          <a rel="noopener noreferrer" href="despre-noi.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
+          <a rel="noopener noreferrer" href="departament-proiecte.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
           <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
-            Mai mult</button></a>
+            Despre Proiecte</button></a>
         </div>
       </section>
       <section class="flex flex-col md:flex-row-reverse px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
@@ -244,27 +265,31 @@
           <p class="text-base text-center">Evenimentele organizate de asociație creează spații în care studenții pot socializa, se pot implica și pot descoperi noi perspective. Sunt concepute pentru a aduce oamenii 
             împreună, pentru a inspira și pentru a genera experiențe memorabile. De la workshop-uri și sesiuni interactive până la întâlniri informale, fiecare eveniment contribuie la construirea unei comunități 
             active și conectate.</p>
-          <a rel="noopener noreferrer" href="despre-noi.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
+          <a rel="noopener noreferrer" href="departament-evenimente.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
           <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
-            Mai mult</button></a>
+            Despre Evenimente</button></a>
         </div>
       </section>
-      <section class="flex flex-col px-12 md:px-24 lg:px-48 justify-center items-center mx-auto gap-8 md:gap-14 self-center my-4">
-        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6">
+      <section class="flex flex-col md:flex-row px-12 md:px-24 lg:px-48 justify-center items-center mx-auto gap-8 md:gap-14 self-center my-4">
+        <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6">
           <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center">Mulțumim tuturor sponsorilor și partenerilor noștri!</h1>
           <p class="text-base text-center md:text-justify">În cadrul LSSV, credem în puterea ideilor care cresc atunci când sunt susținute cu încredere. Oferim studenților un mediu în care inițiativa, curajul și evoluția personală sunt încurajate în fiecare zi, astfel încât potențialul lor să se poată transforma în experiențe reale și valoroase.
             Suntem o comunitate dinamică și deschisă, în care sprijinul, colaborarea și dorința de a construi un viitor mai bun îi însoțesc pe studenți în fiecare pas.
-            <br>Această viziune este posibilă datorită partenerilor noștri – USAMV, IVSA, USR și FTC – și sponsorilor BRD, See US Work & Travel și Bassitto, cărora le mulțumim pentru implicarea și încrederea lor.
-            Împreună, creăm un mediu vibrant, inspirațional și plin de oportunități, în care fiecare student poate să se descopere, să crească și să strălucească.</p>
+            <br>Această viziune este posibilă datorită partenerilor noștri – <span class="text-green-700 font-semibold">USAMV, IVSA, USR și FTC</span> – și sponsorilor <span class="text-green-700 font-semibold">BRD, 
+            See US Work & Travel și Bassitto</span>, cărora le mulțumim pentru implicarea și încrederea lor. Împreună, creăm un mediu vibrant, inspirațional și plin de oportunități, în care fiecare student poate 
+            să se descopere, să crească și să strălucească.</p>
+          <a rel="noopener noreferrer" href="parteneri.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
+          <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
+            Despre Partenerii Noștri</button></a>
         </div>
-        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" class="flex-1 grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div class="col-span-2 row-span-2 h-40 md:h-56">
+        <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex-1 grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="col-span-2 row-span-2 h-30 md:h-46">
             <img src="images/usamv_color.png" class="w-full h-full object-contain rounded-xl" />
           </div>
-          <div class="h-20 md:h-28">
+          <div class="h-28 md:h-36">
             <img src="images/USR (2).png" class="w-full h-full object-contain rounded-xl">
           </div>
-          <div class="h-20 md:h-28">
+          <div class="h-24 md:h-32">
             <img src="images/FTC.png" class="w-full h-full object-contain rounded-xl">
           </div>
           <div class="row-span-2 h-44 md:h-60">
@@ -274,7 +299,7 @@
             <img src="images/BRD.png" class="w-full h-full object-cover rounded-xl">
           </div>
           <div class="h-20 md:h-28">
-            <img src="images/See us.png" class="w-full h-full object-cover rounded-xl"/>
+            <img src="images/See us.png" class="w-full h-full object-contain rounded-xl"/>
           </div>
           <div class="col-span-2 h-24 md:h-32">
             <img src="images/Bassitto.png" class="w-full h-full object-contain rounded-xl" />
