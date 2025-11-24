@@ -54,6 +54,9 @@
     <symbol id="tshirt" viewBox="0 0 16 16"><title>T-Shirt</title>
       <path d="M3 1H6L8 3L10 1H13H16V5L13 6V16H3V6L0 5V1H3Z"></path>
     </symbol>
+    <symbol id="arrowUp" viewBox="0 0 16 16"><title>Arrow Up</title>
+      <path d="M6 8L2 8L2 6L8 5.24536e-07L14 6L14 8L10 8L10 16L6 16L6 8Z"></path>
+    </symbol>
   </svg>
     <header class="w-full bg-green-700 flex">
       <section class="w-full items-center justify-center flex h-12 md:h-full py-4 md:py-6 px-12">
@@ -68,7 +71,7 @@
             </a>
             <div id="submenu" class="absolute left-0 mt-1 w-65 py-4 bg-green-700 text-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-2">
               <a href="despre-noi.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Despre LSSV</a>
-              <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Board Executiv</a>
+              <a href="board-executiv.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Biroul Executiv</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Resurse Umane</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Imagine</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Evenimente</a>
@@ -108,7 +111,7 @@
               </button>
               <div id="mobileSubmenu" class="hidden flex flex-col ml-5 mt-2 gap-2 text-base">
                 <a href="despre-noi.html" class="text-lime-100 hover:text-lime-300">Despre LSSV</a>
-                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Board Executiv</a>
+                <a href="board-executiv.html" class="text-lime-100 hover:text-lime-300">Biroul Executiv</a>
                 <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Resurse Umane</a>
                 <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Imagine</a>
                 <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Evenimente</a>
@@ -314,8 +317,11 @@
             Alătura-te</button></a>
         </div>
       </section>
+      <a id="backToTop" aria-label="Back to top" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all duration-300">
+          <svg aria-hidden="true" class="w-6 h-6 fill-gray-800 dark:fill-gray-200 self-center"><use href="#arrowUp"></use></svg>
+      </a>
     </main>
-    <footer class="w-full bg-green-700 text-white py-4 md:py-6 px-12 text-center">
+    <footer id="footer" class="w-full bg-green-700 text-white py-4 md:py-6 px-12 text-center">
       <p class="text-base md:text-xl">&copy; 2025 Liga Studenților Științelor Vieții. Toate drepturile rezervate.</p>
     </footer>
   </div>

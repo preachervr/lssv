@@ -13,13 +13,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="selection:bg-lime-500 dark:selection:bg-lime-900">
   <svg style="display:none;">
     <symbol id="sun" viewBox="0 0 32 32"><title>Sun</title>
       <path d="M23.395 14.106c2.958-1.383 2.828-6.068 5.758-5.884-4.125-2.74-4.019 3.106-9.089 1.235 1.107-3.068-2.292-6.286-0.091-8.227-4.855 0.979-0.645 5.039-5.555 7.301-1.384-2.958-6.068-2.828-5.884-5.758-2.74 4.125 3.106 4.019 1.235 9.089-3.068-1.107-6.286 2.292-8.227 0.091 0.979 4.855 5.039 0.645 7.301 5.555-2.958 1.384-2.828 6.068-5.758 5.884 4.125 2.74 4.019-3.106 9.089-1.235-1.107 3.068 2.292 6.286 0.091 8.227 4.855-0.979 0.645-5.039 5.555-7.301 1.384 2.958 6.068 2.828 5.884 5.758 2.74-4.125-3.106-4.019-1.235-9.089 3.068 1.107 6.286-2.292 8.226-0.091-0.979-4.855-5.039-0.645-7.301-5.555z"></path>
     </symbol>
     <symbol id="moon" viewBox="0 0 32 32"><title>Moon</title>
       <path d="M10.895 7.574c0 7.55 5.179 13.67 11.567 13.67 1.588 0 3.101-0.38 4.479-1.063-1.695 4.46-5.996 7.636-11.051 7.636-6.533 0-11.83-5.297-11.83-11.83 0-4.82 2.888-8.959 7.023-10.803-0.116 0.778-0.188 1.573-0.188 2.39z"></path>
+    </symbol>
+    <symbol id="arrowUp" viewBox="0 0 16 16"><title>Arrow Up</title>
+      <path d="M6 8L2 8L2 6L8 5.24536e-07L14 6L14 8L10 8L10 16L6 16L6 8Z"></path>
     </symbol>
   </svg>
   <div class="min-h-screen flex flex-col">
@@ -36,7 +39,7 @@
             </a>
             <div id="submenu" class="absolute left-0 mt-1 w-65 py-4 bg-green-700 text-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-2">
               <a href="despre-noi.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Despre LSSV</a>
-              <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Board Executiv</a>
+              <a href="board-executiv.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Biroul Executiv</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Resurse Umane</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Imagine</a>
               <a href="proiecte.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Evenimente</a>
@@ -76,7 +79,7 @@
               </button>
               <div id="mobileSubmenu" class="hidden flex flex-col ml-5 mt-2 gap-2 text-base">
                 <a href="despre-noi.html" class="text-lime-100 hover:text-lime-300">Despre LSSV</a>
-                <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Board Executiv</a>
+                <a href="board-executiv.html" class="text-lime-100 hover:text-lime-300">Biroul Executiv</a>
                 <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Resurse Umane</a>
                 <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Imagine</a>
                 <a href="proiecte.html" class="text-lime-100 hover:text-lime-300">Departament Evenimente</a>
@@ -99,7 +102,7 @@
         </aside>
       </div>
     </header>
-    <main class="flex flex-col flex-1 w-full bg-gray-50 dark:bg-zinc-900 text-gray-800 dark:text-gray-200 leading-relaxed gap-4 md:gap-8 lg:gap-12"> 
+    <main class="flex flex-col flex-1 w-full bg-gray-50 dark:bg-zinc-900 text-gray-800 dark:text-gray-200 leading-relaxed gap-8 md:gap-10 lg:gap-12"> 
      <section>
           <div class="relative w-full h-[350px] md:h-[400px] lg:h-[500px] object-cover shadow-md bg-cover bg-center bg-no-repeat flex justify-center items-center flex-col text-gray-200" 
             style="background-image: url('images/ag-boboci.jpg')">
@@ -109,7 +112,7 @@
               <p class="text-xl md:text-2xl font-semibold text-gray-200">Biroul de Conducere</p>
             </div>
           </div>
-        </section>
+      </section>
       <section class="flex flex-col justify-center items-center mx-auto gap-6 md:gap-10 lg:gap-14 w-3/4">
         <article class="grid grid-cols-1">
           <div class="flex flex-col items-center justify-center">
@@ -123,22 +126,22 @@
          <article class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 lg:gap-14">
           <div class="flex flex-col items-center justify-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Stan V. Raul.jfif" class="w-full h-full object-cover rounded-full">
             </div>
-            <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Nicola Daria</h2>
-            <h3 class="text-base md:text-xl text-gray-300">Vicepreședinte Interne</h3>
+            <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Nicola Daria-Alexia</h2>
+            <h3 class="text-base md:text-xl text-gray-300">Vicepreședinte pe Relații Interne</h3>
           </div>
           <div class="flex flex-col items-center justify-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Kaitar F. Ferenc IMG_0008.jpg" class="w-full h-full object-cover rounded-full">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Nuț Daria</h2>
-            <h3 class="text-base md:text-xl text-gray-300">Vicepreședinte Externe</h3>
+            <h3 class="text-base md:text-xl text-gray-300">Vicepreședinte pe Relații Externe</h3>
         </article>
         <article class="grid grid-cols-1 gap-6 md:gap-10 lg:gap-14">
           <div class="flex flex-col items-center justify-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Popa E. S. Alexandru-Calin IMG_0006.jpg" class="w-full h-full object-cover rounded-full">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Miclăuș Rareș</h2>
             <h3 class="text-base md:text-xl text-gray-300">Secretar General</h3>
@@ -147,7 +150,7 @@
         <article class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 lg:gap-14">
           <div class="flex flex-col items-center justify-center text-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Pop V. D. Ovidiu-Cristian IMG_0012.jpg" class="w-full h-full object-cover rounded-full">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Pop Ovidiu</h2>
             <h3 class="text-base md:text-xl text-gray-300">Coordonator Resurse Umane</h3>
@@ -250,11 +253,14 @@
             și pasiune pentru domeniul științelor vieții.</p>
         </div>
       </section>
+      <a id="backToTop" aria-label="Back to top" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all duration-300">
+          <svg aria-hidden="true" class="w-6 h-6 fill-gray-800 dark:fill-gray-200 self-center"><use href="#arrowUp"></use></svg>
+      </a>
     </main>
-    <footer class="w-full bg-green-700 text-white py-4 md:py-6 px-12 text-center">
+    <footer id="footer" class="w-full bg-green-700 text-white py-4 md:py-6 px-12 text-center">
       <p class="text-base md:text-xl">&copy; 2025 Liga Studenților Științelor Vieții. Toate drepturile rezervate.</p>
     </footer>
   </div>
-  <script src="js/index.js"></script>
+  <script src="js/despre-noi.js"></script>
 </body>
 </html>

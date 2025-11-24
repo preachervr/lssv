@@ -134,8 +134,53 @@ prevBtn.addEventListener("click", () => {
   resetInterval();
 });
 
+// Back To Top Button
+
+const backToTopButton = document.getElementById("backToTop");
+const footer = document.getElementById("footer");
+if (backToTopButton) {
+  const updateBackToTopVisibility = () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.remove("opacity-0");
+      backToTopButton.classList.add("opacity-100");
+    } else {
+      backToTopButton.classList.add("opacity-0");
+      backToTopButton.classList.remove("opacity-100");
+    }
+
+    if (footer) {
+      const footerRect = footer.getBoundingClientRect();
+      const overlap = window.innerHeight - footerRect.top;
+      if (overlap > 0) {
+        backToTopButton.style.bottom = `${overlap + 24}px`;
+      } else {
+        backToTopButton.style.bottom = "24px";
+      }
+    }
+  };
+
+  window.addEventListener("scroll", updateBackToTopVisibility);
+  window.addEventListener("resize", updateBackToTopVisibility);
+
+  updateBackToTopVisibility();
+
+  backToTopButton.addEventListener("click", (e) => {
+    if (e) e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+
+  backToTopButton.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      backToTopButton.click();
+    }
+  });
+}
+
 // AOS
 
 document.addEventListener('DOMContentLoaded', () => {
   AOS.init();
 });
+
