@@ -402,9 +402,6 @@
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
-  }
   .w-24 {
     width: calc(var(--spacing) * 24);
   }
@@ -700,6 +697,9 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
   .text-center {
     text-align: center;
   }
@@ -708,6 +708,9 @@
   }
   .text-left {
     text-align: left;
+  }
+  .text-start {
+    text-align: start;
   }
   .font-montserrat {
     font-family: var(--font-montserrat);
@@ -1022,6 +1025,11 @@
       margin-block: calc(var(--spacing) * 8);
     }
   }
+  .md\:mb-6 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 6);
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -1030,6 +1038,16 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:h-10 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:h-15 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 15);
     }
   }
   .md\:h-20 {
@@ -1087,6 +1105,16 @@
       width: calc(1/3 * 100%);
     }
   }
+  .md\:w-2\/3 {
+    @media (width >= 48rem) {
+      width: calc(2/3 * 100%);
+    }
+  }
+  .md\:w-2\/4 {
+    @media (width >= 48rem) {
+      width: calc(2/4 * 100%);
+    }
+  }
   .md\:w-3\/4 {
     @media (width >= 48rem) {
       width: calc(3/4 * 100%);
@@ -1095,6 +1123,16 @@
   .md\:w-8 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:w-10 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:w-15 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 15);
     }
   }
   .md\:w-20 {
@@ -1130,6 +1168,11 @@
   .md\:gap-2 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:gap-3 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 3);
     }
   }
   .md\:gap-4 {
@@ -1182,6 +1225,16 @@
       padding-inline: calc(var(--spacing) * 24);
     }
   }
+  .md\:px-48 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 48);
+    }
+  }
+  .md\:px-96 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 96);
+    }
+  }
   .md\:py-3 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 3);
@@ -1200,6 +1253,11 @@
   .md\:py-14 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 14);
+    }
+  }
+  .md\:pb-6 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 6);
     }
   }
   .md\:text-justify {
@@ -1242,6 +1300,11 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .lg\:mb-8 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+  }
   .lg\:h-\[500px\] {
     @media (width >= 64rem) {
       height: 500px;
@@ -1252,9 +1315,19 @@
       height: 600px;
     }
   }
+  .lg\:w-1\/3 {
+    @media (width >= 64rem) {
+      width: calc(1/3 * 100%);
+    }
+  }
   .lg\:w-1\/4 {
     @media (width >= 64rem) {
       width: calc(1/4 * 100%);
+    }
+  }
+  .lg\:w-2\/3 {
+    @media (width >= 64rem) {
+      width: calc(2/3 * 100%);
     }
   }
   .lg\:w-16 {
@@ -1275,6 +1348,11 @@
   .lg\:gap-3 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 3);
+    }
+  }
+  .lg\:gap-4 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 4);
     }
   }
   .lg\:gap-6 {
@@ -1312,14 +1390,39 @@
       padding-inline: calc(var(--spacing) * 48);
     }
   }
+  .lg\:px-72 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 72);
+    }
+  }
   .lg\:px-80 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 80);
     }
   }
+  .lg\:px-192 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 192);
+    }
+  }
+  .lg\:px-\[120px\] {
+    @media (width >= 64rem) {
+      padding-inline: 120px;
+    }
+  }
+  .lg\:px-\[240px\] {
+    @media (width >= 64rem) {
+      padding-inline: 240px;
+    }
+  }
   .lg\:py-18 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 18);
+    }
+  }
+  .lg\:pb-8 {
+    @media (width >= 64rem) {
+      padding-bottom: calc(var(--spacing) * 8);
     }
   }
   .lg\:text-justify {
