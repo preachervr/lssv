@@ -88,8 +88,18 @@ document.addEventListener("keydown", e => {
   }
 
   function hideModal() {
-    modal.classList.remove("opacity-100", "flex");
+    // start fade-out and disable interactions immediately
+    modal.classList.remove("opacity-100");
     modal.classList.add("opacity-0", "pointer-events-none");
+
+    // remove the layout-affecting 'flex' only after the opacity transition ends
+    const onTransitionEnd = (e) => {
+      if (e.target === modal && e.propertyName === 'opacity') {
+        modal.classList.remove('flex');
+        modal.removeEventListener('transitionend', onTransitionEnd);
+      }
+    };
+    modal.addEventListener('transitionend', onTransitionEnd);
   }
 
   // Load cards (use a more specific selector if you have many .group elements)
