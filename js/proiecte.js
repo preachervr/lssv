@@ -5,7 +5,7 @@ const currentUrl = window.location.href;
 
 links.forEach(link => {
   if (link.href === currentUrl) {
-    link.classList.add('bg-lime-400/20', 'text-lime-200');
+    link.classList.add('scale-102', 'text-lime-200');
   }
 });
 
@@ -67,35 +67,107 @@ document.addEventListener("keydown", e => {
   if (e.key === "Escape" && !sidebar.classList.contains("pointer-events-none")) close();
 });
 
-// Portfolio Modal
+// Portfolio Modal - GALLERY VERSION
 
-const modal = document.getElementById("modal");
-const modalImg = document.getElementById("modalImg");
-const modalTitle = document.getElementById("modalTitle");
-const modalDesc = document.getElementById("modalDesc");
-const closeModal = document.getElementById("closeModal");
+(function () {
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modalImg");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalDesc = document.getElementById("modalDesc");
+  const closeModal = document.getElementById("closeModal");
+  const nextBtn = document.getElementById("nextImg");
+  const prevBtn = document.getElementById("prevImg");
 
-document.querySelectorAll(".group").forEach(card => {
-  card.addEventListener("click", () => {
-    modalImg.src = card.dataset.img;
-    modalTitle.textContent = card.dataset.title;
-    modalDesc.textContent = card.dataset.desc;
+  let images = [];
+  let currentIndex = 0;
+
+  // Utility: open modal (ensure modal becomes a flex container)
+  function openModal() {
     modal.classList.remove("opacity-0", "pointer-events-none");
     modal.classList.add("flex", "opacity-100");
+  }
+
+  function hideModal() {
+    modal.classList.remove("opacity-100", "flex");
+    modal.classList.add("opacity-0", "pointer-events-none");
+  }
+
+  // Load cards (use a more specific selector if you have many .group elements)
+  document.querySelectorAll(".project-card, .group.project-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const raw = card.dataset.images || card.dataset.img || "";
+      // accept either data-images or data-img (backwards compat). split+trim.
+      images = raw.split(",").map(s => s.trim()).filter(Boolean);
+      if (images.length === 0) return; // nothing to show
+
+      currentIndex = 0;
+      modalTitle.textContent = card.dataset.title || "";
+      modalDesc.textContent = card.dataset.desc || "";
+      updateImage(true);
+      openModal();
+    });
   });
-});
 
-function hideModal() {
-  modal.classList.remove("opacity-100");
-  modal.classList.add("opacity-0", "pointer-events-none");
-}
+  function updateImage(initial = false) {
+    // Fade out / in
+    modalImg.style.opacity = 0;
+    // If initial, no delay so open looks snappy
+    const delay = initial ? 0 : 150;
+    setTimeout(() => {
+      modalImg.src = images[currentIndex];
+      modalImg.setAttribute("alt", modalTitle.textContent || `Image ${currentIndex + 1}`);
+      modalImg.style.opacity = 1;
+    }, delay);
+  }
 
-closeModal.addEventListener("click", hideModal);
+  function nextImage() {
+    if (!images.length) return;
+    currentIndex = (currentIndex + 1) % images.length;
+    updateImage();
+  }
 
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") hideModal();
-});
+  function prevImage() {
+    if (!images.length) return;
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateImage();
+  }
 
-modal.addEventListener("click", e => {
-  if (e.target === modal) hideModal();
-});
+  // Buttons
+  nextBtn.addEventListener("click", (e) => { e.stopPropagation(); nextImage(); });
+  prevBtn.addEventListener("click", (e) => { e.stopPropagation(); prevImage(); });
+
+  // Close handlers
+  closeModal.addEventListener("click", hideModal);
+  modal.addEventListener("click", e => {
+    // click on backdrop closes (but not clicks inside the modal content)
+    if (e.target === modal) hideModal();
+  });
+
+  // Keyboard navigation
+  document.addEventListener("keydown", (e) => {
+    if (!modal.classList.contains("opacity-100")) return;
+    if (e.key === "ArrowRight") nextImage();
+    if (e.key === "ArrowLeft") prevImage();
+    if (e.key === "Escape") hideModal();
+  });
+
+  // Swipe support on the image
+  let startX = 0;
+  modalImg.addEventListener("touchstart", (e) => {
+    if (!e.touches || !e.touches[0]) return;
+    startX = e.touches[0].clientX;
+  }, {passive: true});
+
+  modalImg.addEventListener("touchend", (e) => {
+    if (!e.changedTouches || !e.changedTouches[0]) return;
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
+    if (diff > 50) nextImage();      // swipe left
+    if (diff < -50) prevImage();     // swipe right
+  });
+
+  // Small sanity helper: log any missing references in console
+  if (!modal || !modalImg || !closeModal || !nextBtn || !prevBtn) {
+    console.warn("Gallery modal: missing one or more required elements (#modal, #modalImg, #closeModal, #nextImg, #prevImg).");
+  }
+})();
