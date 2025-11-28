@@ -135,21 +135,14 @@ document.addEventListener("keydown", e => {
     const delay = initial ? 0 : 150;
     setTimeout(() => {
       let srcCandidate = images[currentIndex] || "";
-      // fallback to thumbnail on the card if dataset path is missing or wrong
       if ((!srcCandidate || srcCandidate === "") && activeCard) {
         const thumb = activeCard.querySelector('img');
         srcCandidate = thumb ? thumb.src : srcCandidate;
       }
 
-      // encode spaces and other URI chars to avoid mobile fetch issues
       try {
         srcCandidate = encodeURI(srcCandidate);
-      } catch (err) {
-        // if encodeURI fails, leave original
-      }
-
-      // if the image fails to load (e.g., case/extension mismatch on server),
-      // try the card thumbnail as a robust fallback
+      } catch (err) {      }
       modalImg.onerror = function () {
         modalImg.onerror = null;
         if (activeCard) {
@@ -206,8 +199,8 @@ document.addEventListener("keydown", e => {
     if (!e.changedTouches || !e.changedTouches[0]) return;
     const endX = e.changedTouches[0].clientX;
     const diff = startX - endX;
-    if (diff > 50) nextImage();      // swipe left
-    if (diff < -50) prevImage();     // swipe right
+    if (diff > 50) nextImage();
+    if (diff < -50) prevImage();
   });
 
 
@@ -215,3 +208,47 @@ document.addEventListener("keydown", e => {
     console.warn("Gallery modal: missing one or more required elements (#modal, #modalImg, #closeModal, #nextImg, #prevImg).");
   }
 })();
+
+// Back To Top Button
+
+const backToTopButton = document.getElementById("backToTop");
+const footer = document.getElementById("footer");
+if (backToTopButton) {
+  const updateBackToTopVisibility = () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.remove("opacity-0");
+      backToTopButton.classList.add("opacity-100");
+    } else {
+      backToTopButton.classList.add("opacity-0");
+      backToTopButton.classList.remove("opacity-100");
+    }
+
+    if (footer) {
+      const footerRect = footer.getBoundingClientRect();
+      const overlap = window.innerHeight - footerRect.top;
+      if (overlap > 0) {
+        backToTopButton.style.bottom = `${overlap + 24}px`;
+      } else {
+        backToTopButton.style.bottom = "24px";
+      }
+    }
+  };
+
+  window.addEventListener("scroll", updateBackToTopVisibility);
+  window.addEventListener("resize", updateBackToTopVisibility);
+
+  updateBackToTopVisibility();
+
+  backToTopButton.addEventListener("click", (e) => {
+    if (e) e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+
+  backToTopButton.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      backToTopButton.click();
+    }
+  });
+}
