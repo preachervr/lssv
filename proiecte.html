@@ -236,11 +236,11 @@
             <div class="absolute inset-0 bg-black/70 opacity-100 md:opacity-0 md:group-hover:opacity-100 flex items-center justify-center text-green-700 font-bold 
             transition-opacity duration-300 text-xl">Bătaie cu Apa</div>
           </div>
-          <div id="modal" class="fixed inset-0 opacity-0 pointer-events-none items-center justify-center bg-black/75 z-50 transition-opacity duration-300">
-            <div class="bg-gray-50 dark:bg-zinc-900 text-gray-800 dark:text-gray-200 max-w-3xl w-full p-6 rounded-lg relative">
+          <div id="modal" class="fixed inset-0 flex opacity-0 pointer-events-none items-center justify-center bg-black/75 z-50 transition-opacity duration-300 p-4">
+            <div class="bg-gray-50 dark:bg-zinc-900 text-gray-800 dark:text-gray-200 max-w-3xl w-full p-6 rounded-lg relative" style="max-width:960px;">
               <button id="closeModal" class="absolute top-1 right-2 text-xl hover:text-gray-400 transition-all duration-200 font-bold cursor-pointer">✕</button>
-              <div class="relative overflow-hidden rounded-lg mb-4">
-                <img id="modalImg" class="w-full h-auto transition-opacity duration-300" src="" alt="gallery image">
+              <div class="relative overflow-hidden rounded-lg mb-4" style="max-height:80vh; overflow:auto; -webkit-overflow-scrolling:touch;">
+                <img id="modalImg" class="w-full h-auto object-contain transition-opacity duration-300" src="" alt="gallery image" style="max-height:72vh; width:100%; height:auto; display:block;">
                 <button id="prevImg" aria-label="Previous" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-2 rounded-full cursor-pointer">&#10094;</button>
                 <button id="nextImg" aria-label="Next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-2 rounded-full cursor-pointer">&#10095;</button>
               </div>
