@@ -9,6 +9,21 @@ links.forEach(link => {
   }
 });
 
+// Submenu
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("mobileSubmenuToggle");
+  const submenu = document.getElementById("mobileSubmenu");
+  const arrow = document.getElementById("mobileArrow");
+
+  if (toggle && submenu && arrow) {
+    toggle.addEventListener("click", () => {
+      submenu.classList.toggle("hidden");
+      arrow.classList.toggle("rotate-180");
+    });
+  }
+});
+
 // Dark Mode
 
 const themeButtons = document.querySelectorAll(".themeToggle");
