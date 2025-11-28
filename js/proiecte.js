@@ -81,18 +81,15 @@ document.addEventListener("keydown", e => {
   let images = [];
   let currentIndex = 0;
 
-  // Utility: open modal (ensure modal becomes a flex container)
   function openModal() {
     modal.classList.remove("opacity-0", "pointer-events-none");
     modal.classList.add("flex", "opacity-100");
   }
 
   function hideModal() {
-    // start fade-out and disable interactions immediately
     modal.classList.remove("opacity-100");
     modal.classList.add("opacity-0", "pointer-events-none");
 
-    // remove the layout-affecting 'flex' only after the opacity transition ends
     const onTransitionEnd = (e) => {
       if (e.target === modal && e.propertyName === 'opacity') {
         modal.classList.remove('flex');
@@ -102,13 +99,11 @@ document.addEventListener("keydown", e => {
     modal.addEventListener('transitionend', onTransitionEnd);
   }
 
-  // Load cards (use a more specific selector if you have many .group elements)
   document.querySelectorAll(".project-card, .group.project-card").forEach(card => {
     card.addEventListener("click", () => {
       const raw = card.dataset.images || card.dataset.img || "";
-      // accept either data-images or data-img (backwards compat). split+trim.
       images = raw.split(",").map(s => s.trim()).filter(Boolean);
-      if (images.length === 0) return; // nothing to show
+      if (images.length === 0) return;
 
       currentIndex = 0;
       modalTitle.textContent = card.dataset.title || "";
@@ -119,9 +114,7 @@ document.addEventListener("keydown", e => {
   });
 
   function updateImage(initial = false) {
-    // Fade out / in
     modalImg.style.opacity = 0;
-    // If initial, no delay so open looks snappy
     const delay = initial ? 0 : 150;
     setTimeout(() => {
       modalImg.src = images[currentIndex];
@@ -142,18 +135,14 @@ document.addEventListener("keydown", e => {
     updateImage();
   }
 
-  // Buttons
   nextBtn.addEventListener("click", (e) => { e.stopPropagation(); nextImage(); });
   prevBtn.addEventListener("click", (e) => { e.stopPropagation(); prevImage(); });
 
-  // Close handlers
   closeModal.addEventListener("click", hideModal);
   modal.addEventListener("click", e => {
-    // click on backdrop closes (but not clicks inside the modal content)
     if (e.target === modal) hideModal();
   });
 
-  // Keyboard navigation
   document.addEventListener("keydown", (e) => {
     if (!modal.classList.contains("opacity-100")) return;
     if (e.key === "ArrowRight") nextImage();
@@ -161,7 +150,6 @@ document.addEventListener("keydown", e => {
     if (e.key === "Escape") hideModal();
   });
 
-  // Swipe support on the image
   let startX = 0;
   modalImg.addEventListener("touchstart", (e) => {
     if (!e.touches || !e.touches[0]) return;
@@ -176,7 +164,7 @@ document.addEventListener("keydown", e => {
     if (diff < -50) prevImage();     // swipe right
   });
 
-  // Small sanity helper: log any missing references in console
+
   if (!modal || !modalImg || !closeModal || !nextBtn || !prevBtn) {
     console.warn("Gallery modal: missing one or more required elements (#modal, #modalImg, #closeModal, #nextImg, #prevImg).");
   }
