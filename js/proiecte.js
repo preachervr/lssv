@@ -94,6 +94,7 @@ document.addEventListener("keydown", e => {
   const prevBtn = document.getElementById("prevImg");
 
   let images = [];
+  let activeCard = null;
   let currentIndex = 0;
 
   function openModal() {
@@ -116,6 +117,7 @@ document.addEventListener("keydown", e => {
 
   document.querySelectorAll(".project-card, .group.project-card").forEach(card => {
     card.addEventListener("click", () => {
+      activeCard = card;
       const raw = card.dataset.images || card.dataset.img || "";
       images = raw.split(",").map(s => s.trim()).filter(Boolean);
       if (images.length === 0) return;
@@ -132,7 +134,36 @@ document.addEventListener("keydown", e => {
     modalImg.style.opacity = 0;
     const delay = initial ? 0 : 150;
     setTimeout(() => {
-      modalImg.src = images[currentIndex];
+      let srcCandidate = images[currentIndex] || "";
+      // fallback to thumbnail on the card if dataset path is missing or wrong
+      if ((!srcCandidate || srcCandidate === "") && activeCard) {
+        const thumb = activeCard.querySelector('img');
+        srcCandidate = thumb ? thumb.src : srcCandidate;
+      }
+
+      // encode spaces and other URI chars to avoid mobile fetch issues
+      try {
+        srcCandidate = encodeURI(srcCandidate);
+      } catch (err) {
+        // if encodeURI fails, leave original
+      }
+
+      // if the image fails to load (e.g., case/extension mismatch on server),
+      // try the card thumbnail as a robust fallback
+      modalImg.onerror = function () {
+        modalImg.onerror = null;
+        if (activeCard) {
+          const thumb = activeCard.querySelector('img');
+          if (thumb && thumb.src && thumb.src !== modalImg.src) {
+            modalImg.src = thumb.src;
+            modalImg.setAttribute("alt", modalTitle.textContent || `Image ${currentIndex + 1}`);
+            modalImg.style.opacity = 1;
+            return;
+          }
+        }
+      };
+
+      modalImg.src = srcCandidate;
       modalImg.setAttribute("alt", modalTitle.textContent || `Image ${currentIndex + 1}`);
       modalImg.style.opacity = 1;
     }, delay);
