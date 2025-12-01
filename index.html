@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ro">
 <head>
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,7 +75,7 @@
       <section class="w-full items-center justify-center flex h-12 md:h-full py-4 md:py-6 px-12">
         <nav id="navLinks" class="hidden md:flex flex-row gap-7 md:gap-14 lg:gap-18 text-sm md:text-base lg:text-xl text-white">
           <div class="w-6 md:w-8 lg:w-16">
-            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
           </div>
           <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200">Acasă</a>
           <div class="relative group">
@@ -96,7 +96,8 @@
           <a href="recrutari.html" class="hidden relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Implică-te</a>
           <a href="galerie.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Galerie</a>
           <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Contact</a>
-          <button class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none hover:bg-zinc-700 transition-all duration-200 linear">
+          <button aria-label="Comută tema (Luminos / Întunecat)" class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none 
+          hover:bg-zinc-700 transition-all duration-200 linear">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
@@ -111,9 +112,9 @@
         <aside class="absolute left-0 top-0 h-full w-full bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 gap-6">
           <div class="flex flex-row justify-between items-center">
             <div class="w-6 md:w-8 lg:w-16">
-              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
             </div> 
-            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Close Sidebar">MENIU X</button>
+            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Închide bara laterală">MENIU X</button>
           </div>
           <nav class="flex flex-col gap-4 text-lg">
             <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Acasă</a>
@@ -136,7 +137,8 @@
             <a href="recrutari.html" class=" hidden relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Implică-te</a>
             <a href="galerie.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Galerie</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Contact</a>
-             <button class="themeToggle mx-3 relative flex items-center w-24 h-9 bg-lime-50 dark:bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 linear rounded-full cursor-pointer select-none">
+             <button aria-label="Comută tema (Luminos / Întunecat)" class="themeToggle mx-3 relative flex items-center w-24 h-9 bg-lime-50 dark:bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 linear 
+             rounded-full cursor-pointer select-none">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
@@ -150,19 +152,19 @@
     <main class="flex-1 flex flex-col w-full bg-zinc-200 dark:bg-zinc-900 text-gray-800 dark:text-gray-200 leading-relaxed gap-4 md:gap-6 lg:gap-8"> 
       <section class="relative w-full h-[200px] sm:h-[300px] md:h-[450px] lg:h-[600px] overflow-hidden group">
         <div class="absolute inset-0 opacity-100 transition-opacity duration-700" data-index="0">
-          <img src="images/lssv-team.jpg" alt="LSSV Team Photo" class="w-full h-full object-cover">
+          <img src="images/lssv-team.jpg" class="w-full h-full object-cover" alt="Adunare Generală, Voluntari cu tricouri LSSV">
         </div>
         <div class="absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
-          <img src="images/teambuilding.JPG" alt="Team Building Photo" class="w-full h-full object-cover">
+          <img src="images/teambuilding.JPG" class="w-full h-full object-cover" alt="Voluntari la atelier">
         </div>
         <div class="absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
-          <img src="images/cupa-sportiva.jpg" alt="Cupa Sportiva Photo" class="w-full h-full object-cover">
+          <img src="images/cupa-sportiva.jpg" class="w-full h-full object-cover" alt="Cupa Sportivă a LSSV">
         </div>
         <div class="absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
-          <img src="images/ag-boboci.jpg" alt="Adunare Generală Boboci Photo" class="w-full h-full object-cover">
+          <img src="images/ag-boboci.jpg" class="w-full h-full object-cover" alt="Adunare Generală Voluntari Noi">
         </div>
         <div class="absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
-          <img src="images/slider-7.jfif" alt="LSSV Activity Photo" class="w-full h-full object-cover">
+          <img src="images/slider-7.jfif" class="w-full h-full object-cover" alt="LSSV la adunare generală">
         </div>
          <div class="absolute inset-0 bg-black/55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-centera text-gray-100 text-center py-10 md:py-14 lg:py-18">
            <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 text-lime-200 text-3xl px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
@@ -180,15 +182,15 @@
       </section>
       <section class="flex flex-col md:flex-row px-4 px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
         <div class="flex-1 w-full h-auto">
-          <img src="images/lssv-flag-copy.jpg" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
+          <img src="images/lssv-flag-copy.jpg" class="w-full h-full object-cover rounded-xl" alt="Voluntari cu steagul LSSV">
         </div>
         <div class="flex flex-1 flex-col gap-3 md:gap-6 justify-center">
           <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Liga Studenților Științelor Vieții</h1>
           <p class="text-base text-left md:text-justify">Liga Studenților Științelor Vieții este o asociație care își desfășoară activitatea în scopul drepturilor și intereselor studenților din 
             cadrul USAMV Cluj-Napoca. Astfel se dorește organizarea de evenimente care să încurajeze cercetarea științifică și pregătirea profesională, socială și culturală a membrilor săi. 
             <br>Studenți ai Universității de Științe Agricole și Medicină Veterinară sunteți invitați să vă alăturați Asociației, împreună să punem bazele unui viitor mai bun!</p>
-             <a rel="noopener noreferrer" href="despre-noi.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
-          <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
+             <a rel="noopener noreferrer" href="despre-noi.html" aria-label="Află mai mult despre echipa LSSV" target="_blank" class="self-center">
+          <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-50 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
             Despre Noi</button></a>
         </div>
       </section>
@@ -227,15 +229,15 @@
       </section>
       <section class="flex flex-col md:flex-row-reverse px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
         <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex-1 w-full h-auto">
-          <img src="images/comunitate-acasa.JPG" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
+          <img src="images/comunitate-acasa.JPG" class="w-full h-full object-cover rounded-xl" alt="Voluntari noi în timpul adunării generale" loading="lazy">
         </div>
         <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
-          <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center font-montserrat">Comunitate</h1>
+          <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center font-montserrat">Comunitate</h2>
           <p class="text-base text-left md:text-justify">În LSSV, comunitatea înseamnă mai mult decât un grup de studenți adunați la aceeași universitate — este un spațiu în care oameni diferiți se regăsesc în valori comune și în 
             dorința de a construi ceva împreună. Este locul în care îți găsești sprijin atunci când ai nevoie, unde legi prietenii naturale și unde te simți parte dintr-un colectiv care te încurajează, te inspiră și te primește 
             exact așa cum ești.</p>
           <div class="flex flex-col text-left md:text-center">
-            <h2 class="text-xl text-green-700 font-bold text-center font-montserrat">Scop:</h2>
+            <h3 class="text-xl text-green-700 font-bold text-center font-montserrat">Scop:</h3>
             <p class="text-gray-800 dark:text-gray-300"><span class="text-green-700">•</span> Acomodarea ușoară a voluntarilor în facultate, într-un mediu primitor și deschis.</p>
             <p class="text-gray-800 dark:text-gray-300"><span class="text-green-700">•</span> Oferirea de sprijin și îndrumare sincere, care oferă încredere la fiecare pas.</p>
             <p class="text-gray-800 dark:text-gray-300"><span class="text-green-700">•</span> Întâlnirea cu oameni care împărtășesc aceleași interese și cu care se pot conecta natural.</p>
@@ -248,93 +250,93 @@
             style="background-image: url('images/cupa-sportiva.jpg')">
           <div class="absolute inset-0 bg-black opacity-80"></div>
           <div class="relative text-center flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-8 px-12 md:px-24 lg:px-48">
-            <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center font-montserrat">Voluntariat</h1>
+            <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center font-montserrat">Voluntariat</h2>
               <p class="text-base px-2 sm:px-8 md:px-24 lg:px-80 text-sm md:text-base text-left md:text-center">Voluntariatul în LSSV înseamnă să fii parte din acțiuni care contează: fie că organizezi un eveniment, ajuți la un proiect 
                 caritabil sau coordonezi activități pentru colegi, fiecare contribuție este apreciată și are un impact real. Este și un spațiu de învățare, de dezvoltare personală și de descoperire a propriei 
                 creativități, dar și o oportunitate de a lega prietenii și conexiuni durabile cu studenți cu aceeași pasiune pentru implicare.</p>
-            <a rel="noopener noreferrer" href="proiecte.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
-          <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
+            <a rel="noopener noreferrer" href="proiecte.html" aria-label="Află mai multe despre voluntariatul în LSSV" target="_blank" class="self-center">
+          <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-50 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
             Mai mult</button></a>
           </div>
         </div>
       </section>
       <section class="flex flex-col md:flex-row px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
         <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex-1 w-full h-auto">
-          <img src="images/proiecte-main.jpeg" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
+          <img src="images/proiecte-main.jpeg" class="w-full h-full object-cover rounded-xl" alt="Voluntari la Târgul de Crăciun" loading="lazy">
         </div>
         <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
-          <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center font-montserrat">Proiecte</h1>
+          <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center font-montserrat">Proiecte</h2>
           <p class="text-base text-left md:text-justify">Proiectele noastre sunt create pentru a le oferi studenților experiențe relevante, ocazia de a învăța lucruri noi și de a lucra alături de oameni cu aceleași interese. 
             Fiecare proiect aduce valoare reală, prin activități practice, ghidare și oportunități de dezvoltare personală. Ne propunem să construim un mediu în care inițiativa, creativitatea și colaborarea se 
             transformă în rezultate vizibile.</p>
-          <a rel="noopener noreferrer" href="departament-proiecte.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
-          <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
+          <a rel="noopener noreferrer" href="departament-proiecte.html" aria-label="Despre departamentul de proiecte și fundraising" target="_blank" class="self-center">
+          <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-50 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
             Despre Proiecte</button></a>
         </div>
       </section>
       <section class="flex flex-col md:flex-row-reverse px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
         <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex-1 w-full h-auto">
-          <img src="images/Poza rep. evenimente.jpeg" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
+          <img src="images/Poza rep. evenimente.jpeg" class="w-full h-full object-cover rounded-xl" alt="Voluntari la o seară de board games" loading="lazy">
         </div>
         <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
-          <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center font-montserrat">Evenimente</h1>
+          <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center font-montserrat">Evenimente</h2>
           <p class="text-base text-left md:text-justify">Evenimentele organizate de asociație creează spații în care studenții pot socializa, se pot implica și pot descoperi noi perspective. Sunt concepute pentru a aduce oamenii 
             împreună, pentru a inspira și pentru a genera experiențe memorabile. De la workshop-uri și sesiuni interactive până la întâlniri informale, fiecare eveniment contribuie la construirea unei comunități 
             active și conectate.</p>
-          <a rel="noopener noreferrer" href="departament-evenimente.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
-          <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
+          <a rel="noopener noreferrer" href="departament-evenimente.html" aria-label="Despre departamentul de evenimente și logistică" target="_blank" class="self-center">
+          <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-50 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
             Despre Evenimente</button></a>
         </div>
       </section>
       <section class="flex flex-col md:flex-row px-12 md:px-24 lg:px-48 justify-center items-center mx-auto gap-8 md:gap-14 self-center my-4">
         <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6">
-          <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center font-montserrat">Mulțumim tuturor sponsorilor și partenerilor noștri!</h1>
+          <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center font-montserrat">Mulțumim tuturor sponsorilor și partenerilor noștri!</h2>
           <p class="text-base text-left md:text-justify">În cadrul LSSV, credem în puterea ideilor care cresc atunci când sunt susținute cu încredere. Oferim studenților un mediu în care inițiativa, curajul și evoluția personală sunt încurajate în fiecare zi, astfel încât potențialul lor să se poată transforma în experiențe reale și valoroase.
             Suntem o comunitate dinamică și deschisă, în care sprijinul, colaborarea și dorința de a construi un viitor mai bun îi însoțesc pe studenți în fiecare pas.
             <br>Această viziune este posibilă datorită partenerilor noștri – <span class="text-green-700 font-semibold">USAMV, IVSA, USR și FTC</span> – și sponsorilor <span class="text-green-700 font-semibold">BRD, 
             See US Work & Travel și Bassitto</span>, cărora le mulțumim pentru implicarea și încrederea lor. Împreună, creăm un mediu vibrant, inspirațional și plin de oportunități, în care fiecare student poate 
             să se descopere, să crească și să strălucească.</p>
-          <a rel="noopener noreferrer" href="parteneri.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
+          <a rel="noopener noreferrer" href="parteneri.html" aria-label="Despre partenerii și sponsorii LSSV" target="_blank" class="self-center">
           <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
             Despre Partenerii Noștri</button></a>
         </div>
         <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex-1 grid grid-cols-2 md:grid-cols-3 gap-4">
           <div class="col-span-2 row-span-2 h-30 md:h-46">
-            <img src="images/usamv_color.png" class="w-full h-full object-contain rounded-xl" />
+            <img src="images/usamv_color.png" class="w-full h-full object-contain rounded-xl" alt="Sigla USAMV" loading="lazy">
           </div>
           <div class="h-28 md:h-36">
-            <img src="images/USR (2).png" class="w-full h-full object-contain rounded-xl">
+            <img src="images/USR (2).png" class="w-full h-full object-contain rounded-xl" alt="Sigla USR" loading="lazy">
           </div>
           <div class="h-24 md:h-32">
-            <img src="images/FTC.png" class="w-full h-full object-contain rounded-xl">
+            <img src="images/FTC.png" class="w-full h-full object-contain rounded-xl" alt="Sigla FTC" loading="lazy">
           </div>
           <div class="row-span-2 h-44 md:h-60">
-            <img src="images/IVSA.png" class="w-full h-full object-contain rounded-xl">
+            <img src="images/IVSA.png" class="w-full h-full object-contain rounded-xl" alt="Sigla IVSA" loading="lazy">
           </div>
           <div class="h-20 md:h-28">
-            <img src="images/BRD_logo.svg.png" class="w-full h-full object-contain rounded-xl">
+            <img src="images/BRD_logo.svg.png" class="w-full h-full object-contain rounded-xl" alt="Sigla BRD" loading="lazy">
           </div>
           <div class="h-20 md:h-28">
-            <img src="images/See us.png" class="w-full h-full object-contain rounded-xl"/>
+            <img src="images/See us.png" class="w-full h-full object-contain rounded-xl" alt="Sigla See Us Work & Travel" loading="lazy">
           </div>
           <div class="col-span-2 h-24 md:h-32">
-            <img src="images/Bassitto.png" class="w-full h-full object-contain rounded-xl" />
+            <img src="images/Bassitto.png" class="w-full h-full object-contain rounded-xl" alt="Sigla Bassitto" loading="lazy">
           </div>
         </div>
       </section>
       <section class="flex flex-col md:flex-row-reverse px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
         <div class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
-          <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center">#CineSuntemNoi?LigaSuntemToți</h1>
-          <a rel="noopener noreferrer" href="despre-noi.html" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
+          <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center">#CineSuntemNoi?LigaSuntemToți</h2>
+          <a rel="noopener noreferrer" href="recrutari.html" aria-label="Alătură-te LSSV" target="_blank" class="self-center">
           <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
             Alătura-te</button></a>
         </div>
       </section>
-      <a id="backToTop" aria-label="Back to top" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all duration-300">
+      <a id="backToTop" aria-label="Înapoi la început" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all duration-300">
           <svg aria-hidden="true" class="w-6 h-6 fill-gray-200 dark:fill-gray-800 self-center"><use href="#arrowUp"></use></svg>
       </a>
     </main>
-    <footer id="footer" class="w-full bg-green-700 text-lime-50 py-8 md:py-12 px-8 font-open">
+    <footer id="footer" class="w-full bg-green-700 text-lime-50 py-8 md:py-12 px-8 font-open" alt="Sigla LSSV">
       <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mb-4 md:mb-8 lg:mb-12">
         <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-4">
           <div class="w-10 md:w-13 lg:w-16">

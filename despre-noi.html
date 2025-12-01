@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ro">
 <head>
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +43,7 @@
       <section class="w-full items-center justify-center flex h-12 md:h-full py-4 md:py-6 px-12">
         <nav id="navLinks" class="hidden md:flex flex-row gap-7 md:gap-14 lg:gap-18 text-sm md:text-base lg:text-xl text-white">
           <div class="w-6 md:w-8 lg:w-16">
-            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
           </div>
           <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200">Acasă</a>
           <div class="relative group">
@@ -64,7 +64,8 @@
           <a href="recrutari.html" class="hidden relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Implică-te</a>
           <a href="galerie.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Galerie</a>
           <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Contact</a>
-          <button class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none hover:bg-zinc-700 transition-all duration-200 linear">
+          <button aria-label="Comută tema (Luminos / Întunecat)" class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none 
+          hover:bg-zinc-700 transition-all duration-200 linear">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
@@ -79,9 +80,9 @@
         <aside class="absolute left-0 top-0 h-full w-full bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 gap-6">
           <div class="flex flex-row justify-between items-center">
             <div class="w-6 md:w-8 lg:w-16">
-              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
             </div> 
-            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Close Sidebar">MENIU X</button>
+            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Închide bara laterală">MENIU X</button>
           </div>
           <nav class="flex flex-col gap-4 text-lg">
             <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Acasă</a>
@@ -104,7 +105,8 @@
             <a href="recrutari.html" class=" hidden relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Implică-te</a>
             <a href="galerie.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Galerie</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Contact</a>
-             <button class="themeToggle mx-3 relative flex items-center w-24 h-9 bg-lime-50 dark:bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 linear rounded-full cursor-pointer select-none">
+             <button aria-label="Comută tema (Luminos / Întunecat)" class="themeToggle mx-3 relative flex items-center w-24 h-9 bg-lime-50 dark:bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 linear 
+             rounded-full cursor-pointer select-none">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
@@ -130,7 +132,7 @@
         <article class="grid grid-cols-1">
           <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center">
             <div class="w-36 h-36 rounded-full">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Suciu Alin, Președinte LSSV">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Suciu Alin</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Președinte</h3>
@@ -139,14 +141,14 @@
          <article class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 lg:gap-14">
           <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Stan V. Raul.jfif" class="w-full h-full object-cover rounded-full">
+              <img src="images/Stan V. Raul.jfif" class="w-full h-full object-cover rounded-full" alt="Portret Nicola Daria-Alexia, Vicepreședinte pe Relații Interne LSSV" loading="lazy">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Nicola Daria-Alexia</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Vicepreședinte pe Relații Interne</h3>
           </div>
           <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Kaitar F. Ferenc IMG_0008.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Kaitar F. Ferenc IMG_0008.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Nuț Daria, Vicepreședinte pe Relații Externe" loading="lazy">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Nuț Daria</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Vicepreședinte pe Relații Externe</h3>
@@ -154,7 +156,7 @@
         <article class="grid grid-cols-1 gap-6 md:gap-10 lg:gap-14">
           <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Popa E. S. Alexandru-Calin IMG_0006.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Popa E. S. Alexandru-Calin IMG_0006.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Miclăuș Rareș, Secretar General LSSV" loading="lazy">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Miclăuș Rareș</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Secretar General</h3>
@@ -163,28 +165,28 @@
         <article class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 lg:gap-14">
           <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center text-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Pop V. D. Ovidiu-Cristian IMG_0012.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Pop V. D. Ovidiu-Cristian IMG_0012.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Pop Ovidiu, Coordonator Resurse Umane Interne LSSV" loading="lazy">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Pop Ovidiu</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Coordonator Resurse Umane</h3>
           </div>
           <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center text-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Crișan Florin, Coordonator Evenimente Interne LSSV" loading="lazy">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Crișan Florin</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Coordonator Evenimente</h3>
           </div>
           <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center text-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Creța Ioana, Coordonator Proiecte LSSV" loading="lazy">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Creța Ioana</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Coordonator Proiecte</h3>
           </div>
           <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center text-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Pașcu Ramona, Coordonator Imagine LSSV" loading="lazy">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Pașcu Ramona</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Coordonator Imagine</h3>
@@ -193,14 +195,14 @@
          <article class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 lg:gap-14">
           <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center text-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Mureșan Radu, Coordonator Logistică LSSV" loading="lazy">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Mureșan Radu</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Coordonator Logistică</h3>
           </div>
           <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center text-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Cihărean Filip, Coordonator Fundraising LSSV" loading="lazy">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Cihărean Filip</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Coordonator Fundraising</h3>
@@ -209,14 +211,14 @@
         <article class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-28 lg:gap-32">
           <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center text-center">
             <div class="rounded-full w-36 h-36">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Bochiș Mihai, Cenzor LSSV" loading="lazy">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Bochiș Mihai</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Cenzor</h3>
           </div>
           <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center">
            <div class="rounded-full w-36 h-36">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Tarța Cătălin, Trezorier LSSV" loading="lazy">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Tarța Cătălin</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Trezorier</h3>
@@ -225,7 +227,7 @@
         <article class="grid grid-cols-1">
           <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col items-center justify-center">
             <div class="w-36 h-36 rounded-full">
-              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full">
+              <img src="images/Lancranjan G. George-Florin IMG_0007.jpg" class="w-full h-full object-cover rounded-full" alt="Mascota LSSV, Chip" loading="lazy">
             </div>
             <h2 class="text-xl md:text-2xl text-green-700 font-semibold">Chip</h2>
             <h3 class="text-base md:text-xl text-gray-800 dark:text-gray-300">Mascotă</h3>
@@ -234,10 +236,10 @@
       </section>
       <section class="flex flex-col md:flex-row px-12 md:px-24 lg:px-48 gap-4 md:gap-6 lg:gap-8">
         <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex-1">
-          <img src="images/gala-hermes2.jpg" class="w-full h-full object-cover">
+          <img src="images/gala-hermes2.jpg" class="w-full h-full object-cover" alt="Biroul de Conducere la Gala Hermes" loading="lazy">
         </div>
         <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex-1">
-          <img src="images/3c61f1be-770b-49d2-8a51-19a8926ccca62.jpg" class="w-full h-full object-cover">
+          <img src="images/3c61f1be-770b-49d2-8a51-19a8926ccca62.jpg" class="w-full h-full object-cover" alt="Biroul de Conducere cu steagul USR" loading="lazy">
         </div>
       </section>
       <section class="flex flex-col justify-center items-center mx-auto px-12 md:px-24 lg:px-48">
@@ -249,10 +251,10 @@
       </section>
       <section class="flex flex-col md:flex-row px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
         <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex-1 w-full h-auto">
-          <img src="images/proiecte-main.jpeg" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
+          <img src="images/proiecte-main.jpeg" class="w-full h-full object-cover rounded-xl" alt="Voluntari la Târgul de Crăciun" loading="lazy">
         </div>
         <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
-          <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Obiectivul Nostru</h1>
+          <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Obiectivul Nostru</h2>
           <p class="text-base text-left md:text-justify">Obiectivul nostru principal este să coordonăm și să susținem toate inițiativele LSSV, astfel încât fiecare student să se simtă parte dintr-o 
             comunitate activă și implicată. Ne propunem să oferim sprijin real studenților, să facilităm integrarea lor în viața facultății și să creăm oportunități de dezvoltare personală și profesională prin
             proiecte, evenimente și programe relevante. <br>Ne angajăm să asigurăm un mediu organizat, transparent și incluziv, în care ideile inovatoare sunt încurajate, iar fiecare membru are șansa să contribuie la 
@@ -263,10 +265,10 @@
       </section>
       <section class="flex flex-col md:flex-row-reverse px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
         <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex-1 w-full h-auto">
-          <img src="images/lssv-flag-copy.jpg" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
+          <img src="images/lssv-flag-copy.jpg" class="w-full h-full object-cover rounded-xl" alt="Voluntari cu steagul LSSV" loading="lazy">
         </div>
         <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
-          <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">De ce Liga Studenților Științelor Vieții?</h1>
+          <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">De ce Liga Studenților Științelor Vieții?</h2>
           <p class="text-base text-left md:text-justify"> Liga Studenților Științelor Vieții există pentru a oferi studenților un spațiu activ și implicat, unde fiecare are oportunitatea să se dezvolte, să învețe și să 
             contribuie la comunitatea academică. Prin proiectele, evenimentele și inițiativele noastre, promovăm spiritul de colaborare, creativitatea și implicarea reală în viața facultății. <br>Alegând să faci parte 
             din LSSV, studenții beneficiază de sprijin constant, ghidaj și acces la resurse care îi ajută să se integreze rapid, să își descopere pasiunile și să își construiască conexiuni autentice. Comunitatea 
@@ -275,7 +277,7 @@
             și pasiune pentru domeniul științelor vieții.</p>
         </div>
       </section>
-      <a id="backToTop" aria-label="Back to top" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all duration-300">
+      <a id="backToTop" aria-label="Înapoi la început" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all duration-300">
           <svg aria-hidden="true" class="w-6 h-6 fill-gray-200 dark:fill-gray-800 self-center"><use href="#arrowUp"></use></svg>
       </a>
     </main>
@@ -283,7 +285,7 @@
       <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mb-4 md:mb-8 lg:mb-12">
         <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-4">
           <div class="w-10 md:w-13 lg:w-16">
-            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
           </div>
           <p>Asociație pentru drepturile și interesele studenților USAMV Cluj-Napoca.</p>
         </div>
