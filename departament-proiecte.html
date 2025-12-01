@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ro">
 <head>
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +43,7 @@
       <section class="w-full items-center justify-center flex h-12 md:h-full py-4 md:py-6 px-12">
         <nav id="navLinks" class="hidden md:flex flex-row gap-7 md:gap-14 lg:gap-18 text-sm md:text-base lg:text-xl text-white">
           <div class="w-6 md:w-8 lg:w-16">
-            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
           </div>
           <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200">Acasă</a>
           <div class="relative group">
@@ -64,7 +64,8 @@
           <a href="recrutari.html" class="hidden relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Implică-te</a>
           <a href="galerie.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Galerie</a>
           <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Contact</a>
-          <button class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none hover:bg-zinc-700 transition-all duration-200 linear">
+          <button aria-label="Comută tema (Luminos / Întunecat)" class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none 
+          hover:bg-zinc-700 transition-all duration-200 linear">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
@@ -79,9 +80,9 @@
         <aside class="absolute left-0 top-0 h-full w-full bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 gap-6">
           <div class="flex flex-row justify-between items-center">
             <div class="w-6 md:w-8 lg:w-16">
-              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
             </div> 
-            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Close Sidebar">MENIU X</button>
+            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Închide meniul lateral">MENIU X</button>
           </div>
           <nav class="flex flex-col gap-4 text-lg">
             <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Acasă</a>
@@ -104,7 +105,8 @@
             <a href="recrutari.html" class=" hidden relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Implică-te</a>
             <a href="galerie.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Galerie</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Contact</a>
-             <button class="themeToggle mx-3 relative flex items-center w-24 h-9 bg-lime-50 dark:bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 linear rounded-full cursor-pointer select-none">
+             <button aria-label="Comută tema (Luminos / Întunecat)" class="themeToggle mx-3 relative flex items-center w-24 h-9 bg-lime-50 dark:bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 linear 
+             rounded-full cursor-pointer select-none">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
@@ -129,10 +131,10 @@
       </section>
       <section class="flex flex-col md:flex-row px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
         <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex-1 w-full h-auto">
-          <img src="images/Proiecte.png" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
+          <img src="images/Proiecte.png" alt="Slide 1" class="w-full h-full object-cover rounded-xl" alt="Sigla Departament de Proiecte">
         </div>
         <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
-          <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Despre Proiecte</h1>
+          <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Despre Proiecte</h2>
           <p class="text-base text-left md:text-justify">Departamentul de Proiecte este responsabil de dezvoltarea și coordonarea tuturor inițiativelor LSSV, transformând ideile în acțiuni concrete care aduc valoare 
             comunității studențești. Prin planificare atentă, strategie și implicare constantă, acest departament se asigură că fiecare proiect este bine structurat, relevant și adaptat nevoilor studenților. 
             <br>De la conceperea inițiativelor, până la implementarea și evaluarea lor, Departamentul de Proiecte urmărește ca fiecare etapă să fie clar definită și să genereze rezultate vizibile și benefice. 
@@ -143,10 +145,10 @@
       </section>
       <section class="flex flex-col md:flex-row-reverse px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
         <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex-1 w-full h-auto">
-          <img src="images/Fundraising.png" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
+          <img src="images/Fundraising.png" alt="Slide 1" class="w-full h-full object-cover rounded-xl" alt="Sigla Departament de Fundraising" loading="lazy">
         </div>
         <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
-          <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Despre Fundraising</h1>
+          <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Despre Fundraising</h2>
           <p class="text-base text-left md:text-justify">Departamentul de Fundraising se ocupă de atragerea resurselor financiare necesare pentru desfășurarea proiectelor și evenimentelor LSSV, asigurând 
             sustenabilitatea inițiativelor ligii. Prin identificarea oportunităților, construirea de parteneriate și relații cu sponsori, acest departament facilitează accesul la fonduri și resurse care permit ca 
             fiecare proiect să fie implementat la cel mai înalt standard. <br>Membrii echipei Fundraising planifică și coordonează campanii de strângere de fonduri, negociază colaborări și urmăresc transparența în 
@@ -156,14 +158,14 @@
         </div>
       </section>
       <section class="flex flex-col px-12 md:px-24 lg:px-48 text-center justify-center items-center mx-auto gap-4 md:gap-8 lg:gap-12 self-center">
-        <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Proiecte</h1>
+        <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Proiecte</h2>
         <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center justify-center items-start mx-auto gap-4 md:gap-8 lg:gap-12 self-center">
           <article data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col gap-2 md:gap-3 lg:gap-4">
             <div class="w-full aspect-square overflow-hidden rounded-3xl">
               <img src="images/adopta-un-boboc.jpeg" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Adoptă un Boboc</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Adoptă un Boboc</h3>
                <p class="text-left md:text-justify"><strong class="text-lime-500">Adoptă un Boboc</strong> este proiectul prin care studenții mai mari îi ajută pe cei nou-veniți să se acomodeze cât mai ușor la viața de student. Fiecare boboc este 
                 „adoptat” de un coleg cu experiență, care îl ghidează în primele săptămâni: unde sunt sălile, cum funcționează orarul, ce materiale sunt utile, ce trebuie știut despre profesori și, în general, cum 
                 să te descurci fără bătăi de cap. <br>Pe lângă ghidaj, proiectul include și activități de socializare care îi ajută pe boboci și adoptatori să se cunoască mai bine, să interacționeze într-un mediu 
@@ -177,7 +179,7 @@
               <img src="images/targul-de-craciun.JPG" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Târgul de Crăciun</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Târgul de Crăciun</h3>
                <p class="text-left md:text-justify"><strong class="text-lime-500">Târgul de Crăciun</strong> este proiectul prin care LSSV aduce magia sărbătorilor în campusul USAMV. Studenții se implică în organizarea standurilor și în confecționarea
                  manuală a decorațiunilor, creând un mediu cald și primitor pentru întreaga comunitate. Toate fondurile strânse sunt donate pentru acte de caritate, astfel încât fiecare contribuție să aibă un impact 
                  real. <br>Proiectul include și activitățide socializare, unde studenții pot să se cunoască mai bine, să petreacă timp împreună și să se bucure de atmosfera de sărbătoare într-un cadru relaxat și 
@@ -190,7 +192,7 @@
               <img src="images/mediu antreprenorial.jpg" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Mediul Antreprenorial</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Mediul Antreprenorial</h3>
               <p class="text-left md:text-justify"><strong class="text-lime-500">Mediul Antreprenorial</strong> este proiectul prin care LSSV stimulează spiritul antreprenorial al studenților, oferindu-le oportunitatea de a descoperi, dezvolta și 
                 testa idei inovatoare într-un cadru dinamic și colaborativ.  Mediul Antreprenorial este mai mult decât o serie de activități: este un cadru în care se dezvoltă gândirea creativă, abilitatea de a 
                 lucra în echipă și competențele de leadership. Participanții au ocazia să interacționeze cu persoane de succes, precum antreprenori sau cadre didactice, să învețe din experiențele lor și să 
@@ -203,7 +205,7 @@
               <img src="images/cupa-sportiva.jpg" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Cupa Sportivă</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Cupa Sportivă</h3>
               <p class="text-left md:text-justify"><strong class="text-lime-500">Cupa Sportivă</strong> este proiectul prin care LSSV aduce studenții împreună prin sport, mișcare și voie bună. Indiferent dacă ești pasionat de fotbal, volei, baschet, 
                 tenis sau alte sporturi, aici găsești ocazia să participi, să te antrenezi și să te bucuri de spiritul competitiv al comunității. Proiectul se desfășoară pe parcursul mai multor zile și include atât 
                 competiții oficiale, cât și activități recreative și jocuri distractive pentru studenții care vor doar să participe în mod relaxat. <br>Cupa Sportivă este mai mult decât un concurs: este un cadru în care 
@@ -218,7 +220,7 @@
               <img src="images/atelier-halloween.jpg" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Atelierul de Halloween</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Atelierul de Halloween</h3>
               <p class="text-left md:text-justify"><strong class="text-lime-500">Atelierul de Halloween</strong> este proiectul prin care LSSV aduce studenții împreună prin creativitate, distracție și voie bună. Indiferent dacă ești pasionat de 
                 artă, decorațiuni sau pur și simplu vrei să te distrezi într-un cadru tematic, aici găsești ocazia să participi, să creezi lucrări originale și să te bucuri de spiritul sărbătorii. Proiectul include 
                 ateliere practice de realizare a decorurilor, activități de sculptat dovleci, precum și jocuri și alte activități recreative pentru cei care vor să participe într-un mod relaxat. <br>Atelierul de 
@@ -233,7 +235,7 @@
               <img src="images/martisor.JPG" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">MĂR-țisor</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">MĂR-țisor</h3>
               <p class="text-left md:text-justify"><strong class="text-lime-500">Atelierul de 1 Martie</strong> este proiectul prin care LSSV aduce studenții împreună prin creativitate, tradiție și voie bună. Indiferent dacă ești 
                 pasionat de artizanat sau doar vrei să te distrezi și să înveți să creezi mărțișoare, aici găsești ocazia să participi, să înveți tehnici noi și să te bucuri de atmosfera specială a începutului de 
                 primăvară. Proiectul include atât activități practice de realizare a mărțișoarelor, cât și momente relaxante pentru cei care vor să participe într-un mod lejer. <br>Atelierul de 1 Martie este mai mult 
@@ -250,7 +252,7 @@
           <img src="images/arca lui noe.JPG" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
         </div>
         <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
-          <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Arca lui Noe</h1>
+          <h3 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Arca lui Noe</h3>
           <p class="text-base text-left md:text-justify"><strong class="text-lime-500">Arca lui Noe</strong> este proiectul prin care voluntarii LSSV își unesc energia, empatia și dorința de implicare pentru a aduce un strop de bine într-un adăpost de 
             căței. Aici, studenții nu doar oferă o mână de ajutor personalului, ci devin parte dintr-o comunitate care are grijă de cei mai loiali prieteni ai omului.<br>Participanții se implică în activitățile de 
             zi cu zi ale adăpostului — de la curățenie, organizare și plimbatul cățeilor, până la momentele de joacă și socializare, atât de importante pentru bunăstarea lor. Fiecare interacțiune, oricât de mică, 
@@ -263,7 +265,7 @@
           <div class="flex flex-col md:gap-4 lg:gap-6 bg-green-900 px-6 py-4 rounded-3xl flex-1">
             <div class="flex gap-2 md:gap-4 lg:gap-6">
               <div class="h-10 w-10 md:h-20 md:w-20">
-                <img src="images/Stan V. Raul.jfif" class="w-full h-full object-cover rounded-full">
+                <img src="images/Stan V. Raul.jfif" class="w-full h-full object-cover rounded-full" alt="Portret Creța Ioana, Coordonator Proiecte LSSV" loading="lazy">
               </div>
               <div>
                 <h3 class="text-base md:text-xl text-lime-300 font-semibold">Creța Ioana</h3>
@@ -280,7 +282,7 @@
           <div class="flex flex-col gap-2 md:gap-4 lg:gap-6 bg-green-900 px-6 py-4 rounded-3xl flex-1">
             <div class="flex gap-2 md:gap-4 lg:gap-6">
               <div class="h-10 w-10 md:h-20 md:w-20">
-                <img src="images/Kaitar F. Ferenc IMG_0008.jpg" class="w-full h-full object-cover rounded-full">
+                <img src="images/Kaitar F. Ferenc IMG_0008.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Cihărean Filip, Coordonator Fundraising LSSV" loading="lazy">
               </div>
               <div>
                 <h3 class="text-base md:text-xl text-lime-300 font-semibold">Chihărean Filip</h3>
@@ -296,7 +298,7 @@
           </div>
         </article>
       </section>
-      <a id="backToTop" aria-label="Back to top" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all duration-300">
+      <a id="backToTop" aria-label="Înapoi la început" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all duration-300">
           <svg aria-hidden="true" class="w-6 h-6 fill-gray-200 dark:fill-gray-800 self-center"><use href="#arrowUp"></use></svg>
       </a>
     </main>
@@ -304,7 +306,7 @@
       <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mb-4 md:mb-8 lg:mb-12">
         <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-4">
           <div class="w-10 md:w-13 lg:w-16">
-            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
           </div>
           <p>Asociație pentru drepturile și interesele studenților USAMV Cluj-Napoca.</p>
         </div>

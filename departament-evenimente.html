@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ro">
 <head>
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +43,7 @@
       <section class="w-full items-center justify-center flex h-12 md:h-full py-4 md:py-6 px-12">
         <nav id="navLinks" class="hidden md:flex flex-row gap-7 md:gap-14 lg:gap-18 text-sm md:text-base lg:text-xl text-white">
           <div class="w-6 md:w-8 lg:w-16">
-            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
           </div>
           <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200">Acasă</a>
           <div class="relative group">
@@ -64,7 +64,8 @@
           <a href="recrutari.html" class="hidden relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Implică-te</a>
           <a href="galerie.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Galerie</a>
           <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Contact</a>
-          <button class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none hover:bg-zinc-700 transition-all duration-200 linear">
+          <button aria-label="Comută tema (Luminos / Întunecat)" class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none 
+          hover:bg-zinc-700 transition-all duration-200 linear">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
@@ -79,9 +80,9 @@
         <aside class="absolute left-0 top-0 h-full w-full bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 gap-6">
           <div class="flex flex-row justify-between items-center">
             <div class="w-6 md:w-8 lg:w-16">
-              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
             </div> 
-            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Close Sidebar">MENIU X</button>
+            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Închide meniul lateral">MENIU X</button>
           </div>
           <nav class="flex flex-col gap-4 text-lg">
             <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Acasă</a>
@@ -104,7 +105,8 @@
             <a href="recrutari.html" class=" hidden relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Implică-te</a>
             <a href="galerie.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Galerie</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Contact</a>
-             <button class="themeToggle mx-3 relative flex items-center w-24 h-9 bg-lime-50 dark:bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 linear rounded-full cursor-pointer select-none">
+             <button aria-label="Comută tema (Luminos / Întunecat)" class="themeToggle mx-3 relative flex items-center w-24 h-9 bg-lime-50 dark:bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 linear 
+             rounded-full cursor-pointer select-none">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
@@ -129,10 +131,10 @@
       </section>
       <section class="flex flex-col md:flex-row px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
         <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex-1 w-full h-auto">
-          <img src="images/Evenimente.png" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
+          <img src="images/Evenimente.png" alt="Slide 1" class="w-full h-full object-cover rounded-xl" alt="Sigla Departament de Evenimente">
         </div>
         <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
-          <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Despre Evenimente</h1>
+          <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Despre Evenimente</h2>
           <p class="text-base text-left md:text-justify">Departamentul de Evenimente reprezintă motorul activităților LSSV, fiind responsabil de planificarea, organizarea și implementarea evenimentelor care aduc 
             studenții împreună și transformă inițiativele ligii în experiențe concrete. Prin dedicare, coordonare și atenție la detalii, acest departament creează contexte prin care comunitatea studențească se 
             dezvoltă, se conectează și se implică activ în viața universitară.<br>Fie că este vorba despre activități de grup, momente de socializare sau evenimente recreative, Departamentul de Evenimente asigură 
@@ -143,10 +145,10 @@
       </section>
       <section class="flex flex-col md:flex-row-reverse px-12 md:px-24 lg:px-48 justify-center items-center text-justify mx-auto gap-8 md:gap-14 self-center my-4">
         <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex-1 w-full h-auto">
-          <img src="images/Logistica.png" alt="Slide 1" class="w-full h-full object-cover rounded-xl">
+          <img src="images/Logistica.png" alt="Slide 1" class="w-full h-full object-cover rounded-xl" alt="Sigla Departament de Logistică" loading="lazy">
         </div>
         <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-1 flex-col gap-3 md:gap-6 justify-center text-center">
-          <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Despre Logistică</h1>
+          <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Despre Logistică</h2>
           <p class="text-base text-left md:text-justify">Departamentul de Logistică este pilonul operațional al LSSV, ocupându-se de tot ceea ce ține de organizarea practică și buna desfășurare a activităților și 
             evenimentelor și proiectelor ligii. Responsabil de gestionarea materialelor, echipamentelor, spațiilor și fluxurilor de lucru, acest departament asigură cadrul necesar pentru ca fiecare proiect și 
             eveniment să prindă contur în mod eficient și profesionist.<br>Prin organizare riguroasă, planificare atentă și capacitate de adaptare, membrii Departamentului de Logistică susțin toate inițiativele 
@@ -156,14 +158,14 @@
         </div>
       </section>
       <section class="flex flex-col px-12 md:px-24 lg:px-48 text-center justify-center items-center mx-auto gap-4 md:gap-8 lg:gap-12 self-center">
-        <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Evenimente</h1>
+        <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Evenimente</h2>
         <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center justify-center items-start mx-auto gap-4 md:gap-8 lg:gap-12 self-center">
           <article data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col gap-2 md:gap-3 lg:gap-4">
             <div class="w-full aspect-square overflow-hidden rounded-3xl">
               <img src="images/targul-de-craciun.JPG" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Karaoke</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Karaoke</h3>
                <p class="text-left md:text-justify"><strong class="text-lime-500">Karaoke Night</strong> LSSV este momentul în care studenții lasă emoțiile la ușă și își dau voie să se exprime liber, prin muzică, 
                 energie și voie bună. Este acel tip de seară în care hiturile preferate capătă o nouă viață, prieteniile se leagă mai ușor, iar atmosfera devine un mix perfect de spontaneitate și amuzament.
                 <br>Indiferent dacă ești pasionat de muzică, îți place să faci show sau doar vrei să te relaxezi într-un cadru relaxat, karaoke-ul LSSV aduce pe scenă tot ce ai nevoie: ritm, râsete, încurajări și 
@@ -176,7 +178,7 @@
               <img src="images/quiz-night.JPG" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Quiz Night</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Quiz Night</h3>
                <p class="text-left md:text-justify"><strong class="text-lime-500">Quiz Night</strong> LSSV este momentul ideal pentru studenții care adoră provocările, întrebările istețe și atmosfera plină de energie. Este 
                 seara în care echipele se formează rapid, strategiile se conturează spontan, iar fiecare răspuns devine o mică victorie împărtășită cu prietenii.<br>Indiferent dacă ești genul care știe toate 
                 detaliile din filme, ține minte date istorice sau excelează la cultura generală, Quiz Night LSSV aduce un mix variat de întrebări care pun la încercare mintea și stârnesc conversații amuzante. Pe 
@@ -189,7 +191,7 @@
               <img src="images/movie night.jpeg" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Movie Night</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Movie Night</h3>
               <p class="text-left md:text-justify"><strong class="text-lime-500">Movie Night</strong> LSSV este momentul perfect în care studenții lasă agitația zilei în urmă și se adună într-un spațiu relaxat, 
                 gata să intre împreună în lumi pline de aventură, emoție sau umor. Este seara în care filmele devin pretextul ideal pentru a împărtăși reacții, replici preferate și discuții care pornesc natural, 
                 între prieteni.<br>Fie că ești cinefil convins, că îți place să descoperi povești noi sau pur și simplu vrei să petreci câteva ore într-o atmosferă cozy, Movie Night LSSV aduce tot ce ai nevoie: vibe 
@@ -202,7 +204,7 @@
               <img src="images/evenimente-acasa.jpeg" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Board Games</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Board Games</h3>
               <p class="text-left md:text-justify"><strong class="text-lime-500">Board Games Night</strong> LSSV este momentul în care studenții renunță la cursuri și proiecte pentru a intra într-o lume plină de 
                 joc, competiție amicală și hohote de râs. Este seara perfectă pentru a descoperi jocuri noi, a testa strategii ingenioase și a-ți pune spiritul de echipă la încercare — totul într-o atmosferă 
                 relaxată și prietenoasă.<br>Nu contează dacă ești maestru în jocuri de societate sau doar curios să încerci ceva diferit: Board Games Night LSSV aduce împreună toate tipurile de jucători. Aici vei 
@@ -216,7 +218,7 @@
               <img src="images/una-scurta.JPG" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Una Scurtă</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Una Scurtă</h3>
               <p class="text-left md:text-justify"><strong class="text-lime-500">Una Scurtă</strong> este seara în care microfonul devine aliat, emoțiile dispar, iar studenții se transformă în povestitori amuzanți, 
                 gata să stârnească râsete și bună dispoziție. Conceptul este simplu: fiecare urcă pe scenă cu „o scurtă” – fie că e o glumă, o pățanie din cămin, o replică genială auzită în amfiteatru sau un moment 
                 de autoironie savuroasă.<br>Atmosfera este relaxată, prietenoasă și plină de energie, perfectă pentru a descoperi umorul autentic din comunitatea LSSV. Fără pretenții, fără scenarii complicate — doar 
@@ -228,7 +230,7 @@
               <img src="images/bataie cu apa.jpeg" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Bătaie cu Apa</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Bătaie cu Apa</h3>
               <p class="text-left md:text-justify"><strong class="text-lime-500">Bătaie cu Apă</strong> este evenimentul care aduce vara mai aproape, indiferent de anotimp, și transformă studenții în cea mai haioasă armată 
                 înarmată cu pistoale cu apă, baloane și multă energie. Este momentul perfect în care stresul dispare, grijile se topesc și locul lor este luat de râsete, alergătură și distracție pură.<br>În mijlocul 
                 unei atmosfere relaxate și jucăușe, participanții se bucură de adrenalină și competiție prietenoasă, totul într-un cadru sigur și plin de voie bună. Fie că vrei să-ți demonstrezi abilitățile 
@@ -243,7 +245,7 @@
           <div class="flex flex-col md:gap-4 lg:gap-6 bg-green-900 px-6 py-4 rounded-3xl flex-1">
             <div class="flex gap-2 md:gap-4 lg:gap-6">
               <div class="h-10 w-10 md:h-20 md:w-20">
-                <img src="images/Stan V. Raul.jfif" class="w-full h-full object-cover rounded-full">
+                <img src="images/Stan V. Raul.jfif" class="w-full h-full object-cover rounded-full" alt="Portret Crișan Florin, Coordonator Evenimente Interne LSSV" loading="lazy">
               </div>
               <div>
                 <h3 class="text-base md:text-xl text-lime-300 font-semibold">Crișan Florin</h3>
@@ -261,7 +263,7 @@
           <div class="flex flex-col gap-2 md:gap-4 lg:gap-6 bg-green-900 px-6 py-4 rounded-3xl flex-1">
             <div class="flex gap-2 md:gap-4 lg:gap-6">
               <div class="h-10 w-10 md:h-20 md:w-20">
-                <img src="images/Kaitar F. Ferenc IMG_0008.jpg" class="w-full h-full object-cover rounded-full">
+                <img src="images/Kaitar F. Ferenc IMG_0008.jpg" class="w-full h-full object-cover rounded-full" alt="Portret Mureșan Radu, Coordonator Logistică LSSV" loading="lazy">
               </div>
               <div>
                 <h3 class="text-base md:text-xl text-lime-300 font-semibold">Mureșan Radu</h3>
@@ -285,7 +287,7 @@
       <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mb-4 md:mb-8 lg:mb-12">
         <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-4">
           <div class="w-10 md:w-13 lg:w-16">
-            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
           </div>
           <p>Asociație pentru drepturile și interesele studenților USAMV Cluj-Napoca.</p>
         </div>

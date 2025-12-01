@@ -302,6 +302,9 @@
   .order-3 {
     order: 3;
   }
+  .order-4 {
+    order: 4;
+  }
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -403,6 +406,9 @@
   }
   .h-44 {
     height: calc(var(--spacing) * 44);
+  }
+  .h-48 {
+    height: calc(var(--spacing) * 48);
   }
   .h-64 {
     height: calc(var(--spacing) * 64);
@@ -1150,6 +1156,16 @@
       order: 2;
     }
   }
+  .md\:order-3 {
+    @media (width >= 48rem) {
+      order: 3;
+    }
+  }
+  .md\:order-4 {
+    @media (width >= 48rem) {
+      order: 4;
+    }
+  }
   .md\:col-span-1 {
     @media (width >= 48rem) {
       grid-column: span 1 / span 1;
@@ -1213,6 +1229,11 @@
   .md\:h-46 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 46);
+    }
+  }
+  .md\:h-56 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 56);
     }
   }
   .md\:h-60 {
@@ -1497,6 +1518,11 @@
   .lg\:mb-12 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:h-64 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 64);
     }
   }
   .lg\:h-96 {

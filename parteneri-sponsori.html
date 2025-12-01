@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ro">
 <head>
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +43,7 @@
       <section class="w-full items-center justify-center flex h-12 md:h-full py-4 md:py-6 px-12">
         <nav id="navLinks" class="hidden md:flex flex-row gap-7 md:gap-14 lg:gap-18 text-sm md:text-base lg:text-xl text-white">
           <div class="w-6 md:w-8 lg:w-16">
-            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
           </div>
           <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200">Acasă</a>
           <div class="relative group">
@@ -64,7 +64,8 @@
           <a href="recrutari.html" class="hidden relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Implică-te</a>
           <a href="galerie.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Galerie</a>
           <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Contact</a>
-          <button class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none hover:bg-zinc-700 transition-all duration-200 linear">
+          <button aria-label="Comută tema (Luminos / Întunecat)" class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none 
+          hover:bg-zinc-700 transition-all duration-200 linear">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
@@ -79,9 +80,9 @@
         <aside class="absolute left-0 top-0 h-full w-full bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 gap-6">
           <div class="flex flex-row justify-between items-center">
             <div class="w-6 md:w-8 lg:w-16">
-              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
             </div> 
-            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Close Sidebar">MENIU X</button>
+            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Închide meniul lateral">MENIU X</button>
           </div>
           <nav class="flex flex-col gap-4 text-lg">
             <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Acasă</a>
@@ -104,7 +105,8 @@
             <a href="recrutari.html" class=" hidden relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Implică-te</a>
             <a href="galerie.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Galerie</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Contact</a>
-             <button class="themeToggle mx-3 relative flex items-center w-24 h-9 bg-lime-50 dark:bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 linear rounded-full cursor-pointer select-none">
+             <button aria-label="Comută tema (Luminos / Întunecat)" class="themeToggle mx-3 relative flex items-center w-24 h-9 bg-lime-50 dark:bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 linear 
+             rounded-full cursor-pointer select-none">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
@@ -127,14 +129,14 @@
         </div>
       </section>
       <section class="flex flex-col px-12 md:px-24 lg:px-48 text-center justify-center items-center mx-auto gap-4 md:gap-8 lg:gap-12 self-center">
-        <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Parteneri</h1>
+        <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Parteneri</h2>
         <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center justify-center items-start mx-auto gap-4 md:gap-8 lg:gap-12 self-center">
           <article data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col gap-2 md:gap-3 lg:gap-4">
             <div class="w-full aspect-square overflow-hidden rounded-3xl">
-              <img src="images/usamv_color.png" class="w-full h-full object-cover">
+              <img src="images/usamv_color.png" class="w-full h-full object-cover" alt="Sigla USAMV">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">USAMV Cluj-Napoca</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">USAMV Cluj-Napoca</h3>
                <p class="text-left md:text-center">USAMV este inima academică a studenților din Științele Vieții și fundația pe care LSSV își construiește toate proiectele. Cu o tradiție puternică și o reputație 
                 solidă în domeniile agricole, veterinare și biologice, universitatea oferă cadrul perfect pentru inovație, cercetare și dezvoltare profesională. Parteneriatul cu USAMV înseamnă acces la resurse 
                 academice de top, profesori dedicați și oportunități nelimitate de formare. Împreună, LSSV și USAMV transformă studenția într-o experiență completă, vie și orientată spre viitor.</p>
@@ -145,10 +147,10 @@
           </article>
           <article data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col gap-2 md:gap-3 lg:gap-4">
             <div class="w-full aspect-square overflow-hidden rounded-3xl">
-              <img src="images/IVSA.png" class="w-full h-full object-contain">
+              <img src="images/IVSA.png" class="w-full h-full object-contain" alt="Sigla IVSA">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">IVSA România</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">IVSA România</h3>
                <p class="text-left md:text-center">IVSA România conectează studenții din Științele Vieții cu o comunitate internațională vibrantă și deschisă. Prin acest parteneriat, LSSV devine parte dintr-o rețea 
                 globală de schimburi academice, proiecte internaționale, workshop-uri și campanii profesionale. Colaborarea deschide porți spre experiențe interculturale, dezvoltare personală și oportunități 
                 profesionale în domeniul veterinar și nu numai. Este puntea dintre Cluj și lumea largă, unde fiecare student poate găsi inspirație și motivație să se dezvolte.</p>
@@ -159,40 +161,42 @@
           </article>
           <article data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col gap-2 md:gap-3 lg:gap-4">
             <div class="w-full aspect-square overflow-hidden rounded-3xl">
-              <img src="images/USR (2).png" class="w-full h-full object-contain">
+              <img src="images/USR (2).png" class="w-full h-full object-contain" alt="Sigla USR">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">USR</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">USR</h3>
               <p class="text-left md:text-center">USR este partenerul care susține implicarea civică și spiritul activ al studenților. Prin această colaborare, LSSV participă la inițiative sociale, campanii de 
                 responsabilitate comunitară și proiecte care dau voce generației tinere. Parteneriatul promovează leadership-ul, organizarea și comunicarea, transformând ideile studenților în acțiuni cu impact real. 
                 Împreună, contribuim la un mediu universitar și urban mai implicat, mai deschis și mai orientat spre progres.</p>
                 <a rel="noopener noreferrer" href="https://uniunea-studentilor.ro" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
           <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
             Mai mult</button></a>
+            </div>
           </article>
           <article data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col gap-2 md:gap-3 lg:gap-4">
             <div class="w-full aspect-square overflow-hidden rounded-3xl">
-              <img src="images/FTC.png" class="w-full h-full object-contain">
+              <img src="images/FTC.png" class="w-full h-full object-contain" alt="Sigla FTC">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">FTC</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">FTC</h3>
               <p class="text-left md:text-center">FTC este partenerul care aduce valoare, expertiză și dinamism proiectelor LSSV. Cu sprijinul lor, activitățile studențești capătă un plus de profesionalism: 
                 evenimente mai bine structurate, resurse suplimentare și oportunitatea de a dezvolta proiecte ambițioase. Colaborarea cu FTC înseamnă deschidere spre inovație și evoluție continuă — exact ce au 
                 nevoie studenții pentru a-și transforma ideile în realitate.</p>
                 <a rel="noopener noreferrer" href="https://www.instagram.com/ftcluj/" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
           <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
             Mai mult</button></a>
+            </div>
           </article>
         </section>
         <section class="flex flex-col px-12 md:px-24 lg:px-48 text-center justify-center items-center mx-auto gap-4 md:gap-8 lg:gap-12 self-center">
-        <h1 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Sponsori</h1>
+        <h2 class="text-xl md:text-2xl text-green-700 font-bold text-center md:text-left font-montserrat">Sponsori</h2>
         <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center justify-center items-start mx-auto gap-4 md:gap-8 lg:gap-12 self-center">
           <article data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col gap-2 md:gap-3 lg:gap-4">
             <div class="w-full aspect-square overflow-hidden rounded-3xl">
-              <img src="images/BRD_logo.svg.png" class="w-full h-full object-contain">
+              <img src="images/BRD_logo.svg.png" class="w-full h-full object-contain" alt="Sigla BRD" loading="lazy">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">BRD</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">BRD</h3>
                <p class="text-left md:text-center">USAMV este inima academică a studenților din Științele Vieții și fundația pe care LSSV își construiește toate proiectele. Cu o tradiție puternică și o reputație 
                 solidă în domeniile agricole, veterinare și biologice, universitatea oferă cadrul perfect pentru inovație, cercetare și dezvoltare profesională. Parteneriatul cu USAMV înseamnă acces la resurse 
                 academice de top, profesori dedicați și oportunități nelimitate de formare. Împreună, LSSV și USAMV transformă studenția într-o experiență completă, vie și orientată spre viitor.</p>
@@ -203,10 +207,10 @@
           </article>
           <article data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col gap-2 md:gap-3 lg:gap-4">
             <div class="w-full aspect-square overflow-hidden rounded-3xl">
-              <img src="images/See us.png" class="w-full h-full object-contain">
+              <img src="images/See us.png" class="w-full h-full object-contain" alt="Sigla See US Work & Travel" loading="lazy">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">See US Work & Travel</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">See US Work & Travel</h3>
                <p class="text-left md:text-center">IVSA România conectează studenții din Științele Vieții cu o comunitate internațională vibrantă și deschisă. Prin acest parteneriat, LSSV devine parte dintr-o rețea 
                 globală de schimburi academice, proiecte internaționale, workshop-uri și campanii profesionale. Colaborarea deschide porți spre experiențe interculturale, dezvoltare personală și oportunități 
                 profesionale în domeniul veterinar și nu numai. Este puntea dintre Cluj și lumea largă, unde fiecare student poate găsi inspirație și motivație să se dezvolte.</p>
@@ -217,19 +221,20 @@
           </article>
           <article data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500" class="flex flex-col gap-2 md:gap-3 lg:gap-4">
             <div class="w-full aspect-square overflow-hidden rounded-3xl">
-              <img src="images/Bassitto.png" class="w-full h-full object-contain">
+              <img src="images/Bassitto.png" class="w-full h-full object-contain" alt="Sigla Bassitto" loading="lazy">
             </div>
             <div class="flex flex-col gap-2 md:gap-3 lg:gap-4">
-              <h2 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Bassitto</h2>
+              <h3 class="text-xl md:text-2xl text-green-700 self-center font-semibold">Bassitto</h3>
               <p class="text-left md:text-center">USR este partenerul care susține implicarea civică și spiritul activ al studenților. Prin această colaborare, LSSV participă la inițiative sociale, campanii de 
                 responsabilitate comunitară și proiecte care dau voce generației tinere. Parteneriatul promovează leadership-ul, organizarea și comunicarea, transformând ideile studenților în acțiuni cu impact real. 
                 Împreună, contribuim la un mediu universitar și urban mai implicat, mai deschis și mai orientat spre progres.</p>
                 <a rel="noopener noreferrer" href="https://lacasabassitto.ro" aria-label="Learn more about UrbaNature website project" target="_blank" class="self-center">
           <button class="py-2 px-5 md:py-3 md:px-7 shadow-lg bg-green-700 cursor-pointer text-gray-200 font-semibold rounded-full hover:bg-green-800 hover:scale-105 active:bg-green-900 transition-all duration-300">
             Mai mult</button></a>
+            </div>
           </article>
         </section>
-      <a id="backToTop" aria-label="Back to top" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all duration-300">
+      <a id="backToTop" aria-label="Înapoi la început" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all duration-300">
           <svg aria-hidden="true" class="w-6 h-6 fill-gray-200 dark:fill-gray-800 self-center"><use href="#arrowUp"></use></svg>
       </a>
     </main>

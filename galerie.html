@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ro">
 <head>
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +42,7 @@
       <section class="w-full items-center justify-center flex h-12 md:h-full py-4 md:py-6 px-12">
         <nav id="navLinks" class="hidden md:flex flex-row gap-7 md:gap-14 lg:gap-18 text-sm md:text-base lg:text-xl text-white">
           <div class="w-6 md:w-8 lg:w-16">
-            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
           </div>
           <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200">Acasă</a>
           <div class="relative group">
@@ -63,7 +63,8 @@
           <a href="recrutari.html" class="hidden relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Implică-te</a>
           <a href="galerie.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Galerie</a>
           <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Contact</a>
-          <button class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none hover:bg-zinc-700 transition-all duration-200 linear">
+          <button aria-label="Comută tema (Luminos / Întunecat)" class="themeToggle self-center relative flex items-center w-28 h-9 px-2 bg-lime-50 dark:bg-zinc-800 rounded-full cursor-pointer select-none 
+          hover:bg-zinc-700 transition-all duration-200 linear">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
@@ -78,9 +79,9 @@
         <aside class="absolute left-0 top-0 h-full w-full bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 gap-6">
           <div class="flex flex-row justify-between items-center">
             <div class="w-6 md:w-8 lg:w-16">
-              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+              <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
             </div> 
-            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Close Sidebar">MENIU X</button>
+            <button id="closeSidebar" class="self-end text-base hover:text-lime-200 cursor-pointer" aria-label="Închide meniul lateral">MENIU X</button>
           </div>
           <nav class="flex flex-col gap-4 text-lg">
             <a href="index.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Acasă</a>
@@ -103,7 +104,8 @@
             <a href="recrutari.html" class=" hidden relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Implică-te</a>
             <a href="galerie.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Galerie</a>
             <a href="contact.html" class="relative px-3 py-1 rounded-md text-lime-50 hover:bg-lime-400/20 hover:text-lime-200 transition-all duration-200">Contact</a>
-             <button class="themeToggle mx-3 relative flex items-center w-24 h-9 bg-lime-50 dark:bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 linear rounded-full cursor-pointer select-none">
+             <button aria-label="Comută tema (Luminos / Întunecat)" class="themeToggle mx-3 relative flex items-center w-24 h-9 bg-lime-50 dark:bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 linear 
+             rounded-full cursor-pointer select-none">
             <span class="themeLight absolute left-1 z-10"><svg aria-hidden="true" aria-label="Sun Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
               <use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1 z-10"><svg aria-hidden="true" aria-label="Moon Theme Changer" class="w-7 h-7 fill-green-600 transition-all duration-200 ease-in-out self-center">
@@ -116,32 +118,33 @@
     </header>
     <main class="flex-1 w-full bg-gray-50 dark:bg-zinc-900 text-gray-800 dark:text-gray-200 dark:text-gray-200 leading-relaxed">
       <section id="gallery" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 px-8 md:px-16 lg:px-24 gap-4 p-4">
-        <img src="images/teambuilding.JPG" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/targul-de-craciun.JPG" class="w-full h-[280px] md:h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/cupa-sportiva.jpg" class="w-full h-[180px] md:h-[200px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/atelier-halloween.jpg" class="w-full h-[240px] md:h-[260px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/bataie cu apa.jpeg" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/quiz-night.JPG" class="w-full h-[260px] md:h-[280px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/movie night.jpeg" class="w-full h-[180px] md:h-[200px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/adopta-un-boboc.jpeg" class="w-full h-[220px] md:h-[240px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-         <img src="images/teambuilding.JPG" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/targul-de-craciun.JPG" class="w-full h-[280px] md:h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/cupa-sportiva.jpg" class="w-full h-[180px] md:h-[200px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/atelier-halloween.jpg" class="w-full h-[240px] md:h-[260px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/bataie cu apa.jpeg" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/quiz-night.JPG" class="w-full h-[260px] md:h-[280px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/movie night.jpeg" class="w-full h-[180px] md:h-[200px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/adopta-un-boboc.jpeg" class="w-full h-[220px] md:h-[240px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-         <img src="images/teambuilding.JPG" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/targul-de-craciun.JPG" class="w-full h-[280px] md:h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/cupa-sportiva.jpg" class="w-full h-[180px] md:h-[200px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/atelier-halloween.jpg" class="w-full h-[240px] md:h-[260px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/bataie cu apa.jpeg" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/quiz-night.JPG" class="w-full h-[260px] md:h-[280px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/movie night.jpeg" class="w-full h-[180px] md:h-[200px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
-        <img src="images/adopta-un-boboc.jpeg" class="w-full h-[220px] md:h-[240px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="">
+        <img src="images/teambuilding.JPG" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Teambuilding">
+        <img src="images/targul-de-craciun.JPG" class="w-full h-[280px] md:h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Targul de Craciun">
+        <img src="images/cupa-sportiva.jpg" class="w-full h-[180px] md:h-[200px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Cupa Sportiva">
+        <img src="images/atelier-halloween.jpg" class="w-full h-[240px] md:h-[260px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Atelierul de Halloween">
+        <img src="images/bataie cu apa.jpeg" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Bataie cu Apa">
+        <img src="images/quiz-night.JPG" class="w-full h-[260px] md:h-[280px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Quiz Night">
+        <img src="images/movie night.jpeg" class="w-full h-[180px] md:h-[200px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Movie Night">
+        <img src="images/adopta-un-boboc.jpeg" class="w-full h-[220px] md:h-[240px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Adopta un Boboc">
+        <img src="images/teambuilding.JPG" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Teambuilding">
+        <img src="images/targul-de-craciun.JPG" class="w-full h-[280px] md:h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Targul de Craciun">
+        <img src="images/cupa-sportiva.jpg" class="w-full h-[180px] md:h-[200px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Cupa Sportiva">
+        <img src="images/atelier-halloween.jpg" class="w-full h-[240px] md:h-[260px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Atelierul de Halloween">
+        <img src="images/bataie cu apa.jpeg" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Bataie cu Apa">
+        <img src="images/quiz-night.JPG" class="w-full h-[260px] md:h-[280px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Quiz Night">
+        <img src="images/movie night.jpeg" class="w-full h-[180px] md:h-[200px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Movie Night">
+        <img src="images/adopta-un-boboc.jpeg" class="w-full h-[220px] md:h-[240px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Adopta un Boboc">
+        <img src="images/teambuilding.JPG" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Teambuilding">
+        <img src="images/targul-de-craciun.JPG" class="w-full h-[280px] md:h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300"alt="Poză Targul de Craciun">
+        <img src="images/cupa-sportiva.jpg" class="w-full h-[180px] md:h-[200px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Cupa Sportiva">
+        <img src="images/atelier-halloween.jpg" class="w-full h-[240px] md:h-[260px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Atelierul de Halloween">
+        <img src="images/bataie cu apa.jpeg" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Bataie cu Apa">
+        <img src="images/quiz-night.JPG" class="w-full h-[260px] md:h-[280px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Quiz Night">
+        <img src="images/movie night.jpeg" class="w-full h-[180px] md:h-[200px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Movie Night">
+        <img src="images/adopta-un-boboc.jpeg" class="w-full h-[220px] md:h-[240px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Adopta un Boboc">
+        <img src="images/teambuilding.JPG" class="w-full h-[200px] md:h-[220px] object-cover rounded-lg hover:scale-105 transition-transform duration-300" alt="Poză Teambuilding">
       </section>
-      <a id="backToTop" aria-label="Back to top" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all duration-300">
+      <a id="backToTop" aria-label="Înapoi la început" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all duration-300">
           <svg aria-hidden="true" class="w-6 h-6 fill-gray-200 dark:fill-gray-800 self-center"><use href="#arrowUp"></use></svg>
       </a>
     </main>
@@ -149,7 +152,7 @@
       <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mb-4 md:mb-8 lg:mb-12">
         <div class="col-span-2 md:col-span-1 flex flex-col items-start gap-4">
           <div class="w-10 md:w-13 lg:w-16">
-            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full">
+            <img src="images/sigla_lssv.png" class="w-full h-full object-contain rounded-full" alt="Sigla LSSV">
           </div>
           <p>Asociație pentru drepturile și interesele studenților USAMV Cluj-Napoca.</p>
         </div>
