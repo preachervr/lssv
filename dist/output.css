@@ -458,9 +458,6 @@
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
-  .w-12 {
-    width: calc(var(--spacing) * 12);
-  }
   .w-24 {
     width: calc(var(--spacing) * 24);
   }
@@ -733,6 +730,9 @@
   }
   .fill-green-600 {
     fill: var(--color-green-600);
+  }
+  .fill-lime-50 {
+    fill: var(--color-lime-50);
   }
   .fill-lime-100 {
     fill: var(--color-lime-100);
@@ -1073,6 +1073,13 @@
       }
     }
   }
+  .hover\:fill-lime-200 {
+    &:hover {
+      @media (hover: hover) {
+        fill: var(--color-lime-200);
+      }
+    }
+  }
   .hover\:text-gray-400 {
     &:hover {
       @media (hover: hover) {
@@ -1291,11 +1298,6 @@
   .md\:w-13 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 13);
-    }
-  }
-  .md\:w-14 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 14);
     }
   }
   .md\:w-20 {
