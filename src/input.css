@@ -6,3 +6,8 @@
   --font-montserrat: Montserrat, sans-serif;
   --font-open: Open Sans, sans-serif;
 }
+
+label.required::after {
+  content: " *";
+  color: red;
+}
