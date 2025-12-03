@@ -82,19 +82,6 @@ document.addEventListener("keydown", e => {
   if (e.key === "Escape" && !sidebar.classList.contains("pointer-events-none")) close();
 });
 
-// Gallery images
-
-document.addEventListener("DOMContentLoaded", () => {
-  const gallery = document.querySelectorAll("#gallery img");
-  const heights = [180, 200, 220, 240, 260, 280];
-
-  gallery.forEach(img => {
-    const h = heights[Math.floor(Math.random() * heights.length)];
-    img.style.height = `${h}px`;
-  });
-});
-
-
 // Back To Top Button
 
 const backToTopButton = document.getElementById("backToTop");
@@ -138,3 +125,30 @@ if (backToTopButton) {
     }
   });
 }
+
+// Embed under submenu
+
+ (function(){
+      function setTagembedZ() {
+        try {
+          const widget = document.querySelector('.tagembed-widget');
+          if (!widget) return false;
+          // prefer iframe inside widget
+          const iframe = widget.querySelector('iframe');
+          if (iframe) {
+            iframe.style.zIndex = '0';
+            return true;
+          }
+
+          widget.style.zIndex = '0';
+          return true;
+        } catch (e) {
+          return false;
+        }
+      }
+
+      setTagembedZ();
+      let attempts = 0;
+      const id = setInterval(()=>{ attempts++; if (setTagembedZ() || attempts > 12) clearInterval(id); }, 400);
+      window.addEventListener('load', ()=>{ setTagembedZ(); setTimeout(setTagembedZ, 500); });
+    })();

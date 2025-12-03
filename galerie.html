@@ -12,6 +12,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
+  <style>
+    /* Only raise the submenu; don't modify the embed's layout (avoids breaking TagEmbed). */
+    #submenu { z-index: 99999 !important; position: absolute; }
+    .group:hover #submenu { opacity: 1 !important; visibility: visible !important; }
+  </style>
 </head>
 <body>
   <svg style="display:none;">
@@ -49,7 +54,7 @@
             <a id="toggleSubmenu" href="despre-noi.html" class="flex items-center gap-1 relative px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Despre noi
               <span id="submenuArrow" class="transition-transform duration-200 group-hover:rotate-180">▼</span>
             </a>
-            <div id="submenu" class="absolute left-0 mt-1 w-90 py-4 bg-green-700 text-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+            <div id="submenu" class="absolute left-0 mt-1 w-90 py-4 bg-green-700 text-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-30">
               <a href="despre-noi.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Despre LSSV</a>
               <a href="board-executiv.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Biroul Executiv</a>
               <a href="departament-hr.html" class="block px-5 py-1 rounded-md text-lime-50 transition-all duration-200 hover:text-lime-200 hover:scale-102">Departament Resurse Umane</a>
@@ -118,7 +123,7 @@
     </header>
     <main class="flex-1 w-full bg-gray-50 dark:bg-zinc-900 text-gray-800 dark:text-gray-200 dark:text-gray-200 leading-relaxed">
       <section id="gallery" class="px-8 md:px-16 lg:px-24 gap-4 p-4">
-        <div class="tagembed-widget" data-widget-id="309984" data-website="1"></div><script src="https://widget.tagembed.com/embed.min.js" type="text/javascript"></script>
+        <div class="tagembed-widget z-1" data-widget-id="309984" data-website="1"></div><script src="https://widget.tagembed.com/embed.min.js" type="text/javascript"></script>
       </section>
       <button id="backToTop" aria-label="Înapoi la început" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all 
       duration-300 z-2"><svg aria-hidden="true" class="w-6 h-6 fill-gray-200 dark:fill-gray-800 self-center" ><use href="#arrowUp"></use></svg>
