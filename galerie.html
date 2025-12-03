@@ -12,14 +12,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
-  <style>
-    /* Ensure header submenu appears above third-party embedded widgets */
-    #submenu { z-index: 999999 !important; position: absolute; }
-    /* Lower tagembed widget stacking context so it doesn't cover nav menus */
-    .tagembed-widget, .tagembed-widget iframe { z-index: 0 !important; position: relative !important; }
-    /* Fallback: if tagembed injects other containers, try to lower them too */
-    .tagembed-widget * { z-index: 0 !important; }
-  </style>
 </head>
 <body>
   <svg style="display:none;">
@@ -126,7 +118,7 @@
     </header>
     <main class="flex-1 w-full bg-gray-50 dark:bg-zinc-900 text-gray-800 dark:text-gray-200 dark:text-gray-200 leading-relaxed">
       <section id="gallery" class="px-8 md:px-16 lg:px-24 gap-4 p-4">
-        <div class="tagembed-widget z-1" data-widget-id="309984" data-website="1"></div><script src="https://widget.tagembed.com/embed.min.js" type="text/javascript"></script>
+        <div class="tagembed-widget" data-widget-id="309984" data-website="1"></div><script src="https://widget.tagembed.com/embed.min.js" type="text/javascript"></script>
       </section>
       <button id="backToTop" aria-label="Înapoi la început" class="block cursor-pointer opacity-0 fixed left-6 bottom-6 px-4 py-4 bg-green-700 text-gray-300 rounded-lg shadow-lg hover:bg-green-900 transition-all 
       duration-300 z-2"><svg aria-hidden="true" class="w-6 h-6 fill-gray-200 dark:fill-gray-800 self-center" ><use href="#arrowUp"></use></svg>
@@ -173,26 +165,5 @@
   </div>
 </div>
   <script src="js/galerie.js"></script>
-  <script>
-    // Ensure any iframe injected by TagEmbed is forced behind the header submenu.
-    (function enforceTagembedZIndex() {
-      function apply() {
-        const widgets = document.querySelectorAll('.tagembed-widget');
-        widgets.forEach(w => {
-          w.style.zIndex = '0';
-          w.style.position = 'relative';
-          const ifr = w.querySelector('iframe');
-          if (ifr) {
-            try { ifr.style.zIndex = '0'; ifr.style.position = 'relative'; } catch (e) {}
-          }
-        });
-      }
-      // Try immediately and also a few times after load (widget may inject later)
-      apply();
-      let attempts = 0;
-      const id = setInterval(() => { attempts++; apply(); if (attempts > 10) clearInterval(id); }, 500);
-      window.addEventListener('load', () => { apply(); setTimeout(apply, 500); });
-    })();
-  </script>
 </body>
 </html>
