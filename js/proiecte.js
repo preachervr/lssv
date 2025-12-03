@@ -115,44 +115,11 @@ document.addEventListener("keydown", e => {
     modal.addEventListener('transitionend', onTransitionEnd);
   }
 
-  // Helper: check if an image can be loaded (with timeout)
-  function checkImageExists(src, timeout = 5000) {
-    return new Promise(resolve => {
-      if (!src) return resolve(false);
-      const img = new Image();
-      let done = false;
-      const cleanup = () => { img.onload = img.onerror = null; clearTimeout(t); };
-      img.onload = () => { if (done) return; done = true; cleanup(); resolve(true); };
-      img.onerror = () => { if (done) return; done = true; cleanup(); resolve(false); };
-      img.src = src;
-      const t = setTimeout(() => { if (done) return; done = true; cleanup(); resolve(false); }, timeout);
-    });
-  }
-
   document.querySelectorAll(".project-card, .group.project-card").forEach(card => {
-    card.addEventListener("click", async () => {
+    card.addEventListener("click", () => {
       activeCard = card;
       const raw = card.dataset.images || card.dataset.img || "";
-      const candidateImages = raw.split(",").map(s => s.trim()).filter(Boolean);
-
-      // Validate each candidate image and keep only those that successfully load.
-      const validated = [];
-      for (const src of candidateImages) {
-        try {
-          // note: encodeURI to avoid spaces breaking the loader
-          const ok = await checkImageExists(encodeURI(src));
-          if (ok) validated.push(src);
-        } catch (err) { }
-      }
-
-      // If none of the provided images load, fall back to the card thumbnail (if any)
-      if (validated.length === 0) {
-        const thumb = card.querySelector('img');
-        images = thumb && thumb.src ? [thumb.src] : [];
-      } else {
-        images = validated;
-      }
-
+      images = raw.split(",").map(s => s.trim()).filter(Boolean);
       if (images.length === 0) return;
 
       currentIndex = 0;
