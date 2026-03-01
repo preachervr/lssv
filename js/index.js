@@ -60,7 +60,7 @@ const sidebarContent = sidebar.querySelector("aside");
 
 btnMenu.addEventListener("click", () => {
   sidebar.classList.remove("opacity-0", "pointer-events-none");
-  sideBarBackdrop.classList.remove("opacity-40");
+  sideBarBackdrop.classList.remove("opacity-30");
   sidebarContent.classList.remove("-translate-x-full");
   btnMenu.classList.add("hidden");
 });
@@ -181,6 +181,6 @@ if (backToTopButton) {
 // AOS
 
 document.addEventListener('DOMContentLoaded', () => {
-  AOS.init();
+  AOS.init({ once: true, offset: 50, duration: 1000 });
 });
 
