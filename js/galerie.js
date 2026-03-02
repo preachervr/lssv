@@ -1,12 +1,54 @@
-// Active states
+/// Active Link Logic
 
-const links = document.querySelectorAll('#navLinks a');
-const currentUrl = window.location.href;
-
-links.forEach(link => {
-  if (link.href === currentUrl) {
-    link.classList.add('scale-102', 'text-lime-200');
+document.addEventListener('DOMContentLoaded', () => {
+  
+  let currentPath = window.location.pathname.split('/').pop();
+  if (currentPath === '' || currentPath === '/') {
+    currentPath = 'index.html';
   }
+
+  const navLinks = document.querySelectorAll('#navLinks a, #sidebar nav a');
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href) return; // Skip if no href
+    
+    const linkPath = href.split(/[?#]/)[0].split('/').pop();
+
+    if (linkPath === currentPath) {
+      
+      makeLinkActive(link);
+
+      const desktopSubmenu = link.closest('#submenu');
+      if (desktopSubmenu) {
+        const desktopToggle = document.getElementById('toggleSubmenu');
+        if (desktopToggle) {
+          makeLinkActive(desktopToggle);
+        }
+      }
+
+      const mobileSubmenu = link.closest('#mobileSubmenu');
+      if (mobileSubmenu) {
+        const mobileToggle = document.getElementById('mobileSubmenuToggle');
+        if (mobileToggle) {
+          makeLinkActive(mobileToggle);
+          
+          mobileSubmenu.classList.remove('hidden');
+          mobileSubmenu.classList.add('flex');
+          const mobileArrow = document.getElementById('mobileArrow');
+          if (mobileArrow) {
+            mobileArrow.classList.add('rotate-180');
+          }
+        }
+      }
+    }
+  });
+
+  function makeLinkActive(el) {
+    el.classList.remove('text-zinc-600', 'dark:text-zinc-300', 'text-zinc-700', 'dark:text-zinc-200', 'font-semibold');
+    el.classList.add('text-green-600', 'dark:text-green-500', 'font-bold');
+  }
+
 });
 
 // Submenu

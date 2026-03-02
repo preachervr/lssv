@@ -1279,6 +1279,9 @@
   .text-green-700 {
     color: var(--color-green-700);
   }
+  .text-lime-50 {
+    color: var(--color-lime-50);
+  }
   .text-lime-200 {
     color: var(--color-lime-200);
   }

@@ -31,27 +31,26 @@
   </svg>
   <div class="min-h-screen flex flex-col overflow-x-hidden">
     <header class="w-full fixed top-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 transition-colors duration-300 font-montserrat shadow-sm">
-      <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 md:py-4">  
+      <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 md:py-4">
         <a href="index.html" class="flex items-center gap-3 group">
           <div class="w-10 md:w-12 h-10 md:h-12 rounded-full overflow-hidden bg-white shadow-sm border border-zinc-100 dark:border-zinc-700">
             <img src="images/sigla_lssv.png" class="w-full h-full object-contain p-1" alt="Sigla LSSV">
           </div>
           <span class="font-bold text-lg md:text-xl text-green-700 dark:text-green-500 tracking-tight hidden sm:block">LSSV</span>
         </a>
-        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-zinc-600 dark:text-zinc-300">
+        <nav id="navLinks" class="hidden lg:flex items-center gap-8 text-sm font-semibold text-zinc-600 dark:text-zinc-300">
           <a href="index.html" class="hover:text-green-600 dark:hover:text-green-400 transition-colors">Acasă</a>
-          
           <div class="relative group">
-            <a href="despre-noi.html" class="flex items-center gap-1 text-green-600 dark:text-green-400 py-2">
+            <a href="despre-noi.html" id="toggleSubmenu" class="flex items-center gap-1 hover:text-green-600 dark:hover:text-green-400 transition-colors py-2">
               Despre noi <span class="text-[10px] opacity-70 group-hover:rotate-180 transition-transform">▼</span>
             </a>
-            <div class="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 w-64 z-50">
+            <div id="submenu" class="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 w-64 z-50">
               <div class="bg-white dark:bg-zinc-800 rounded-xl shadow-xl border border-zinc-100 dark:border-zinc-700 overflow-hidden flex flex-col py-2 text-zinc-600 dark:text-zinc-300">
                 <a href="despre-noi.html" class="px-5 py-2.5 hover:bg-green-50 dark:hover:bg-zinc-700 hover:text-green-600 dark:hover:text-green-400 transition-colors">Despre LSSV</a>
                 <a href="board-executiv.html" class="px-5 py-2.5 hover:bg-green-50 dark:hover:bg-zinc-700 hover:text-green-600 dark:hover:text-green-400 transition-colors">Biroul Executiv</a>
                 <a href="departament-hr.html" class="px-5 py-2.5 hover:bg-green-50 dark:hover:bg-zinc-700 hover:text-green-600 dark:hover:text-green-400 transition-colors">Resurse Umane (HR)</a>
                 <a href="departament-imagine.html" class="px-5 py-2.5 hover:bg-green-50 dark:hover:bg-zinc-700 hover:text-green-600 dark:hover:text-green-400 transition-colors">Imagine & Comunicare</a>
-                <a href="departament-evenimente.html" class="px-5 py-2.5 bg-green-50 dark:bg-zinc-700 text-green-600 dark:text-green-400 transition-colors">Evenimente & Logistică</a>
+                <a href="departament-evenimente.html" class="px-5 py-2.5 hover:bg-green-50 dark:hover:bg-zinc-700 hover:text-green-600 dark:hover:text-green-400 transition-colors">Evenimente & Logistică</a>
                 <a href="departament-proiecte.html" class="px-5 py-2.5 hover:bg-green-50 dark:hover:bg-zinc-700 hover:text-green-600 dark:hover:text-green-400 transition-colors">Proiecte & Fundraising</a>
                 <a href="parteneri-sponsori.html" class="px-5 py-2.5 border-t border-zinc-100 dark:border-zinc-700 mt-1 hover:bg-green-50 dark:hover:bg-zinc-700 hover:text-green-600 dark:hover:text-green-400 transition-colors">Parteneri & Sponsori</a>
               </div>
@@ -85,7 +84,7 @@
         <nav class="flex flex-col gap-4 font-montserrat font-semibold text-zinc-700 dark:text-zinc-200 overflow-y-auto">
           <a href="index.html" class="hover:text-green-600 transition-colors">Acasă</a>
           <div class="flex flex-col border-b border-zinc-100 dark:border-zinc-800 pb-2">
-            <button id="mobileSubmenuToggle" class="flex justify-between items-center w-full py-2 text-green-600 transition-colors">
+            <button id="mobileSubmenuToggle" class="flex justify-between items-center w-full py-2 hover:text-green-600 transition-colors">
               <span>Despre noi</span>
               <span id="mobileArrow" class="text-xs transition-transform">▼</span>
             </button>
@@ -94,7 +93,7 @@
               <a href="board-executiv.html" class="hover:text-green-600">Biroul Executiv</a>
               <a href="departament-hr.html" class="hover:text-green-600">Resurse Umane</a>
               <a href="departament-imagine.html" class="hover:text-green-600">Imagine & Comunicare</a>
-              <a href="departament-evenimente.html" class="text-green-600">Evenimente & Logistică</a>
+              <a href="departament-evenimente.html" class="hover:text-green-600">Evenimente & Logistică</a>
               <a href="departament-proiecte.html" class="hover:text-green-600">Proiecte & Fundraising</a>
               <a href="parteneri-sponsori.html" class="hover:text-green-600">Parteneri & Sponsori</a>
             </div>
@@ -341,7 +340,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/index.js"></script>
+  <script src="js/despre-noi.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({ once: true, offset: 50 });
