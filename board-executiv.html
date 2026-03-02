@@ -23,7 +23,7 @@
     <symbol id="gmail" viewBox="0 0 640 640"><title>Gmail</title><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></symbol>
   </svg>
   <div class="min-h-screen flex flex-col overflow-x-hidden">
-<header class="w-full fixed top-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 transition-colors duration-300 font-montserrat shadow-sm">
+    <header class="w-full fixed top-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 transition-colors duration-300 font-montserrat shadow-sm">
       <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 md:py-4">
         <a href="index.html" class="flex items-center gap-3 group">
           <div class="w-10 md:w-12 h-10 md:h-12 rounded-full overflow-hidden bg-white shadow-sm border border-zinc-100 dark:border-zinc-700">
@@ -81,7 +81,7 @@
               <span>Despre noi</span>
               <span id="mobileArrow" class="text-xs transition-transform">▼</span>
             </button>
-            <div id="mobileSubmenu" class="hidden flex-col pl-4 gap-3 py-3 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+            <div id="mobileSubmenu" class="hidden flex flex-col pl-4 gap-3 py-3 text-sm font-medium text-zinc-500 dark:text-zinc-400">
               <a href="despre-noi.html" class="hover:text-green-600">Despre LSSV</a>
               <a href="board-executiv.html" class="hover:text-green-600">Biroul Executiv</a>
               <a href="departament-hr.html" class="hover:text-green-600">Resurse Umane</a>
@@ -258,7 +258,7 @@
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
       </button>
     </main>
-    <footer id="footer" class="w-full bg-zinc-950 text-zinc-400 py-16 px-6 font-open border-t border-zinc-900 mt-auto">
+    <footer id="footer" class="w-full bg-zinc-950 text-zinc-400 py-16 px-6 font-open border-t border-zinc-900">
       <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
         <div class="col-span-1 md:col-span-1 flex flex-col gap-6">
           <div class="w-16 h-16 bg-white rounded-full p-1 flex items-center justify-center">
@@ -279,7 +279,7 @@
           <a href="contact.html" class="hover:text-green-400 transition-colors text-sm">Contact</a>
         </div>
         <div class="flex flex-col gap-4">
-          <h3 class="text-white font-bold font-montserrat tracking-wide">Contact</h3>
+          <h3 class="text-white font-bold font-montserrat tracking-wide">Social Media</h3>
           <div class="flex gap-4">
              <a href="mailto:lssvhorticultura@gmail.com" class="p-2 bg-zinc-900 rounded-full hover:bg-green-600 hover:text-white transition-all"><svg class="w-5 h-5 fill-current"><use href="#gmail"></use></svg></a>
              <a href="https://www.instagram.com/lssv.usamv/" target="_blank" class="p-2 bg-zinc-900 rounded-full hover:bg-green-600 hover:text-white transition-all"><svg class="w-5 h-5 fill-current"><use href="#instagram"></use></svg></a>
@@ -289,14 +289,11 @@
         </div>
       </div>
       <div class="pt-8 border-t border-zinc-900 text-center text-xs">
-        <p>&copy; 2025 Liga Studenților Științelor Vieții. Toate drepturile rezervate.</p>
+        <p>&copy; <span id="currentYear"></span> Liga Studenților Științelor Vieții. Toate drepturile rezervate.</p>
       </div>
     </footer>
   </div>
   <script src="js/despre-noi.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ once: true, offset: 50 });
-  </script>
 </body>
 </html>

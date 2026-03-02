@@ -194,3 +194,14 @@ if (backToTopButton) {
       const id = setInterval(()=>{ attempts++; if (setTagembedZ() || attempts > 12) clearInterval(id); }, 400);
       window.addEventListener('load', ()=>{ setTagembedZ(); setTimeout(setTagembedZ, 500); });
     })();
+
+// AOS
+
+document.addEventListener('DOMContentLoaded', () => {
+  AOS.init({ once: true, offset: 50, duration: 700 });
+});
+
+// Current Year
+
+const currentYear = document.getElementById("currentYear");
+currentYear.textContent = new Date().getFullYear();

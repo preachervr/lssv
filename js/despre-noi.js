@@ -171,5 +171,10 @@ if (backToTopButton) {
 // AOS
 
 document.addEventListener('DOMContentLoaded', () => {
-  AOS.init();
+  AOS.init({ once: true, offset: 50, duration: 700 });
 });
+
+// Current Year
+
+const currentYear = document.getElementById("currentYear");
+currentYear.textContent = new Date().getFullYear();
