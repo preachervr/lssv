@@ -184,3 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
   AOS.init({ once: true, offset: 50, duration: 1000 });
 });
 
+// Current Year
+
+const currentYear = document.getElementById("currentYear");
+currentYear.textContent = new Date().getFullYear();
