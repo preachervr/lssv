@@ -222,9 +222,9 @@ if (backToTopButton) {
 
 // AOS
 
-document.addEventListener('DOMContentLoaded', () => {
-  AOS.init({ once: true, offset: 50, duration: 700 });
-});
+window.addEventListener("load", function () {
+  AOS.init({once: true, offset: 50, duration: 700});
+})
 
 // Current Year
 
