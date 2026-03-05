@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="icon" href="images/favicon-32x32.png">
+  <link rel="preload" as="image" href="images/hero-background.webp">
 </head>
 <body class="bg-zinc-50 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 font-open antialiased selection:bg-green-500/30 dark:selection:bg-green-500/50 transition-colors duration-300">
   <svg style="display:none;">
@@ -33,17 +34,14 @@
   <div class="min-h-screen flex flex-col overflow-x-hidden">
     <header class="w-full fixed top-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 transition-colors duration-300 font-montserrat shadow-sm">
       <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 md:py-4">
-        
         <a href="index.html" class="flex items-center gap-3 group">
           <div class="w-10 md:w-12 h-10 md:h-12 rounded-full overflow-hidden bg-white shadow-sm border border-zinc-100 dark:border-zinc-700">
             <img src="images/sigla_lssv.png" class="w-full h-full object-contain p-1" alt="Sigla LSSV">
           </div>
           <span class="font-bold text-lg md:text-xl text-green-700 dark:text-green-500 tracking-tight hidden sm:block">LSSV</span>
         </a>
-
         <nav id="navLinks" class="hidden lg:flex items-center gap-8 text-sm font-semibold text-zinc-600 dark:text-zinc-300">
           <a href="index.html" class="hover:text-green-600 dark:hover:text-green-400 transition-colors">Acasă</a>
-          
           <div class="relative group">
             <a href="despre-noi.html" id="toggleSubmenu" class="flex items-center gap-1 hover:text-green-600 dark:hover:text-green-400 transition-colors py-2">
               Despre noi <span class="text-[10px] opacity-70 group-hover:rotate-180 transition-transform">▼</span>
@@ -60,26 +58,22 @@
               </div>
             </div>
           </div>
-          
           <a href="proiecte.html" class="hover:text-green-600 dark:hover:text-green-400 transition-colors">Proiecte</a>
           <a href="galerie.html" class="hover:text-green-600 dark:hover:text-green-400 transition-colors">Galerie</a>
           <a href="contact.html" class="hover:text-green-600 dark:hover:text-green-400 transition-colors">Contact</a>
         </nav>
-
         <div class="flex items-center gap-4">
           <button aria-label="Comută tema" class="themeToggle relative hidden md:flex items-center w-14 h-7 bg-zinc-200 dark:bg-zinc-700 rounded-full cursor-pointer transition-colors shadow-inner">
             <span class="themeLight absolute left-1.5 text-xs"><svg class="w-3.5 h-3.5 fill-amber-500"><use href="#sun"></use></svg></span>
             <span class="themeDark absolute right-1.5 text-xs"><svg class="w-3.5 h-3.5 fill-zinc-300"><use href="#moon"></use></svg></span>
             <span class="themeDot absolute left-1 w-5 h-5 bg-white rounded-full shadow transition-transform duration-300"></span>
           </button>
-          
           <button id="btnMenu" class="lg:hidden text-zinc-800 dark:text-zinc-200 p-2 focus:outline-none" aria-label="Meniu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
           </button>
         </div>
       </div>
     </header>
-
     <div id="sidebar" class="fixed inset-0 z-[60] pointer-events-none opacity-0 transition-opacity duration-300">
       <div id="sidebarBackdrop" class="absolute inset-0 bg-zinc-900/80 backdrop-blur-sm transition-opacity duration-300"></div>
       <aside class="absolute left-0 top-0 h-full w-72 bg-white dark:bg-zinc-900 shadow-2xl transform -translate-x-full transition-transform duration-300 ease-out flex flex-col p-6">
@@ -123,19 +117,19 @@
     <main class="flex-1 w-full flex flex-col pt-[72px]">
       <section class="relative w-full h-[75vh] min-h-[500px] overflow-hidden group bg-zinc-900">
         <div class="absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out z-0 slide" data-index="0">
-          <img src="images/lssv-team.jpg" class="w-full h-full object-cover" alt="Adunare Generală, Voluntari cu tricouri LSSV">
+          <img src="images/lssv-team.jpg" fetchpriority="high" class="w-full h-full object-cover" alt="Adunare Generală, Voluntari cu tricouri LSSV">
         </div>
         <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0 slide" data-index="1">
-          <img src="images/teambuilding.JPG" class="w-full h-full object-cover" alt="Voluntari la atelier">
+          <img src="images/teambuilding.JPG" loading="lazy" class="w-full h-full object-cover" alt="Voluntari la atelier">
         </div>
         <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0 slide" data-index="2">
-          <img src="images/cupa-sportiva.jpg" class="w-full h-full object-cover" alt="Cupa Sportivă a LSSV">
+          <img src="images/cupa-sportiva.jpg" loading="lazy" class="w-full h-full object-cover" alt="Cupa Sportivă a LSSV">
         </div>
         <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0 slide" data-index="3">
-          <img src="images/ag-boboci.jpg" class="w-full h-full object-cover" alt="Adunare Generală Voluntari Noi">
+          <img src="images/ag-boboci.jpg" loading="lazy" class="w-full h-full object-cover" alt="Adunare Generală Voluntari Noi">
         </div>
         <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0 slide" data-index="4">
-          <img src="images/slider-7.jfif" class="w-full h-full object-cover" alt="LSSV la adunare generală">
+          <img src="images/slider-7.jfif" loading="lazy" class="w-full h-full object-cover" alt="LSSV la adunare generală">
         </div>
         <div class="absolute inset-0 bg-gradient-to-b from-zinc-900/60 via-zinc-900/40 to-zinc-900/90 z-10"></div>
         <div class="relative z-20 h-full flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto mt-4">
