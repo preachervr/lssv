@@ -2213,11 +2213,6 @@
       padding-block: calc(var(--spacing) * 32);
     }
   }
-  .lg\:pt-0 {
-    @media (width >= 64rem) {
-      padding-top: calc(var(--spacing) * 0);
-    }
-  }
   .lg\:pb-32 {
     @media (width >= 64rem) {
       padding-bottom: calc(var(--spacing) * 32);
