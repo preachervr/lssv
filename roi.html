@@ -114,236 +114,158 @@
         </div>
       </aside>
     </div>
-    <main class="flex-1 w-full flex flex-col pt-[72px]">
-      <section class="relative w-full h-[75vh] min-h-[500px] overflow-hidden group bg-zinc-900">
-        <div class="absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out z-0 slide" data-index="0">
-          <img src="images/lssv-team.webp" fetchpriority="high" class="w-full h-full object-cover" alt="Adunare Generală, Voluntari cu tricouri LSSV">
+    <main class="flex-1 w-full flex flex-col pt-[100px] pb-20 bg-zinc-50 dark:bg-zinc-900 transition-colors duration-300">
+      <section class="max-w-4xl mx-auto px-6 w-full">
+        <div class="text-center mb-12">
+          <span class="text-green-600 dark:text-green-500 font-bold uppercase tracking-widest text-sm mb-2 block">Document Oficial</span>
+          <h1 class="text-3xl md:text-5xl font-black font-montserrat text-zinc-900 dark:text-white mb-6">Regulament de Ordine Interioară</h1>
+          <div class="w-24 h-1.5 bg-green-500 rounded-full mx-auto"></div>
         </div>
-        <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0 slide" data-index="1">
-          <img src="images/teambuilding.webp" loading="lazy" class="w-full h-full object-cover" alt="Voluntari la atelier">
-        </div>
-        <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0 slide" data-index="2">
-          <img src="images/cupa-sportiva.webp" loading="lazy" class="w-full h-full object-cover" alt="Cupa Sportivă a LSSV">
-        </div>
-        <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0 slide" data-index="3">
-          <img src="images/ag-boboci.webp" loading="lazy" class="w-full h-full object-cover" alt="Adunare Generală Voluntari Noi">
-        </div>
-        <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0 slide" data-index="4">
-          <img src="images/slider-7.jfif.webp" loading="lazy" class="w-full h-full object-cover" alt="LSSV la adunare generală">
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-b from-zinc-900/60 via-zinc-900/40 to-zinc-900/90 z-10"></div>
-        <div class="relative z-20 h-full flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto mt-4">
-          <span class="px-4 py-1.5 rounded-full bg-green-500/20 border border-green-400/30 text-green-300 text-sm font-bold tracking-widest uppercase mb-6 backdrop-blur-sm shadow-lg" data-aos="fade-down">
-            USAMV Cluj-Napoca
-          </span>
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-black font-montserrat text-white tracking-tight mb-6 drop-shadow-xl" data-aos="fade-up" data-aos-delay="100">
-            Construim <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-lime-300">Viitorul</span><br>Studenției
-          </h1>
-          <p class="text-lg md:text-xl text-zinc-200 font-light mb-10 max-w-2xl drop-shadow-md" data-aos="fade-up" data-aos-delay="200">
-            Suntem vocea studenților. Organizăm evenimente, încurajăm cercetarea și dezvoltăm abilități pentru o carieră de succes.
-          </p>
-          <a href="despre-noi.html" class="inline-flex items-center gap-2 text-white bg-green-600 font-bold py-3.5 px-8 rounded-full hover:bg-green-500 transition-all duration-300 ease-in-out shadow-lg 
-          hover:shadow-green-500/30 transform hover:-translate-y-1">Despre Povestea Noastră</a>
-        </div>
-        <button id="prev" class="absolute top-1/2 left-4 md:left-8 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-green-600 backdrop-blur-sm text-white rounded-full opacity-0 
-        group-hover:opacity-100 transition-all duration-300 z-30 cursor-pointer" aria-label="Înapoi">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-        </button>
-        <button id="next" class="absolute top-1/2 right-4 md:right-8 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-green-600 backdrop-blur-sm text-white rounded-full opacity-0 
-        group-hover:opacity-100 transition-all duration-300 z-30 cursor-pointer" aria-label="Înainte">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-        </button>
-        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-30">
-          <span class="bar w-6 h-1.5 rounded-full bg-white/80 cursor-pointer" data-bar="0"></span>
-          <span class="bar w-6 h-1.5 rounded-full bg-white/40 cursor-pointer" data-bar="1"></span>
-          <span class="bar w-6 h-1.5 rounded-full bg-white/40 cursor-pointer" data-bar="2"></span>
-          <span class="bar w-6 h-1.5 rounded-full bg-white/40 cursor-pointer" data-bar="3"></span>
-          <span class="bar w-6 h-1.5 rounded-full bg-white/40 cursor-pointer" data-bar="4"></span>
-        </div>
-      </section>
-      <section class="max-w-7xl mx-auto px-6 py-20 lg:py-32">
-        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div class="w-full lg:w-1/2 relative" data-aos="fade-right">
-            <div class="absolute inset-0 bg-green-500 rounded-3xl transform rotate-3 scale-105 opacity-20 dark:opacity-40"></div>
-            <img src="images/lssv-flag-copy.webp" loading="lazy" class="relative w-full h-auto object-cover rounded-3xl shadow-2xl z-10" alt="Voluntari cu steagul LSSV">
-          </div>
-          <div class="w-full lg:w-1/2 flex flex-col items-start text-left" data-aos="fade-left">
-            <span class="text-green-600 dark:text-green-400 font-bold uppercase tracking-widest text-sm mb-2">Despre Asociație</span>
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black font-montserrat text-zinc-900 dark:text-white mb-6 leading-tight">
-              Liga Studenților <br>Științelor Vieții
-            </h2>
-            <div class="w-16 h-1.5 bg-green-500 rounded-full mb-6"></div>
-            <p class="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
-              Liga Studenților Științelor Vieții este o asociație care își desfășoară activitatea în scopul drepturilor și intereselor studenților din cadrul USAMV Cluj-Napoca. Astfel se dorește organizarea de evenimente care să încurajeze cercetarea științifică și pregătirea profesională, socială și culturală a membrilor săi.
-            </p>
-            <p class="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
-              Studenți ai Universității de Științe Agricole și Medicină Veterinară sunteți invitați să vă alăturați Asociației, împreună să punem bazele unui viitor mai bun!
-            </p>
-            <a href="despre-noi.html" class="inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-bold py-3.5 px-8 rounded-full hover:bg-green-600 dark:hover:bg-green-500 
-            hover:text-white transition-all duration-300 ease-in-out shadow-lg hover:shadow-green-500/30 transform hover:-translate-y-1">
-              Despre Noi
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="w-full bg-zinc-100 dark:bg-zinc-800/50 py-20 lg:py-32 px-6 border-y border-zinc-200 dark:border-zinc-800">
-        <div class="max-w-7xl mx-auto">
-          <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-black font-montserrat text-zinc-900 dark:text-white mb-6">De ce Liga Studenților Științelor Vieții?</h2>
-            <p class="text-lg text-zinc-600 dark:text-zinc-400">
-              LSSV este o comunitate, oportunități de voluntariat, proiecte și evenimente care te pun în mișcare și evenimente care fac studenția mai vie. Un loc unde te implici, te dezvolți și te conectezi cu oameni ca tine.
-            </p>
-          </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          <div data-aos="fade-up" data-aos-delay="100">
-            <div class="bg-white dark:bg-zinc-800 rounded-3xl p-8 shadow-sm hover:shadow-xl dark:hover:shadow-green-900/20 border border-zinc-200 dark:border-zinc-700/50 transform hover:-translate-y-2 transition-all duration-300 text-center flex flex-col items-center group h-full">
-              <div class="w-16 h-16 rounded-2xl bg-green-50 dark:bg-green-900/30 flex items-center justify-center mb-6 group-hover:bg-green-500 group-hover:scale-110 transition-all duration-300">
-                <svg class="w-8 h-8 fill-green-600 dark:fill-green-400 group-hover:fill-white transition-colors"><use href="#community"></use></svg>
-              </div>
-              <h3 class="text-xl font-bold font-montserrat text-zinc-900 dark:text-white mb-3">Comunitate</h3>
-              <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Un loc unde găsești oameni ca tine — deschiși, implicați și gata să te ajute să te integrezi și să crești alături de ei.</p>
-            </div>
-          </div>
-          <div data-aos="fade-up" data-aos-delay="200">
-            <div class="bg-white dark:bg-zinc-800 rounded-3xl p-8 shadow-sm hover:shadow-xl dark:hover:shadow-green-900/20 border border-zinc-200 dark:border-zinc-700/50 transform hover:-translate-y-2 transition-all duration-300 text-center flex flex-col items-center group h-full">
-              <div class="w-16 h-16 rounded-2xl bg-green-50 dark:bg-green-900/30 flex items-center justify-center mb-6 group-hover:bg-green-500 group-hover:scale-110 transition-all duration-300">
-                <svg class="w-8 h-8 fill-green-600 dark:fill-green-400 group-hover:fill-white transition-colors"><use href="#volunteer"></use></svg>
-              </div>
-              <h3 class="text-xl font-bold font-montserrat text-zinc-900 dark:text-white mb-3">Voluntariat</h3>
-              <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Îți poți pune ideile în practică, poți învăța lucruri noi și poți contribui concret la viața studenților din facultate.</p>
-            </div>
-          </div>
-          <div data-aos="fade-up" data-aos-delay="300">
-            <div class="bg-white dark:bg-zinc-800 rounded-3xl p-8 shadow-sm hover:shadow-xl dark:hover:shadow-green-900/20 border border-zinc-200 dark:border-zinc-700/50 transform hover:-translate-y-2 transition-all duration-300 text-center flex flex-col items-center group h-full">
-              <div class="w-16 h-16 rounded-2xl bg-green-50 dark:bg-green-900/30 flex items-center justify-center mb-6 group-hover:bg-green-500 group-hover:scale-110 transition-all duration-300">
-                <svg class="w-8 h-8 fill-green-600 dark:fill-green-400 group-hover:fill-white transition-colors"><use href="#project"></use></svg>
-              </div>
-              <h3 class="text-xl font-bold font-montserrat text-zinc-900 dark:text-white mb-3">Proiecte</h3>
-              <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">De la proiecte sportive la seri tematice și acțiuni caritabile, LSSV îți oferă șansa să fii parte din proiecte cu impact real.</p>
-            </div>
-          </div>
-          <div data-aos="fade-up" data-aos-delay="400">
-            <div class="bg-white dark:bg-zinc-800 rounded-3xl p-8 shadow-sm hover:shadow-xl dark:hover:shadow-green-900/20 border border-zinc-200 dark:border-zinc-700/50 transform hover:-translate-y-2 transition-all duration-300 text-center flex flex-col items-center group h-full">
-              <div class="w-16 h-16 rounded-2xl bg-green-50 dark:bg-green-900/30 flex items-center justify-center mb-6 group-hover:bg-green-500 group-hover:scale-110 transition-all duration-300">
-                <svg class="w-8 h-8 fill-green-600 dark:fill-green-400 group-hover:fill-white transition-colors"><use href="#event"></use></svg>
-              </div>
-              <h3 class="text-xl font-bold font-montserrat text-zinc-900 dark:text-white mb-3">Evenimente</h3>
-              <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Participi, te distrezi, cunoști oameni noi și creezi amintiri — fiecare eveniment aduce ceva diferit și memorabil.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="max-w-7xl mx-auto px-6 py-20 lg:py-32">
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
-          <div class="w-full lg:w-1/2 relative" data-aos="fade-left">
-            <div class="absolute inset-0 bg-green-500 rounded-3xl transform rotate-3 scale-105 opacity-20 dark:opacity-30"></div>
-            <img src="images/comunitate-acasa.webp" class="relative w-full h-auto object-cover rounded-3xl shadow-xl z-10" alt="Voluntari noi în timpul adunării generale" loading="lazy">
-          </div>
-          <div class="w-full lg:w-1/2 flex flex-col items-start text-left" data-aos="fade-right">
-            <h2 class="text-3xl md:text-4xl font-black font-montserrat text-zinc-900 dark:text-white mb-6">Comunitate</h2>
-            <p class="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
-              În LSSV, comunitatea înseamnă mai mult decât un grup de studenți adunați la aceeași universitate — este un spațiu în care oameni diferiți se regăsesc în valori comune și în dorința de a construi ceva împreună. Este locul în care îți găsești sprijin atunci când ai nevoie, unde legi prietenii naturale și unde te simți parte dintr-un colectiv care te încurajează, te inspiră și te primește exact așa cum ești.
-            </p>
-            <h3 class="text-xl font-bold text-green-600 dark:text-green-500 font-montserrat mb-4">Scop:</h3>
-            <ul class="space-y-3 text-zinc-600 dark:text-zinc-400">
-              <li class="flex items-start gap-3">
-                <span class="text-green-500 font-bold mt-0.5">•</span> Acomodarea ușoară a voluntarilor în facultate, într-un mediu primitor și deschis.
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-green-500 font-bold mt-0.5">•</span> Oferirea de sprijin și îndrumare sincere, care oferă încredere la fiecare pas.
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-green-500 font-bold mt-0.5">•</span> Întâlnirea cu oameni care împărtășesc aceleași interese și cu care se pot conecta natural.
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-green-500 font-bold mt-0.5">•</span> Clădirea unor relații calde și autentice, care să însoțească voluntarii pe tot parcursul facultății — și chiar dincolo de ea.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="w-full relative py-16 md:py-24 lg:py-32 px-6 bg-cover bg-center bg-no-repeat bg-scroll md:bg-fixed" style="background-image: url('images/cupa-sportiva.webp');">
-        <div class="absolute inset-0 bg-zinc-900/80 z-0"></div>
-        <div class="max-w-4xl mx-auto text-center relative z-10" data-aos="fade-up">
-          <h2 class="text-3xl md:text-5xl font-black font-montserrat text-white mb-6 md:mb-8">Voluntariat</h2>
-          <p class="text-base md:text-lg lg:text-xl text-zinc-300 leading-relaxed mb-8 md:mb-10">
-            Voluntariatul în LSSV înseamnă să fii parte din acțiuni care contează: fie că organizezi un eveniment, ajuți la un proiect caritabil sau coordonezi activități pentru colegi, fiecare contribuție este apreciată și are un impact real. Este și un spațiu de învățare, de dezvoltare personală și de descoperire a propriei creativități, dar și o oportunitate de a lega prietenii și conexiuni durabile cu studenți cu aceeași pasiune pentru implicare.
-          </p>
-          <a href="proiecte.html" class="inline-block bg-green-600 hover:bg-green-500 text-white font-bold py-3 md:py-4 px-8 md:px-10 rounded-full shadow-lg hover:shadow-green-500/30 transform hover:-translate-y-1 transition-all duration-300 ease-in-out" aria-label="Descoperă Oportunitățile de Voluntariat">
-            Mai mult
-          </a>
-        </div>
-      </section>
-      <section class="max-w-7xl mx-auto px-6 py-20 lg:py-32">
-        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div class="w-full lg:w-1/2 relative" data-aos="fade-right">
-            <div class="absolute inset-0 bg-green-500 rounded-3xl transform -rotate-3 scale-105 opacity-20 dark:opacity-30"></div>
-            <img src="images/proiecte-main.webp" class="relative w-full h-auto object-cover rounded-3xl shadow-xl z-10" alt="Voluntari la Târgul de Crăciun" loading="lazy">
-          </div>
-          <div class="w-full lg:w-1/2 flex flex-col items-start text-left" data-aos="fade-left">
-            <h2 class="text-3xl md:text-4xl font-black font-montserrat text-zinc-900 dark:text-white mb-6">Proiecte</h2>
-            <p class="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
-              Proiectele noastre sunt create pentru a le oferi studenților experiențe relevante, ocazia de a învăța lucruri noi și de a lucra alături de oameni cu aceleași interese. Fiecare proiect aduce valoare reală, prin activități practice, ghidare și oportunități de dezvoltare personală. Ne propunem să construim un mediu în care inițiativa, creativitatea și colaborarea se transformă în rezultate vizibile.
-            </p>
-            <a href="departament-proiecte.html" class="text-green-600 dark:text-green-400 font-bold hover:text-green-800 dark:hover:text-green-300 flex items-center gap-2 transition-colors duration-300 ease-in-out">
-              Despre Proiecte <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="max-w-7xl mx-auto px-6 pb-20 lg:pb-32">
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
-          <div class="w-full lg:w-1/2 relative" data-aos="fade-left">
-            <div class="absolute inset-0 bg-green-500 rounded-3xl transform rotate-3 scale-105 opacity-20 dark:opacity-30"></div>
-            <img src="images/Poza rep. evenimente.webp" class="relative w-full h-auto object-cover rounded-3xl shadow-xl z-10" alt="Voluntari la o seară de board games" loading="lazy">
-          </div>
-          <div class="w-full lg:w-1/2 flex flex-col items-start text-left" data-aos="fade-right">
-            <h2 class="text-3xl md:text-4xl font-black font-montserrat text-zinc-900 dark:text-white mb-6">Evenimente</h2>
-            <p class="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
-              Evenimentele organizate de asociație creează spații în care studenții pot socializa, se pot implica și pot descoperi noi perspective. Sunt concepute pentru a aduce oamenii împreună, pentru a inspira și pentru a genera experiențe memorabile. De la workshop-uri și sesiuni interactive până la întâlniri informale, fiecare eveniment contribuie la construirea unei comunități active și conectate.
-            </p>
-            <a href="departament-evenimente.html" class="text-green-600 dark:text-green-400 font-bold hover:text-green-800 dark:hover:text-green-300 flex items-center gap-2 transition-colors duration-300 ease-in-out">
-              Despre Evenimente <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="w-full bg-zinc-100 dark:bg-zinc-800/50 py-20 lg:py-32 px-6 border-y border-zinc-200 dark:border-zinc-800">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div class="w-full lg:w-1/2 flex flex-col items-start text-left" data-aos="fade-right">
-            <h2 class="text-3xl md:text-4xl font-black font-montserrat text-zinc-900 dark:text-white mb-6">Mulțumim tuturor sponsorilor și partenerilor noștri!</h2>
-            <p class="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
-              În cadrul LSSV, credem în puterea ideilor care cresc atunci când sunt susținute cu încredere. Oferim studenților un mediu în care inițiativa, curajul și evoluția personală sunt încurajate în fiecare zi, astfel încât potențialul lor să se poată transforma în experiențe reale și valoroase. Suntem o comunitate dinamică și deschisă, în care sprijinul, colaborarea și dorința de a construi un viitor mai bun îi însoțesc pe studenți în fiecare pas.
-            </p>
-            <p class="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
-              Această viziune este posibilă datorită partenerilor noștri – <strong class="text-zinc-900 dark:text-white">USAMV, IVSA, USR și FTC</strong> – și sponsorilor <strong class="text-zinc-900 dark:text-white">BRD, See US Work & Travel și Bassitto</strong>, cărora le mulțumim pentru implicarea și încrederea lor. Împreună, creăm un mediu vibrant, inspirațional și plin de oportunități, în care fiecare student poate să se descopere, să crească și să strălucească.
-            </p>
-            <a href="parteneri-sponsori.html" class="inline-flex items-center gap-2 text-white bg-green-600 font-bold py-3.5 px-8 rounded-full hover:bg-green-500 transition-all duration-300 ease-in-out shadow-lg 
-          hover:shadow-green-500/30 transform hover:-translate-y-1">Despre Partenerii Noștri</a>
-          </div>
-          <div class="w-full lg:w-1/2" data-aos="fade-left">
-            <div class="bg-white dark:bg-zinc-800 rounded-3xl shadow-xl border border-zinc-200 dark:border-zinc-700/50 p-8 md:p-12">
-              <div class="grid grid-cols-2 md:grid-cols-3 gap-8 items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-300 mix-blend-multiply dark:mix-blend-normal">
-                <img src="images/usamv_color.webp" class="h-16 md:h-24 object-contain col-span-2 md:col-span-2 dark:bg-white dark:p-2 dark:rounded-xl" alt="Sigla USAMV" loading="lazy">
-                <img src="images/uni-main-logo.png" class="h-12 md:h-16 object-contain dark:bg-white dark:p-2 dark:rounded-xl" alt="Sigla USR" loading="lazy">
-                <img src="images/FTC.webp" class="h-12 md:h-16 object-contain dark:bg-white dark:p-2 dark:rounded-xl" alt="Sigla FTC" loading="lazy">
-                <img src="images/IVSA.webp" class="h-16 md:h-20 object-contain row-span-2 dark:bg-white dark:p-2 dark:rounded-xl" alt="Sigla IVSA" loading="lazy">
-                <img src="images/BRD_logo.svg.webp" class="h-10 md:h-12 object-contain dark:bg-white dark:p-2 dark:rounded-xl" alt="Sigla BRD" loading="lazy">
-                <img src="images/See us.webp" class="h-12 md:h-16 object-contain dark:bg-white dark:p-2 dark:rounded-xl" alt="Sigla See Us Work & Travel" loading="lazy">
-                <img src="images/Bassitto.webp" class="h-10 md:h-14 object-contain col-span-2 dark:bg-white dark:p-2 dark:rounded-xl" alt="Sigla Bassitto" loading="lazy">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="w-full bg-gradient-to-r from-green-700 to-green-500 py-24 px-6 text-center shadow-inner">
-        <div class="max-w-4xl mx-auto" data-aos="zoom-in">
-          <h2 class="text-3xl md:text-5xl font-black font-montserrat text-white mb-8 drop-shadow-md">#CineSuntemNoi?LigaSuntemToți</h2>
-          <a href="recrutari.html" class="inline-block bg-white text-green-700 font-bold text-lg py-4 px-12 rounded-full shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out" 
-          aria-label="Alătură-te Echipei LSSV">
-            Alătură-te Echipei!
-          </a>
+        <div class="bg-white dark:bg-zinc-800 rounded-3xl shadow-lg border border-zinc-200 dark:border-zinc-700 p-8 md:p-12 font-open text-zinc-700 dark:text-zinc-300">
+          <h2 class="text-2xl font-bold font-montserrat text-green-600 dark:text-green-400 mt-2 mb-4 border-b border-zinc-100 dark:border-zinc-700 pb-2">Capitolul 1. Statutul de membru și implicarea</h2>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 1.</strong> Prezența obligatorie: participarea la cel puțin 70% din adunări generale și din şedinţele de department şi 50% din activități( ateliere, proiecte).</p>
+          <p class="mb-8 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 2.</strong> Dacă un membru nu răspunde la mesaje sau nu se implică timp de un semestru și nu are prezențe suficiente, statutul său este revocat( din membru devii voluntar).</p>
+          <h2 class="text-2xl font-bold font-montserrat text-green-600 dark:text-green-400 mt-10 mb-4 border-b border-zinc-100 dark:border-zinc-700 pb-2">Capitolul 2. Comunicare și randament</h2>
+          <p class="mb-8 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 3.</strong> Membrii/volunatrii trebuie să reacționeze la anunțurile importante (cu un semn/emoji) în maximum 48 de ore.</p>
+          <h2 class="text-2xl font-bold font-montserrat text-green-600 dark:text-green-400 mt-10 mb-4 border-b border-zinc-100 dark:border-zinc-700 pb-2">Capitolul 3. Utilizarea resurselor</h2>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 4.</strong> Bunurile asociației pot fi împrumutate doar pe bază de înștiințare a Coordonatorului pe Logistică.</p>
+          <p class="mb-8 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 5.</strong> Fondurile asociației se folosesc STRICT pentru protocolul proiectelor, activtăților, atelierelor și cluburilor nu în scop personal.</p>
+          <h2 class="text-2xl font-bold font-montserrat text-green-600 dark:text-green-400 mt-10 mb-4 border-b border-zinc-100 dark:border-zinc-700 pb-2">Capitolul 4. Conduită şi valori (codul etic)</h2>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 6.</strong> Respectul reciproc presupune interzicerea oricărei forme de discriminare sau bullying.</p>
+          <ul class="list-none pl-4 space-y-2 mb-4">
+            <li><strong class="text-zinc-900 dark:text-white">Art 6.1.</strong> Prima abatere de forma avertisment verbal, va fi notată în drive (foaia de prezenţe).</li>
+            <li><strong class="text-zinc-900 dark:text-white">Art 6.1.2.</strong> A doua abatere:
+              <ul class="list-disc pl-6 mt-1 space-y-1">
+                <li>cazul de voluntar- revocarea dreptului de a deveni membrul în următorul semestru</li>
+                <li>cazul de membru- revocarea dreptului de a vota la următoarele 2 AG-uri</li>
+              </ul>
+            </li>
+            <li><strong class="text-zinc-900 dark:text-white">Art 6.1.3.</strong> A treia abatere: excluderea din organizație fără drept de revenire.</li>
+          </ul>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 7.</strong> Membrii/voluntarii nu pot folosi imaginea asociației pentru campanii politice personale.</p>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 8.</strong> Şedinţele încep la ora fixată; întârzierea repetată poate atrage avertismente; absența repetată la ședințe poate atrage asupra statutului din MEMBRU-VOLUNTAR, din BE-BC, ВС- VOLUNTAR).</p>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 9.</strong> O persoană care a fost introdusă în Comisia de Etică a universității, nu va avea dreptul de a intra ca membru în asociație; dacă este deja membru în asociație, va fi exclus.</p>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 10.</strong> Comportamentul în afara asociației este valabil atât pentru volunatri vechi şi membri, dar şi pentru membrii noi în cadrul activităților universității.</p>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 11.</strong> Toți membrii asociației, în special cei cu funcții de conducere, au obligația de a menține o conduită profesională pe parcursul activităților.</p>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 12.</strong> Deciziile luate în cadrul asociației trebuie să se bazeze strict pe competență, rezultate şi interesele organizației, fiind total independente de relațiile sau circumstanțele din viața personală a membrilor.</p>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 13.</strong> Orice neînțelegere sau conflict de natură personală între membrii asociației trebuie gestionat în afara spațiului oficial de lucru (grupuri online, ședințe sau evenimente), dar şi înafara campusului univeristar.</p>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 14.</strong> Este strict interzisă utilizarea funcției sau a autorității în cadrul asociației pentru a favoriza sau a sancționa un alt membru pe baza unor motive subiective, de ordin personal.</p>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 15.</strong> În cazul în care un membru al conducerii se află într-o situație de conflict de interese (de exemplu, evaluarea unei persoane apropiate), acesta are obligația de a se abține de la vot sau de la procesul decizional respectiv.</p>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 16.</strong> Prin protejarea climatului de lucru, membrii se vor abţine de la a aduce dispute, tensiuni sau detalii intime din viața privată în cadrul activităților asociației, dacă acestea pot afecta moralul echipei sau eficiența procesului de lucru.</p>
+          <ul class="list-none pl-4 mb-8">
+            <li><strong class="text-zinc-900 dark:text-white">Art 16.1.</strong> Orice comportament care perturbă climatul profesional prin prisma unor probleme personale va fi sancționat conform procedurii stabilite pentru conduită neconformă.</li>
+          </ul>
+          <h2 class="text-2xl font-bold font-montserrat text-green-600 dark:text-green-400 mt-10 mb-4 border-b border-zinc-100 dark:border-zinc-700 pb-2">Capitolul 5. Conduita în cadrul activităților și reprezentarea asociației</h2>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 17.</strong> Sfera de aplicare înseamnă prezentele norme de conduită se aplică tuturor membrilor şi voluntarilor în cadrul evenimentelor asociației, indiferent de natura acestora:</p>
+          <ul class="list-disc pl-6 space-y-2 mb-4">
+            <li><strong class="text-zinc-900 dark:text-white">evenimente formale:</strong> conferințe, şedinţe, gale, proiecte cu parteneri externi sau instituționali, adunări generale, ședințe de departament</li>
+            <li><strong class="text-zinc-900 dark:text-white">evenimente non-formale:</strong> team-building-uri, ieşiri sociale, petreceri tematice sau activități de networking</li>
+          </ul>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 18.</strong> Responsabilitatea comportamentului, adică BC/membrii/voluntarii asociației sunt considerați reprezentanți ai organizației în orice context în care identitatea lor de voluntar este cunoscută.</p>
+          <p class="mb-4 pl-4 border-l-2 border-green-500 italic">orice comportament care aduce atingere valorilor asociației, bunelor maniere sau moralității publice indiferent dacă este menționat explicit sau nu în prezentul regulament - va fi considerat conduită neconformă.</p>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 19.</strong> Orice acțiune care contravine bunului simț, eticii voluntariatului sau care creează un climat negativ (ex: gesturi obscene, consum iresponsabil de substanțe legale, interzicerea consumului de substanțe interzise atitudini sfidătoare, perturbarea activităților) va fi analizată de Biroul de Conducere.</p>
+          <ul class="list-none pl-4 space-y-2 mb-8">
+            <li><strong class="text-zinc-900 dark:text-white">Art 19.1.</strong> Dreptul de decizie al conducerii:
+              <ul class="list-none pl-4 mt-2 space-y-2">
+                <li><strong class="text-zinc-900 dark:text-white">Art 19.1.1.</strong> În cazul apariției unor astfel de situații, Biroul de Conducere are autoritatea deplină de a evalua gravitatea faptei şi de a aplica sancțiuni proporţionale, de la avertisment verbal până la excluderea imediată.</li>
+                <li><strong class="text-zinc-900 dark:text-white">Art 19.1.2.</strong> Sancțiunea va fi stabilită în funcție de impactul acțiunii asupra imaginii asociației şi de gradul de perturbare a evenimentului respectiv.</li>
+                <li><strong class="text-zinc-900 dark:text-white">Art 19.1.3.</strong> În cazuri de urgență la evenimente externe, coordonatorul de proiect poate decide suspendarea participării membrului respectiv pe loc, urmând ca Biroul de Conducere să valideze sancțiunea finală în termen de 48 de ore, ca în decurs de 5 zile lucrătoare aceasta să fie validate de Adunarea Generală.</li>
+              </ul>
+            </li>
+          </ul>
+          <h2 class="text-2xl font-bold font-montserrat text-green-600 dark:text-green-400 mt-10 mb-4 border-b border-zinc-100 dark:border-zinc-700 pb-2">Capitolul 6. Politica de siguranță și prevenire a hărţuirii</h2>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 20.</strong> Este strict interzisă orice formă de hărţuire, abuz de putere sau comportament care încalcă limitele personale ale oricărui membru, indiferent de funcția acestuia (voluntar sau membru al conducerii).</p>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 21.</strong> Se consideră hărţuire sau conduită inacceptabilă orice comportament nedorit care are ca scop sau efect lezarea demnității unei persoane, incluzând, dar fără a se limita la:</p>
+          <ul class="list-disc pl-6 space-y-2 mb-4">
+            <li><strong class="text-zinc-900 dark:text-white">hărţuire verbală și psihologică:</strong> umilirea publică, intimidarea, utilizarea tonului ridicat în mod nejustificat, amenințările sau insistența în comunicare după ce persoana a cerut încetarea acesteia</li>
+            <li><strong class="text-zinc-900 dark:text-white">hărţuire fizică sau sexuală:</strong> orice contact fizic nedorit, avansuri nepotrivite, comentarii sugestive sau gesturi care creează un mediu ostil sau ofensator</li>
+            <li><strong class="text-zinc-900 dark:text-white">încălcarea limitelor personale:</strong> orice acțiune care continuă după ce „partea cealaltă" a comunicat explicit o barieră (ex: „te rog să nu mai faci această glumă", „nu mă simt confortabil cu această abordare")</li>
+          </ul>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 22.</strong> Abuzul de putere (hărţuirea din partea Conducerii): membrii Biroului de Conducere au datoria de a exercita autoritatea cu responsabilitate.</p>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 23.</strong> Se consideră abatere gravă:</p>
+          <ul class="list-disc pl-6 space-y-2 mb-4">
+            <li>condiţionarea oportunităților din asociație de favoruri personale</li>
+            <li>utilizarea funcției pentru a exercita presiuni emoționale sau psihologice asupra voluntarilor</li>
+            <li>ignorarea limitelor comunicate de voluntari sub pretextul ierarhiei"</li>
+          </ul>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 24.</strong> Mecanismul de raportare și protecția victimelor</p>
+          <ul class="list-none pl-4 space-y-2 mb-8">
+            <li><strong class="text-zinc-900 dark:text-white">Art 24.1.</strong> Orice membru care se simte victimă a hărţuirii are dreptul să raporteze incidentul fără teamă de repercursiuni.
+              <ul class="list-none pl-4 mt-2 space-y-2">
+                <li><strong class="text-zinc-900 dark:text-white">Art 24.1.1.</strong> Cazul A (Făptaşul este voluntar/membru): sesizarea se face către Biroul de Conducere, care va demara o anchetă internă imediată.</li>
+                <li><strong class="text-zinc-900 dark:text-white">Art 24.1.2.</strong> Cazul B (Făptaşul este membru al Conducerii): pentru a evita conflictul de interese, sesizarea poate fi făcută direct către [Cenzorul asociației / Adunarea Generală], garantându-se anonimatul victimei pe parcursul procesului de evaluare.</li>
+                <li><strong class="text-zinc-900 dark:text-white">Art 24.1.3.</strong> Se consideră sancţiuni: confirmarea oricărei forme de hărţuire atrage după sine excluderea imediată şi definitivă din asociație, fără posibilitatea de revenire.</li>
+              </ul>
+            </li>
+          </ul>
+          <h2 class="text-2xl font-bold font-montserrat text-green-600 dark:text-green-400 mt-10 mb-4 border-b border-zinc-100 dark:border-zinc-700 pb-2">Capitolul 7. Norme de comunicare digitală și conduită online</h2>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 25.</strong> Spațiul oficial de comunicare toate grupurile de mesagerie (WhatsApp, Messenger, Discord, etc) create sub egida asociației sau pentru coordonarea proiectelor sunt considerate spații oficiale de lucru.</p>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 26.</strong> Membrii au obligația de a menține un limbaj profesional și un climat bazat pe respect reciproc.</p>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 27.</strong> Definiția abaterilor de limbaj prin „conduită inadecvată" se înțelege orice formă de injurie, jignire sau manifestare ostilă exprimată prin:</p>
+          <ul class="list-disc pl-6 space-y-2 mb-4">
+            <li><strong class="text-zinc-900 dark:text-white">mesaje scrise:</strong> text vulgar, atacuri la persoană, limbaj licențios sau discriminatoriu</li>
+            <li><strong class="text-zinc-900 dark:text-white">materiale vizuale:</strong> fotografii, capturi de ecran (screenshots) sau videoclipuri cu conținut ofensator, obscen sau care vizează denigrarea unui coleg</li>
+            <li><strong class="text-zinc-900 dark:text-white">elemente grafice de reacție:</strong> utilizarea de stickere, GIF-uri sau emoji-uri cu tentă jignitoare, sexuală sau care instigă la ură</li>
+          </ul>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 28.</strong> Procedura de sancționare: politică de toleranță scăzută față de comportamentul agresiv în mediul online, după cum urmează:</p>
+          <ul class="list-none pl-4 space-y-2 mb-8">
+            <li><strong class="text-zinc-900 dark:text-white">Art 28.1.</strong> Prima abatere (Avertisment Scris): orice membru care utilizează injurii sau materiale jignitoare (sub orice formă menționată mai sus) va primi un avertisment oficial din partea Biroului de Conducere, iar mesajul ofensator va fi şters imediat de administrator.</li>
+            <li><strong class="text-zinc-900 dark:text-white">Art 28.2.</strong> A doua abatere (Excluderea): reconcilierea aceleiași fapte sau orice altă manifestare de jignire ulterioară avertismentului atrage după sine propunerea de încetare imediată a statului de voluntariat.</li>
+            <li><strong class="text-zinc-900 dark:text-white">Art 28.3.</strong> Sancțiunile se aplică indiferent dacă mesajul a fost trimis în glumă" sau dacă a fost şters ulterior de către autor (dacă există dovezi/capturi de ecran care să ateste fapta).</li>
+            <li><strong class="text-zinc-900 dark:text-white">Art 28.4.</strong> Avertismentele/ Sancțiunile pot fi propuse de către orice membru al conducerii asociației, ca mai apoi să fie discutate intern şi în urma unei analize se va supune la vot (50%+1). Acesta va rămâne anonimă, exceptând cazul unei contestaţii şi se va disputa la următoarea Adunare Generală. Va fi construită o bază de date pentru sancțiuni, pe care o va administra Vicepreşedintele pe Relații Interne.</li>
+            <li><strong class="text-zinc-900 dark:text-white">Art 28.5.</strong> Orice membru care se simte vizat de un astfel de comportament sau care este martor la o astfel de conduită pe grupurile asociației are datoria de a sesiza Biroului de Conducere, garantându-i-se confidențialitatea.</li>
+          </ul>
+          <h2 class="text-2xl font-bold font-montserrat text-green-600 dark:text-green-400 mt-10 mb-4 border-b border-zinc-100 dark:border-zinc-700 pb-2">Capitolul 8. Evaluare periodică și clauză de revocare internă</h2>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 29.</strong> Membrii conducerii nu sunt evaluați doar pe rezultate finale, ci pe procesul de lucru.</p>
+          <ul class="list-none pl-4 space-y-2 mb-4">
+            <li><strong class="text-zinc-900 dark:text-white">Art 29.1.</strong> Indicatori de proces:
+              <ul class="list-disc pl-6 mt-1 space-y-1">
+                <li>respectarea termenelor limită pentru planificarea proiectelor</li>
+                <li>gradul de satisfacție a voluntarilor din subordine</li>
+                <li>transparența decizională (publicarea minutelor şedinţelor în timp util)</li>
+                <li>prezența la ședințele de Board (peste 90%-2 absenţe)</li>
+              </ul>
+            </li>
+            <li><strong class="text-zinc-900 dark:text-white">Art 29.2.</strong> Sesiuni de feedback 360°: o dată la 2 luni, membrii Board-ului primesc feedback anonim de la coordonatorii de departamente și de la voluntari.</li>
+            <li><strong class="text-zinc-900 dark:text-white">Art 29.3.</strong> Acumularea a trei mustrări pe parcursul unui mandat atrage de drept revocarea din funcție a membrului respectiv și pierderea calității de membru al Biroului de Conducere.</li>
+            <li><strong class="text-zinc-900 dark:text-white">Art 29.4.</strong> În cazul constatării unor abateri repetate, a neglijenței în îndeplinirea sarcinilor sau a oricăror nereguli de natură administrativă ori etică, membrul Consiliului Director în cauză va fi sancționat cu mustrare formală.</li>
+            <li><strong class="text-zinc-900 dark:text-white">Art 29.5.</strong> La acumularea celei de-a treia mustrări, mandatul persoanei vizate încetează automat, aceasta fiind eliberată din funcția de conducere deținută în cadrul asociației, fără a mai fi necesară o procedură de vot suplimentară.</li>
+            <li><strong class="text-zinc-900 dark:text-white">Art 29.6.</strong> Nerespecatrea indicatorilor de proces și acumularea de 3 mustrări, duce la demitere automată. ACESTEA SE VOR DA DE PREŞEDINTE ȘI DE VICEPREŞEDINTELE PE RELAȚII INTERNE.</li>
+          </ul>
+          <h3 class="text-xl font-bold font-montserrat text-zinc-900 dark:text-white mt-8 mb-2">Capitolul 8.1. Procedura de revocare (demitere) fără Adunarea Generală</h3>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 30.</strong> Pentru ca acest lucru să fie legal și etic, trebuie să existe un sistem de "checks and balances" în interiorul Board-ului sau al Consiliului extins.</p>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 31.</strong> Votul de Neîncredere Intern (Peer Review)</p>
+          <ul class="list-none pl-4 mb-4">
+            <li><strong class="text-zinc-900 dark:text-white">Art 31.1.</strong> Un membru al conducerii poate fi demis prin votul de 50%+1 din restul membrilor Board-ului, dacă se constată încălcări grave ale procesului de lucru sau inactivitate prelungită, cu condiția ca persoana vizată are dreptul la o "audiere" internă pentru a-şi prezenta punctul de vedere înainte de vot.</li>
+          </ul>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 32.</strong> Revocarea prin Consiliul Coordonatorilor</p>
+          <ul class="list-none pl-4 mb-4">
+            <li><strong class="text-zinc-900 dark:text-white">Art 32.1</strong> Dacă coordonatorii departamentelor consideră că un membru al Biroului Executiv blochează activitatea, aceştia pot depune o moțiune de cenzură semnată de majoritatea coordonatorilor, aceasta duce la demiterea imediată a persoanei respective din funcție (50%+1); se aplică procedura de mai sus.</li>
+          </ul>
+          <h3 class="text-xl font-bold font-montserrat text-zinc-900 dark:text-white mt-8 mb-2">8.2. Clauza de "demitere de drept" (automată)</h3>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 33.</strong> Există situații unde nu mai este nevoie de vot, ci demiterea este constatată automat.</p>
+          <ul class="list-none pl-4 space-y-2 mb-8">
+            <li><strong class="text-zinc-900 dark:text-white">Art 33.1.</strong> Ce depășește cele 2 absente se va aduce motivare.</li>
+            <li><strong class="text-zinc-900 dark:text-white">Art 33.2.</strong> Neîndeplinirea sarcinilor critice: dacă un membru al conducerii nu livrează un raport/document obligatoriu (ex: raportul financiar sau planul de activitate) în termen de 3 zile de la deadline-ul setat.</li>
+          </ul>
+          <h2 class="text-2xl font-bold font-montserrat text-green-600 dark:text-green-400 mt-10 mb-4 border-b border-zinc-100 dark:border-zinc-700 pb-2">Capitolul 9. Clasificarea membrilor și drepturile asociate</h2>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 33.</strong> Membrul activ (membru cu drept de vot) este voluntarul care a parcurs perioada de probă, a demonstrat o implicare constantă și a fost validat de Biroul de Conducere; acesta se bucură de statut deplin în cadrul asociației și are următoarele privilegii:</p>
+          <ul class="list-disc pl-6 space-y-2 mb-6 text-zinc-700 dark:text-zinc-300">
+            <li><strong class="text-zinc-900 dark:text-white">dreptul de vot:</strong> capacitatea de a vota în cadrul Adunărilor Generale și de a influența deciziile strategice, modificările de regulament sau alegerea conducerii</li>
+            <li><strong class="text-zinc-900 dark:text-white">prioritate în reprezentare:</strong> acces prioritar la evenimente sociale, conferințe, deplasări externe, schimburi de experiență și sesiuni limitate de networking</li>
+            <li><strong class="text-zinc-900 dark:text-white">eligibilitate:</strong> dreptul exclusiv de a candida și de a fi ales în funcții de conducere (Birou Executiv, Coordonator/ Subcoordonator de Departament) sau în funcții de execuție strategică</li>
+            <li><strong class="text-zinc-900 dark:text-white">acces la resurse:</strong> prioritate în utilizarea facilităților asociației și în accesarea programelor de mentorat intern</li>
+          </ul>
+          <p class="mb-2 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 34.</strong> Voluntarul (membru aspirant) este acel membru aflat la începutul activității sau persoana care dorește să se implice în proiectele asociației fără a-şi asuma responsabilități administrative; statutul său este definit de următoarele caracteristici:</p>
+          <ul class="list-disc pl-6 space-y-2 mb-8 text-zinc-700 dark:text-zinc-300">
+            <li><strong class="text-zinc-900 dark:text-white">participare generală:</strong> are dreptul şi este încurajat să participe la toate activitățile, proiectele, training-urile și evenimentele asociației deschise publicului sau membrilor interni</li>
+            <li><strong class="text-zinc-900 dark:text-white">absenţa dreptului de vot:</strong> poate participa la ședințe și îşi poate exprima opinia, însă nu are drept de vot în procesul decizional oficial sau în alegerile pentru funcții de conducere</li>
+            <li><strong class="text-zinc-900 dark:text-white">acces la evenimente sociale:</strong> participă la evenimente sociale în funcție de locurile disponibile, după ocuparea acestora de către membrii activi</li>
+            <li><strong class="text-zinc-900 dark:text-white">evoluție:</strong> statutul de voluntar reprezintă etapa premergătoare dobândirii calității de membru, în funcție de criteriile de performanță şi de vechime stabilite prin prezentul regulament</li>
+          </ul>
+          <h2 class="text-2xl font-bold font-montserrat text-green-600 dark:text-green-400 mt-10 mb-4 border-b border-zinc-100 dark:border-zinc-700 pb-2">Capitolul 10. Recunoaşterea volunatarilor și a membriilor</h2>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 35.</strong> Membrul lunii se va baza pe recunoaşterea publică a celor mai activi voluntari.</p>
+          <p class="mb-4 leading-relaxed"><strong class="text-zinc-900 dark:text-white">Art 36.</strong> La primirea de invitații la gale, AG-uri de la asociațiile partenere, membrii activi au prioriatate la invitație.</p>
         </div>
       </section>
       <button id="backToTop" aria-label="Înapoi sus" class="opacity-0 fixed right-6 bottom-6 p-4 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-full shadow-2xl hover:scale-110 hover:-translate-y-1 
@@ -393,7 +315,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/index.js" defer></script>
+  <script src="js/roi.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
 </body>
 </html>
